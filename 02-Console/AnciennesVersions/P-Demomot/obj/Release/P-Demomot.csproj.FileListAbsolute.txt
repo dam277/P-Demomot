@@ -1,0 +1,15 @@
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Release\P-Demomot.exe.config
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Release\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Release\P-Demomot.pdb
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Release\P-Demomot.csproj.SuggestedBindingRedirects.cache
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Release\P-Demomot.csproj.CoreCompileInputs.cache
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Release\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Release\P-Demomot.pdb
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\bin\Release\P-Demomot.exe.config
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\bin\Release\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\bin\Release\P-Demomot.pdb
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\obj\Release\P-Demomot.csproj.AssemblyReference.cache
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\obj\Release\P-Demomot.csproj.SuggestedBindingRedirects.cache
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\obj\Release\P-Demomot.csproj.CoreCompileInputs.cache
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\obj\Release\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\02-Console\P-Demomot\obj\Release\P-Demomot.pdb
