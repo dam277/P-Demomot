@@ -1,17 +1,22 @@
 # P-Demomot
 
-==INFORMATIONS==
--Le jeu en windows Forms sera connecté à une base de donnée
--Le jeu en console ne sera pas connecté à une base de donnée
--Le site html répértoriera tous les comptes de la base de donnée
+## Table of Contents
+1. [What's the project ?](#the-project)
+2. [Contributors](#contributors)
+3. [Features](#features)
+4. 1. [Game modes](#game-modes)
+5. 2. [Classement](#classement)
 
+<hr>
 
-----Code_C#----
-___Version1___
--Création des class
--Mise en place des methodes et variabkes de base
+## the project
+This project consist of creating a game like turn by turn.
 
-___Version3___
-Code C#
-Création du menu principal - Création du choix de l'inventaire de personnages - Création de la possibilité de choisir et de créer un utilisateur
-Création du début de projet en Windows Forms
+There is two games in one application.<br>
+It have a system of account creation and connection.
+
+## Features
+### Game modes
+
+## Contributors
+- [Damien Loup](https://github.com/dam277)
