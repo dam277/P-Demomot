@@ -71,6 +71,7 @@ namespace P_Demomot.utils
             _damages = damages;
             _loadTurns = loadTurns;
             _nbTurns = nbTurns;
+            Console.ReadLine
         }
 
         /// <summary>
