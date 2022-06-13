@@ -17,7 +17,6 @@ namespace P_Demomot.utils
         private int _lvl1CardsToUpgrade;            //Cards required to upgrade a character to level 2
         private int _lvl2UpgradePrice;              //Price to upgrade a character to level 3
         private int _lvl2CardsToUpgrade;            //Cards required to upgrade a character to level 3
-
         /// <summary>
         /// STRING
         /// </summary>
