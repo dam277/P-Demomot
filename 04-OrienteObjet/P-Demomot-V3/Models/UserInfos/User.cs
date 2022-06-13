@@ -170,9 +170,88 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="nickname">User nickname</param>
+        /// <param name="password">User password</param>
+        /// <param name="confirmPassword">User confirm password</param>
+        private User(string nickname, string role)
+        {
+            _nickname = nickname;
+            _role = role;
+            _entryDate = DateTime.Now;
+        }
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Create account
+        /// </summary>
+        public static void CreateAccount(string nickname, string password, string confirmPassword, string role = "membre")
+        {
+            if (nickname != null && password == confirmPassword)
+            {
+                User user = new User(nickname, role);
+            }
+        }
+
+        /// <summary>
+        /// Connect to an account
+        /// </summary>
+        /// <param name="nickname"></param>
+        /// <param name="password"></param>
+        public void Connect(string nickname, string password)
+        {
+
+        }
+
+        /// <summary>
+        /// Get a user by an ID
+        /// </summary>
+        /// <param name="userId">User id</param>
+        /// <returns></returns>
+        public User GetUserById(int userId)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Get a user by his nickname
+        /// </summary>
+        /// <param name="nickname">User nickname</param>
+        /// <returns></returns>
+        public User GetUserByNickname(string nickname)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Get the inventory of the user by the user id
+        /// </summary>
+        /// <param name="idUser">User id</param>
+        /// <returns></returns>
+        public List<Character> GetInventoryById(int idUser)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add a character to a list
+        /// </summary>
+        /// <param name="character">Character to add</param>
+        public void AddCharacter(Character character)
+        {
+            // Check what type of character is it
+            if(character is Fighter)
+            {
+                _fighterList.Add(character as Fighter);
+            }
+            else if(character is Tank)
+            {
+                _tankList.Add(character as Tank);
+            }
+        }
         #endregion
     }
 }
