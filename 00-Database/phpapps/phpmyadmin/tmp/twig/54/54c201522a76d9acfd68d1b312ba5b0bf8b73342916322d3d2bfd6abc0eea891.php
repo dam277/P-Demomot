@@ -82,6 +82,6 @@ class __TwigTemplate_4ad3e0c8b3f45ca8f9856b1f1aeb25ab4e54f2e8cc760dcb3687ece053d
 
     public function getSourceContext()
     {
-        return new Source("", "checkbox.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\checkbox.twig");
+        return new Source("", "checkbox.twig", "C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\checkbox.twig");
     }
 }

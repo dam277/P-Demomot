@@ -1,0 +1,103 @@
+2022-06-13T08:44:06.495016Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-13T08:44:06.495016Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-13T08:44:06.495016Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-13T08:44:06.495016Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-13T08:44:06.495016Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-13T08:44:06.495016Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 9864 ...
+2022-06-13T08:44:06.510635Z 0 [ERROR] Can't open shared library 'C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-13T08:44:06.510635Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-13T08:44:06.510635Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-13T08:44:06.557533Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-13T08:44:06.557533Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-13T08:44:06.604395Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-13T08:44:06.682471Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-13T08:44:06.682471Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-13T08:44:06.729335Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-13T08:44:06.744956Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-13T08:44:06.744956Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-13T08:44:06.744956Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-13T08:44:06.807441Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 1615635
+2022-06-13T08:44:06.807441Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-13T08:44:06.807441Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-13T08:44:06.807441Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-13T08:44:06.807441Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-13T08:44:06.807441Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-13T08:44:06.807441Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-13T08:44:06.807441Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-13T08:44:06.807441Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-13T08:44:06.807441Z 0 [Note] IPv6 is available.
+2022-06-13T08:44:06.807441Z 0 [Note]   - '::' resolves to '::';
+2022-06-13T08:44:06.807441Z 0 [Note] Server socket created on IP: '::'.
+2022-06-13T08:44:06.807441Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:06.807441Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-13T08:44:06.823062Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220613 10:44:06
+2022-06-13T08:44:06.823062Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-13T08:44:06.823062Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:06.823062Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-13T08:44:06.823062Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:06.823062Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-13T08:44:06.838714Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-13T08:44:06.838714Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-13T08:44:30.088314Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__relation from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.090311Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.092337Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_coords from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.094301Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.095330Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__history from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.097568Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__recent from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.098567Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__favorite from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.100922Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_uiprefs from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.102652Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__tracking from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.103651Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__userconfig from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.105646Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__bookmark from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.107640Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__users from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.109475Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__navigationhiding from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.111219Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__savedsearches from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.112218Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__central_columns from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.114650Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__designer_settings from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:30.115649Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__export_templates from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-13T08:44:59.562216Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.562216Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.566205Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.567233Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.569228Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.570226Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.574244Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.574244Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.577235Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.577235Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.580227Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.580227Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.584247Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.585243Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.588892Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.588892Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T08:44:59.591882Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T08:44:59.591882Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T11:44:09.269116Z 59 [Note] Aborted connection 59 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-13T11:44:34.637973Z 60 [Note] Aborted connection 60 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-13T11:44:57.337135Z 61 [Note] Aborted connection 61 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-13T11:45:17.993404Z 62 [Note] Aborted connection 62 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-13T11:45:40.466396Z 63 [Note] Aborted connection 63 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-13T12:13:01.809956Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.809956Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.809956Z 104 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-2688_68` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T12:13:01.825605Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.825605Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.825605Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.825605Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.825605Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.841199Z 104 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:01.841199Z 104 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T12:13:21.648392Z 124 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:21.649390Z 124 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-13T12:13:33.276598Z 144 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-13T12:13:33.276598Z 144 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.

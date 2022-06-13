@@ -130,6 +130,6 @@ class __TwigTemplate_37709f9a07f3c38cef6a57670dff9a72f785812c3b8eee82d149a1e7907
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/column_default.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_default.twig");
+        return new Source("", "columns_definitions/column_default.twig", "C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_default.twig");
     }
 }
