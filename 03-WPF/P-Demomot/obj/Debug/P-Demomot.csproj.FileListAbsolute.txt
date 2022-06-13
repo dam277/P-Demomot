@@ -1,0 +1,15 @@
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\bin\Debug\P-Demomot.exe.config
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\bin\Debug\P-Demomot.exe
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\bin\Debug\P-Demomot.pdb
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.csprojAssemblyReference.cache
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\MainWindow.g.cs
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\App.g.cs
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot_MarkupCompile.cache
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot_MarkupCompile.lref
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\MainWindow.baml
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.g.resources
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P_Demomot.Properties.Resources.resources
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.csproj.GenerateResource.cache
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.csproj.CoreCompileInputs.cache
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.exe
+C:\Users\damloup\Desktop\P-Demomot\03-WPF\P-Demomot\obj\Debug\P-Demomot.pdb

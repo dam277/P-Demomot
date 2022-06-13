@@ -1,0 +1,8 @@
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Debug\P-Demomot.exe.config
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Debug\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\bin\Debug\P-Demomot.pdb
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Debug\P-Demomot.csproj.CoreCompileInputs.cache
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Debug\P-Demomot.exe
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Debug\P-Demomot.pdb
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Debug\P-Demomot.csproj.AssemblyReference.cache
+C:\Users\damis\Desktop\P-Demomot\P-Demomot\obj\Debug\P-Demomot.csproj.SuggestedBindingRedirects.cache
