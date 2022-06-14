@@ -3,17 +3,17 @@
 -- *--------------------------------------------
 -- * DB-MAIN version: 11.0.2              
 -- * Generator date: Sep 14 2021              
--- * Generation date: Tue Jun 14 16:30:05 2022 
--- * LUN file: C:\Users\damloup\Desktop\P-Demomot\01-Documents\01-Shemas\03-SQL\P-DemomotDB.lun 
--- * Schema: MLD-v2/2-1 
+-- * Generation date: Tue Jun 14 21:48:46 2022 
+-- * LUN file: C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\01-Documents\01-Shemas\03-SQL\P-DemomotDB.lun 
+-- * Schema: db_demomot_v2/2-1 
 -- ********************************************* 
 
 
 -- Database Section
 -- ________________ 
 
-create database db_demomot_v2;
-use db_demomot_v2;
+create database db_demomot;
+use db_demomot;
 
 
 -- Tables Section

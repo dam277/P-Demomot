@@ -130,6 +130,6 @@ $context["key"] != "")) && (twig_slice($this->env, (($__internal_f607aeef2c31a95
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/column_virtuality.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_virtuality.twig");
+        return new Source("", "columns_definitions/column_virtuality.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_virtuality.twig");
     }
 }

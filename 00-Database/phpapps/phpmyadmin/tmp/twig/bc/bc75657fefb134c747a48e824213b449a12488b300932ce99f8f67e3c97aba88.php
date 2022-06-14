@@ -77,6 +77,6 @@ class __TwigTemplate_a3b96ca2fc597453945ec7cbff22209745c98cf24959147b418a8eb8124
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/column_type.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_type.twig");
+        return new Source("", "columns_definitions/column_type.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_type.twig");
     }
 }

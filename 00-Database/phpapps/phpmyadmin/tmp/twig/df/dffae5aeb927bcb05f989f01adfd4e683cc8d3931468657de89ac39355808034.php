@@ -108,6 +108,6 @@ class __TwigTemplate_1de2f2d05a89c7728b97e02fe3e573259e595b6b5a92455d970c08fe456
 
     public function getSourceContext()
     {
-        return new Source("", "display/export/options_output_compression.twig", "D:\\DATA\\UwAmp\\phpapps\\phpmyadmin\\templates\\display\\export\\options_output_compression.twig");
+        return new Source("", "display/export/options_output_compression.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\display\\export\\options_output_compression.twig");
     }
 }

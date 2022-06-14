@@ -123,6 +123,6 @@ class __TwigTemplate_e85b1cf1691f3251d4e7543d12f7b007b31ba1226da0ade8cf0a4d10842
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/column_indexes.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_indexes.twig");
+        return new Source("", "columns_definitions/column_indexes.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_indexes.twig");
     }
 }

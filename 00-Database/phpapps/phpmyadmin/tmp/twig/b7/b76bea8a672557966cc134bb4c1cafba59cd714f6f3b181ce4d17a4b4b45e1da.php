@@ -469,6 +469,6 @@ $context["subpartition"]) && is_array($__internal_0795e3de58b6454b051261c0c2b5be
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/partitions.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\partitions.twig");
+        return new Source("", "columns_definitions/partitions.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\partitions.twig");
     }
 }

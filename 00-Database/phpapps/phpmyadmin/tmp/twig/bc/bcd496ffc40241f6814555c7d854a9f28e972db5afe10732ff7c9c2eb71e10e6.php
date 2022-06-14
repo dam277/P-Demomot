@@ -126,6 +126,6 @@ class __TwigTemplate_ea7411f9252b10be9db25712846f93509c3178ab00019aff3dd785f8714
 
     public function getSourceContext()
     {
-        return new Source("", "select_lang.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\select_lang.twig");
+        return new Source("", "select_lang.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\select_lang.twig");
     }
 }

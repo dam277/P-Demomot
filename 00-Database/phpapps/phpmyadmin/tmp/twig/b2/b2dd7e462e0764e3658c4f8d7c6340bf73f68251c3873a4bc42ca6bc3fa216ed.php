@@ -448,6 +448,6 @@ class __TwigTemplate_280eae2efb247342c9c5c277776b6ea422f7112772ebac1ae116777b32d
 
     public function getSourceContext()
     {
-        return new Source("", "columns_definitions/column_attributes.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_attributes.twig");
+        return new Source("", "columns_definitions/column_attributes.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\columns_definitions\\column_attributes.twig");
     }
 }

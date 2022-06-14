@@ -78,6 +78,6 @@ class __TwigTemplate_becdb048eae09502a79d9e07158509a83b21af6c83694324363638389ea
 
     public function getSourceContext()
     {
-        return new Source("", "export/alias_item.twig", "D:\\DATA\\UwAmp\\phpapps\\phpmyadmin\\templates\\export\\alias_item.twig");
+        return new Source("", "export/alias_item.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\export\\alias_item.twig");
     }
 }

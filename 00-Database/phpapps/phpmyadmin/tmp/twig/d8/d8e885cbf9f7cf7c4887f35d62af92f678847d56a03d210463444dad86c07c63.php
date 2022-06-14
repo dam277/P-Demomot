@@ -131,6 +131,6 @@ class __TwigTemplate_13e1b8f4e5a402bb2089d31308fed5df98b3836b509a708242ae15f47e7
 
     public function getSourceContext()
     {
-        return new Source("", "list/item.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\list\\item.twig");
+        return new Source("", "list/item.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\list\\item.twig");
     }
 }

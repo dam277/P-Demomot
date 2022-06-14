@@ -466,6 +466,6 @@ class __TwigTemplate_3efcb962c4c289c2093a59ddbd608575541f035e962cc79d724dc5552ed
 
     public function getSourceContext()
     {
-        return new Source("", "table/structure/display_table_stats.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\table\\structure\\display_table_stats.twig");
+        return new Source("", "table/structure/display_table_stats.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\table\\structure\\display_table_stats.twig");
     }
 }

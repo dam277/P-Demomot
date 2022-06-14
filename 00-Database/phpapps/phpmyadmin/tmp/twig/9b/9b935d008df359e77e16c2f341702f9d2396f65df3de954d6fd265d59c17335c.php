@@ -88,6 +88,6 @@ class __TwigTemplate_d3355f50774210561068a971c9b8cc5eac4e30e9afc4e2d4c7eb695c6cc
 
     public function getSourceContext()
     {
-        return new Source("", "table/page_with_secondary_tabs.twig", "C:\\UwAmp\\phpapps\\phpmyadmin\\templates\\table\\page_with_secondary_tabs.twig");
+        return new Source("", "table/page_with_secondary_tabs.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\table\\page_with_secondary_tabs.twig");
     }
 }

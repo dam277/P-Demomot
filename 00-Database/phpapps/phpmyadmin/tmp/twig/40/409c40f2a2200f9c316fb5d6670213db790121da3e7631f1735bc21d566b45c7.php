@@ -980,6 +980,6 @@ $context["row"]) && is_array($__internal_064553f1273f2ea50405f85092d06733f3f2fe5
 
     public function getSourceContext()
     {
-        return new Source("", "table/structure/display_structure.twig", "C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\table\\structure\\display_structure.twig");
+        return new Source("", "table/structure/display_structure.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\table\\structure\\display_structure.twig");
     }
 }

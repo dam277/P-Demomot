@@ -89,6 +89,6 @@ class __TwigTemplate_68d7193329c8124d5d65b4df0963cb6f0411da0001c67b6f69bba894126
 
     public function getSourceContext()
     {
-        return new Source("", "div_for_slider_effect.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\div_for_slider_effect.twig");
+        return new Source("", "div_for_slider_effect.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\div_for_slider_effect.twig");
     }
 }

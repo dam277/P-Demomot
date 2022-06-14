@@ -85,6 +85,6 @@ class __TwigTemplate_b982ca94c661c96d1e410aec55ff3260d9f5e66013159625b0090a1917c
 
     public function getSourceContext()
     {
-        return new Source("", "display/results/sort_by_key.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\display\\results\\sort_by_key.twig");
+        return new Source("", "display/results/sort_by_key.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\display\\results\\sort_by_key.twig");
     }
 }
