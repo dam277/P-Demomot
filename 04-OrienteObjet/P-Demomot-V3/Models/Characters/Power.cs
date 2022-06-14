@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.Characters
 {
-    class Power
+    public class Power
     {
         #region Variables
         private MainController _mainController;         // Main controller
@@ -136,6 +136,14 @@ namespace P_Demomot.Models.Characters
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Power()
+        {
+
+        }
+
         /// <summary>
         /// Normal power class constructor
         /// </summary>

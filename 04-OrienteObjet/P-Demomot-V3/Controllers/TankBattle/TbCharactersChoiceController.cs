@@ -8,5 +8,9 @@ namespace P_Demomot.Controllers.TankBattle
 {
     class TbCharactersChoiceController : MainController
     {
+        public TbCharactersChoiceController()
+        {
+
+        }
     }
 }

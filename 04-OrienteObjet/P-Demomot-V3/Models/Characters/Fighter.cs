@@ -7,7 +7,7 @@ using P_Demomot.Models.Utils;
 
 namespace P_Demomot.Models.Characters
 {
-    class Fighter : Character
+    public class Fighter : Character
     {
         #region Variables
         private Dictionary<string, Power> _powers;          // Powers of a fighter
@@ -42,6 +42,14 @@ namespace P_Demomot.Models.Characters
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Fighter() : base()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

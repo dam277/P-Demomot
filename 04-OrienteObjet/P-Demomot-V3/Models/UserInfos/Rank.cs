@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.UserInfos
 {
-    class Rank
+    public class Rank
     {
         #region Variables
         private int _points;        // Rank points
@@ -46,6 +46,14 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Rank()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

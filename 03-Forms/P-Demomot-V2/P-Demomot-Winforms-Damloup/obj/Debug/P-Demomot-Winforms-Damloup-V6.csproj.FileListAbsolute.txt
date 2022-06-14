@@ -58,3 +58,13 @@ H:\01-Apprentissage\P-demoMot\P-Demomot\01-Versions\V2-WinForm\P-Demomot-Winform
 H:\01-Apprentissage\P-demoMot\P-Demomot\01-Versions\V2-WinForm\P-Demomot-Winforms-Damloup-v5\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup-V6.csproj.CoreCompileInputs.cache
 H:\01-Apprentissage\P-demoMot\P-Demomot\01-Versions\V2-WinForm\P-Demomot-Winforms-Damloup-v5\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup.exe
 H:\01-Apprentissage\P-demoMot\P-Demomot\01-Versions\V2-WinForm\P-Demomot-Winforms-Damloup-v5\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup.pdb
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\bin\Debug\P-Demomot-Winforms-Damloup.exe.config
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\bin\Debug\P-Demomot-Winforms-Damloup.exe
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\bin\Debug\P-Demomot-Winforms-Damloup.pdb
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup-V6.csprojAssemblyReference.cache
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P_Demomot_Winforms_Damloup.Form1.resources
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P_Demomot_Winforms_Damloup.Properties.Resources.resources
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup-V6.csproj.GenerateResource.cache
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup-V6.csproj.CoreCompileInputs.cache
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup.exe
+C:\Users\damloup\Desktop\P-Demomot\03-Forms\P-Demomot-V2\P-Demomot-Winforms-Damloup\obj\Debug\P-Demomot-Winforms-Damloup.pdb

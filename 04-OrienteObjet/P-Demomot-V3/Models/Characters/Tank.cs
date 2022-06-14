@@ -7,7 +7,7 @@ using P_Demomot.Models.Utils;
 
 namespace P_Demomot.Models.Characters
 {
-    class Tank : Character
+    public class Tank : Character
     {
         #region Variables
         private int _moves;             // Tank moves
@@ -62,6 +62,14 @@ namespace P_Demomot.Models.Characters
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic Class constructor
+        /// </summary>
+        public Tank()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

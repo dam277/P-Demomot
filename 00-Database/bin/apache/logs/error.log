@@ -355,3 +355,21 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/User
 [Mon Jun 13 10:44:07.633889 2022] [ssl:warn] [pid 5008:tid 772] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
 PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
 [Mon Jun 13 10:44:07.665103 2022] [mpm_winnt:notice] [pid 5008:tid 772] AH00354: Child: Starting 64 worker threads.
+[Tue Jun 14 15:40:21.972849 2022] [ssl:warn] [pid 17684:tid 364] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Jun 14 15:40:21.973847 2022] [ssl:warn] [pid 17684:tid 364] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 14 15:40:22.005271 2022] [core:warn] [pid 17684:tid 364] AH00098: pid file C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Jun 14 15:40:22.077080 2022] [ssl:warn] [pid 17684:tid 364] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Jun 14 15:40:22.077080 2022] [ssl:warn] [pid 17684:tid 364] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Jun 14 15:40:22.077080 2022] [ssl:warn] [pid 17684:tid 364] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Tue Jun 14 15:40:22.659380 2022] [mpm_winnt:notice] [pid 17684:tid 364] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/8.0.1 configured -- resuming normal operations
+[Tue Jun 14 15:40:22.659380 2022] [mpm_winnt:notice] [pid 17684:tid 364] AH00456: Server built: Jan 28 2016 09:58:25
+[Tue Jun 14 15:40:22.659380 2022] [core:notice] [pid 17684:tid 364] AH00094: Command line: 'C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\bin\\httpd.exe -d C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache -f C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\conf\\httpd.conf'
+[Tue Jun 14 15:40:22.662686 2022] [mpm_winnt:notice] [pid 17684:tid 364] AH00418: Parent: Created child process 7928
+[Tue Jun 14 15:40:23.340294 2022] [ssl:warn] [pid 7928:tid 656] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Jun 14 15:40:23.340294 2022] [ssl:warn] [pid 7928:tid 656] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Jun 14 15:40:23.435732 2022] [ssl:warn] [pid 7928:tid 656] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Jun 14 15:40:23.436729 2022] [ssl:warn] [pid 7928:tid 656] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Jun 14 15:40:23.436729 2022] [ssl:warn] [pid 7928:tid 656] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Tue Jun 14 15:40:23.462526 2022] [mpm_winnt:notice] [pid 7928:tid 656] AH00354: Child: Starting 64 worker threads.

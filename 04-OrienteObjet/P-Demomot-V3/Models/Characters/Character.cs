@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.Characters
 {
-    class Character
+    public class Character
     {
         #region Variables   
         protected MainController _mainController;       // Main controller
@@ -114,6 +114,14 @@ namespace P_Demomot.Models.Characters
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Character()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

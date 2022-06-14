@@ -1,4 +1,8 @@
-﻿using System;
+﻿using P_Demomot.Models.Characters;
+using P_Demomot.Models.UserInfos;
+using P_Demomot.Models.Utils;
+using P_Demomot.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +14,22 @@ namespace P_Demomot.Controllers
     {
         public MainController()
         {
+
+        }
+
+        protected void ShowView(object sender)
+        {
             
+        }
+
+        public MainController GetController(string action)
+        {
+            return null;
+        }
+
+        protected void Show()
+        {
+
         }
     }
 }

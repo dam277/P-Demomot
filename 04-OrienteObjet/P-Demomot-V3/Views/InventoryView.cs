@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace P_Demomot.Views
 {
-    public partial class InventoryView : Form
+    public partial class InventoryView : Form, IView
     {
         public InventoryView()
         {
             InitializeComponent();
+        }
+
+        private void InventoryView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

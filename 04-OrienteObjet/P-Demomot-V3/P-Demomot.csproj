@@ -189,6 +189,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\InventoryView.resx">
+      <DependentUpon>InventoryView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginSignInView.resx">
       <DependentUpon>LoginSignInView.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +212,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controllers\ControllerFactory\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

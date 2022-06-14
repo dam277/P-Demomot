@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.UserInfos
 {
-    class Team
+    public class Team
     {
         #region Variables
         private MainController _mainController;     // Main controller
@@ -68,6 +68,14 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Team()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

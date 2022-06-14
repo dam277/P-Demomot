@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.UserInfos
 {
-    class Chest
+    public class Chest
     {
         #region Variables
         private MainController _mainController;             // Main controller
+        private string _name;                               // Chest name
         private int _idChest;                               // Chest Id
         private Rarity _rarity;                             // Chest rarity
         private Dictionary<Rarity, uint> _chanceNbr;        // Chest chanceNbr
@@ -30,6 +31,17 @@ namespace P_Demomot.Models.UserInfos
             set 
             { 
                 _mainController = value; 
+            }
+        }
+
+        /// <summary>
+        /// Public chest name
+        /// </summary>
+        public string Name
+        {
+            get
+            {
+                return _name;
             }
         }
 
@@ -69,9 +81,17 @@ namespace P_Demomot.Models.UserInfos
 
         #region Constructors
         /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Chest()
+        {
+
+        }
+
+        /// <summary>
         /// Class constructor
         /// </summary>
-        /// <param name="rarity">Chesr rarity</param>
+        /// <param name="rarity">Chest rarity</param>
         private Chest(Rarity rarity)
         {
             _rarity = rarity;

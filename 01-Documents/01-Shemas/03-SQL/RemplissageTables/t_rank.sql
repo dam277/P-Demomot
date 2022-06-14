@@ -1,0 +1,16 @@
+INSERT INTO `t_rank` (`idRank`, `ranName`, `ranPoints`) VALUES
+(1, 'Wood 1', 0),
+(2, 'Wood 2', 250),
+(3, 'Wood 3', 500),
+(4, 'Wood 4', 750),
+(5, 'Silver 1', 1000),
+(6, 'Silver 2', 1250),
+(7, 'Silver 3', 1500),
+(8, 'Gold 1', 1750),
+(9, 'Gold 2', 2000),
+(10, 'Gold 3', 2250),
+(11, 'Master 1', 2500),
+(12, 'Master 2', 3000),
+(13, 'Master 3', 3500),
+(14, 'Champion', 4000),
+(15, 'Supreme Champion', 4000);

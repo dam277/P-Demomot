@@ -295,6 +295,6 @@ class __TwigTemplate_4f7d189ae7a3b4c0042bec0126cf69ceaa8f956df68625247c127f51afb
 
     public function getSourceContext()
     {
-        return new Source("", "display/import/javascript.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\display\\import\\javascript.twig");
+        return new Source("", "display/import/javascript.twig", "C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\display\\import\\javascript.twig");
     }
 }

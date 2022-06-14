@@ -1,4 +1,5 @@
-﻿using System;
+﻿using P_Demomot.Models.UserInfos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace P_Demomot.Controllers.UserProperties
 {
     class InventoryController : MainController
     {
+        public InventoryController(User user)
+        {
+
+        }
     }
 }

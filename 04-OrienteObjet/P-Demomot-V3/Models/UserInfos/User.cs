@@ -1,4 +1,5 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Characters;
 using P_Demomot.Models.Utils;
 using System;
@@ -9,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Models.UserInfos
 {
-    class User
+    public class User
     {
         #region Variables 
         private MainController _mainController;                 // Main controller
+        private InventoryController _inventoryController;       // Inventory controller
         private int _id;                                        // User ID
         private string _nickname;                               // User nickname
         private string _profileImage;                           // User profile image
@@ -170,6 +172,14 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Constructors
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public User()
+        {
+
+        }
+
         /// <summary>
         /// Class constructor
         /// </summary>

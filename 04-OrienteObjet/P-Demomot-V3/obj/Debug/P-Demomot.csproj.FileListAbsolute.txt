@@ -32,3 +32,4 @@ C:\Users\damloup\Desktop\P-Demomot\04-OrienteObjet\P-Demomot-V3\bin\Debug\System
 C:\Users\damloup\Desktop\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P-Demomot.csproj.CopyComplete
 C:\Users\damloup\Desktop\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.OptionsView.resources
 C:\Users\damloup\Desktop\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.LoginSignInView.resources
+C:\Users\damloup\Desktop\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.InventoryView.resources
