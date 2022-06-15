@@ -3,21 +3,27 @@
 -- *--------------------------------------------
 -- * DB-MAIN version: 11.0.2              
 -- * Generator date: Sep 14 2021              
--- * Generation date: Tue Jun 14 16:30:05 2022 
+-- * Generation date: Wed Jun 15 10:22:40 2022 
 -- * LUN file: C:\Users\damloup\Desktop\P-Demomot\01-Documents\01-Shemas\03-SQL\P-DemomotDB.lun 
--- * Schema: MLD-v2/2-1 
+-- * Schema: MLD-v3/3-2 
 -- ********************************************* 
 
 
 -- Database Section
 -- ________________ 
 
-create database db_demomot_v2;
-use db_demomot_v2;
+create database db_demomot;
+use db_demomot;
 
 
 -- Tables Section
 -- _____________ 
+
+create table t_upgrade (
+     idUpgrade int not null auto_increment,
+     upgLife varchar(100) not null,
+     upgDamages varchar(100) not null,
+     constraint ID_t_upgrade_ID primary key (idUpgrade));
 
 create table t_belong (
      idChest int not null,
@@ -33,6 +39,7 @@ create table t_character (
      chaGame int not null,
      idUser int not null,
      idRarity int not null,
+     idUpgrade int not null,
      constraint ID_t_character_ID primary key (idCharacter));
 
 create table t_chest (
@@ -123,6 +130,10 @@ alter table t_character add constraint FKt_contain_FK
      foreign key (idRarity)
      references t_rarity (idRarity);
 
+alter table t_character add constraint FKt_can_FK
+     foreign key (idUpgrade)
+     references t_upgrade (idUpgrade);
+
 -- Not implemented
 -- alter table t_chest add constraint ID_t_chest_CHK
 --     check(exists(select * from t_belong
@@ -161,6 +172,9 @@ alter table t_user add constraint FKt_be_FK
 -- Index Section
 -- _____________ 
 
+create unique index ID_t_upgrade_IND
+     on t_upgrade (idUpgrade);
+
 create unique index ID_t_belong_IND
      on t_belong (idChest, idUser);
 
@@ -175,6 +189,9 @@ create index FKt_own_IND
 
 create index FKt_contain_IND
      on t_character (idRarity);
+
+create index FKt_can_IND
+     on t_character (idUpgrade);
 
 create unique index ID_t_chest_IND
      on t_chest (idChest);
