@@ -3,9 +3,9 @@
 -- *--------------------------------------------
 -- * DB-MAIN version: 11.0.2              
 -- * Generator date: Sep 14 2021              
--- * Generation date: Wed Jun 15 10:22:40 2022 
+-- * Generation date: Wed Jun 15 10:44:34 2022 
 -- * LUN file: C:\Users\damloup\Desktop\P-Demomot\01-Documents\01-Shemas\03-SQL\P-DemomotDB.lun 
--- * Schema: MLD-v3/3-2 
+-- * Schema: db_demomot-v3/3-2-1 
 -- ********************************************* 
 
 
@@ -18,12 +18,6 @@ use db_demomot;
 
 -- Tables Section
 -- _____________ 
-
-create table t_upgrade (
-     idUpgrade int not null auto_increment,
-     upgLife varchar(100) not null,
-     upgDamages varchar(100) not null,
-     constraint ID_t_upgrade_ID primary key (idUpgrade));
 
 create table t_belong (
      idChest int not null,
@@ -95,6 +89,13 @@ create table t_session (
      idUser int not null,
      constraint ID_t_session_ID primary key (idSession),
      constraint FKt_isPartOf_ID unique (idUser));
+
+create table t_upgrade (
+     idUpgrade int not null auto_increment,
+     upgLife varchar(100) not null,
+     upgDamages varchar(100) not null,
+     upgCharacterName varchar(100) not null,
+     constraint ID_t_upgrade_ID primary key (idUpgrade));
 
 create table t_user (
      idUser int not null auto_increment,
@@ -172,9 +173,6 @@ alter table t_user add constraint FKt_be_FK
 -- Index Section
 -- _____________ 
 
-create unique index ID_t_upgrade_IND
-     on t_upgrade (idUpgrade);
-
 create unique index ID_t_belong_IND
      on t_belong (idChest, idUser);
 
@@ -225,6 +223,9 @@ create unique index ID_t_session_IND
 
 create unique index FKt_isPartOf_IND
      on t_session (idUser);
+
+create unique index ID_t_upgrade_IND
+     on t_upgrade (idUpgrade);
 
 create unique index ID_t_user_IND
      on t_user (idUser);

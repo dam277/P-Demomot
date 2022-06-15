@@ -1,0 +1,711 @@
+{
+    "Character" :
+    {
+        "Name" : "",
+        "Life" :
+        {
+            "levelOne" : "0",
+            "levelTwo" : "0",
+            "levelThree" : "0"
+        },
+        "Powers" :
+        {
+            "Power1" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Power2" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Ultime" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            }
+        }
+    },
+    "Recruit" :
+    {
+        "Name" : "Recruit",
+        "Life" :
+        {
+            "levelOne" : "65",
+            "levelTwo" : "80",
+            "levelThree" : "110"
+        },
+        "Powers" :
+        {
+            "Punch" :
+            {
+                "levelOne" : "12",
+                "levelTwo" : "15",
+                "levelThree" : "20"
+            },
+            "Kick" :
+            {
+                "levelOne" : "14",
+                "levelTwo" : "16",
+                "levelThree" : "21"
+            }
+        }
+    },
+    "Infantryman" :
+    {
+        "Name" : "Infantryman",
+        "Life" :
+        {
+            "levelOne" : "70",
+            "levelTwo" : "84",
+            "levelThree" : "112"
+        },
+        "Powers" :
+        {
+            "Hit" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "10",
+                "levelThree" : "16"
+            },
+            "Shoot" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "20",
+                "levelThree" : "23"
+            },
+            "USnipe" :
+            {
+                "levelOne" : "25",
+                "levelTwo" : "30",
+                "levelThree" : "35"
+            }
+        }
+    },
+    "TrapInstaller" :
+    {
+        "Name" : "Trap installer",
+        "Life" :
+        {
+            "levelOne" : "68",
+            "levelTwo" : "76",
+            "levelThree" : "91"
+        },
+        "Powers" :
+        {
+            "Trap" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "2",
+                "levelThree" : "5"
+            },
+            "Slap" :
+            {
+                "levelOne" : "9",
+                "levelTwo" : "13",
+                "levelThree" : "17"
+            },
+            "UTrapped" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "13",
+                "levelThree" : "16"
+            }
+        }
+    },
+    "Archer" :
+    {
+        "Name" : "Archer",
+        "Life" :
+        {
+            "levelOne" : "50",
+            "levelTwo" : "60",
+            "levelThree" : "75"
+        },
+        "Powers" :
+        {
+            "Arrow" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "20",
+                "levelThree" : "30"
+            },
+            "FireArrow" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "9",
+                "levelThree" : "13"
+            },
+            "USleepyArrow" :
+            {
+                "levelOne" : "4",
+                "levelTwo" : "10",
+                "levelThree" : "15"
+            }
+        }
+    },
+    "Knight" :
+    {
+        "Name" : "Knight",
+        "Life" :
+        {
+            "levelOne" : "90",
+            "levelTwo" : "112",
+            "levelThree" : "140"
+        },
+        "Powers" :
+        {
+            "SwordHit" :
+            {
+                "levelOne" : "4",
+                "levelTwo" : "8",
+                "levelThree" : "12"
+            },
+            "OverHealed" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "15",
+                "levelThree" : "20"
+            },
+            "UShield" :
+            {
+                "levelOne" : "20",
+                "levelTwo" : "35",
+                "levelThree" : "50"
+            }
+        }
+    },
+    "Shaman" :
+    {
+        "Name" : "Shaman",
+        "Life" :
+        {
+            "levelOne" : "55",
+            "levelTwo" : "60",
+            "levelThree" : "75"
+        },
+        "Powers" :
+        {
+            "Laser" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "10",
+                "levelThree" : "13"
+            },
+            "Heal" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "20",
+                "levelThree" : "30"
+            },
+            "UResurection" :
+            {
+                "levelOne" : "3",
+                "levelTwo" : "2",
+                "levelThree" : "1"
+            }
+        }
+    },
+    "Horseman" :
+    {
+        "Name" : "Horseman",
+        "Life" :
+        {
+            "levelOne" : "60",
+            "levelTwo" : "70",
+            "levelThree" : "80"
+        },
+        "Powers" :
+        {
+            "Charge" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "18",
+                "levelThree" : "25"
+            },
+            "Boost" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "8",
+                "levelThree" : "15"
+            },
+            "UImpale" :
+            {
+                "levelOne" : "25",
+                "levelTwo" : "40",
+                "levelThree" : "60"
+            }
+        }
+    },
+    "Ram" :
+    {
+        "Name" : "Ram",
+        "Life" :
+        {
+            "levelOne" : "95",
+            "levelTwo" : "120",
+            "levelThree" : "140"
+        },
+        "Powers" :
+        {
+            "SpeedCharge" :
+            {
+                "levelOne" : "4",
+                "levelTwo" : "8",
+                "levelThree" : "12"
+            },
+            "Tank" :
+            {
+                "levelOne" : "2",
+                "levelTwo" : "3",
+                "levelThree" : "4"
+            },
+            "UConcentration" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "10",
+                "levelThree" : "18"
+            }
+        }
+    },
+    "BearTrainer" :
+    {
+        "Name" : "Bear trainer",
+        "Life" :
+        {
+            "levelOne" : "75",
+            "levelTwo" : "85",
+            "levelThree" : "95"
+        },
+        "Powers" :
+        {
+            "BearSlap" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "14",
+                "levelThree" : "21"
+            },
+            "Bleeding" :
+            {
+                "levelOne" : "4",
+                "levelTwo" : "7",
+                "levelThree" : "9"
+            },
+            "UBearRage" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "16",
+                "levelThree" : "23"
+            }
+        }
+    },
+    "Sorcerer" :
+    {
+        "Name" : "Sorcerer",
+        "Life" :
+        {
+            "levelOne" : "65",
+            "levelTwo" : "75",
+            "levelThree" : "85"
+        },
+        "Powers" :
+        {
+            "Fire" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "9",
+                "levelThree" : "12"
+            },
+            "Purify" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "25",
+                "levelThree" : "30"
+            },
+            "UFREEZE" :
+            {
+                "levelOne" : "3",
+                "levelTwo" : "5",
+                "levelThree" : "8"
+            }
+        }
+    },
+    "Skeleton" :
+    {
+        "Name" : "Skeleton",
+        "Life" :
+        {
+            "levelOne" : "50",
+            "levelTwo" : "60",
+            "levelThree" : "75"
+        },
+        "Powers" :
+        {
+            "HelpingHand" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "25",
+                "levelThree" : "30"
+            },
+            "Regeneration" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "9",
+                "levelThree" : "14"
+            },
+            "UArmLaunch" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "20",
+                "levelThree" : "30"
+            }
+        }
+    },
+    "Guard" :
+    {
+        "Name" : "Guard",
+        "Life" :
+        {
+            "levelOne" : "100",
+            "levelTwo" : "125",
+            "levelThree" : "150"
+        },
+        "Powers" :
+        {
+            "Target" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "14",
+                "levelThree" : "20"
+            },
+            "Interception" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "10",
+                "levelThree" : "20"
+            },
+            "Upoison" :
+            {
+                "levelOne" : "7",
+                "levelTwo" : "12",
+                "levelThree" : "15"
+            }
+        }
+    },
+    "Arquebusier" :
+    {
+        "Name" : "Arquebusier",
+        "Life" :
+        {
+            "levelOne" : "55",
+            "levelTwo" : "65",
+            "levelThree" : "70"
+        },
+        "Powers" :
+        {
+            "PowerShoot" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "25",
+                "levelThree" : "35"
+            },
+            "SpeedShoot" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "15",
+                "levelThree" : "20"
+            },
+            "UPoisonBullet" :
+            {
+                "levelOne" : "12",
+                "levelTwo" : "16",
+                "levelThree" : "22"
+            }
+        }
+    },
+    "Lancer" :
+    {
+        "Name" : "Lancer",
+        "Life" :
+        {
+            "levelOne" : "60",
+            "levelTwo" : "77",
+            "levelThree" : "85"
+        },
+        "Powers" :
+        {
+            "JavelinThrow" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "15",
+                "levelThree" : "25"
+            },
+            "JavelinHit" :
+            {
+                "levelOne" : "20",
+                "levelTwo" : "25",
+                "levelThree" : "35"
+            },
+            "UDeflect" :
+            {
+                "levelOne" : "8",
+                "levelTwo" : "12",
+                "levelThree" : "17"
+            }
+        }
+    },
+    "Triggerfish" :
+    {
+        "Name" : "Triggerfish",
+        "Life" :
+        {
+            "levelOne" : "50",
+            "levelTwo" : "55",
+            "levelThree" : "65"
+        },
+        "Powers" :
+        {
+            "RockThrow" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "25",
+                "levelThree" : "30"
+            },
+            "RocketLauncher" :
+            {
+                "levelOne" : "12",
+                "levelTwo" : "23",
+                "levelThree" : "35"
+            },
+            "UBleedingDizziness" :
+            {
+                "levelOne" : "9",
+                "levelTwo" : "17",
+                "levelThree" : "26"
+            }
+        }
+    },
+    "Halberdier" :
+    {
+        "Name" : "Halberdier",
+        "Life" :
+        {
+            "levelOne" : "85",
+            "levelTwo" : "95",
+            "levelThree" : "110"
+        },
+        "Powers" :
+        {
+            "AxeBlow" :
+            {
+                "levelOne" : "8",
+                "levelTwo" : "17",
+                "levelThree" : "24"
+            },
+            "PowerAxe" :
+            {
+                "levelOne" : "10-17",
+                "levelTwo" : "15-26",
+                "levelThree" : "23-34"
+            },
+            "UDebuff" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "9",
+                "levelThree" : "14"
+            }
+        }
+    },
+    "Witch" :
+    {
+        "Name" : "Witch",
+        "Life" :
+        {
+            "levelOne" : "52",
+            "levelTwo" : "73",
+            "levelThree" : "82"
+        },
+        "Powers" :
+        {
+            "PoisonCloud" :
+            {
+                "levelOne" : "5",
+                "levelTwo" : "10",
+                "levelThree" : "18"
+            },
+            "Infection" :
+            {
+                "levelOne" : "15",
+                "levelTwo" : "25",
+                "levelThree" : "30"
+            },
+            "USbireInvoke" :
+            {
+                "levelOne" : "3",
+                "levelTwo" : "6",
+                "levelThree" : "10"
+            }
+        }
+    },
+    "Cannon" :
+    {
+        "Name" : "Cannon",
+        "Life" :
+        {
+            "levelOne" : "63",
+            "levelTwo" : "75",
+            "levelThree" : "86"
+        },
+        "Powers" :
+        {
+            "Cannonball" :
+            {
+                "levelOne" : "8",
+                "levelTwo" : "16",
+                "levelThree" : "24"
+            },
+            "ExplosiveCannonBall" :
+            {
+                "levelOne" : "4",
+                "levelTwo" : "8",
+                "levelThree" : "12"
+            },
+            "UDoubleShot" :
+            {
+                "levelOne" : "10-15",
+                "levelTwo" : "20-25",
+                "levelThree" : "30-35"
+            }
+        }
+    },
+    "Catapult" :
+    {
+        "Name" : "Catapult",
+        "Life" :
+        {
+            "levelOne" : "55",
+            "levelTwo" : "64",
+            "levelThree" : "73"
+        },
+        "Powers" :
+        {
+            "BombThrow" :
+            {
+                "levelOne" : "12",
+                "levelTwo" : "15",
+                "levelThree" : "21"
+            },
+            "Fortification" :
+            {
+                "levelOne" : "10",
+                "levelTwo" : "15",
+                "levelThree" : "25"
+            },
+            "UDamageBoost" :
+            {
+                "levelOne" : "6",
+                "levelTwo" : "9",
+                "levelThree" : "13"
+            }
+        }
+    },
+    "Character" :
+    {
+        "Name" : "",
+        "Life" :
+        {
+            "levelOne" : "0",
+            "levelTwo" : "0",
+            "levelThree" : "0"
+        },
+        "Powers" :
+        {
+            "Power1" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Power2" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Ultime" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            }
+        }
+    },
+    "Character" :
+    {
+        "Name" : "",
+        "Life" :
+        {
+            "levelOne" : "0",
+            "levelTwo" : "0",
+            "levelThree" : "0"
+        },
+        "Powers" :
+        {
+            "Power1" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Power2" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Ultime" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            }
+        }
+    },
+    "Character" :
+    {
+        "Name" : "",
+        "Life" :
+        {
+            "levelOne" : "0",
+            "levelTwo" : "0",
+            "levelThree" : "0"
+        },
+        "Powers" :
+        {
+            "Power1" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Power2" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            },
+            "Ultime" :
+            {
+                "levelOne" : "0",
+                "levelTwo" : "0",
+                "levelThree" : "0"
+            }
+        }
+    }
+    
+    
+}
