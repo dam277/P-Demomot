@@ -1,711 +1,766 @@
 {
-    "Character" :
+    "PowersSpecifications" :
     {
-        "Name" : "",
-        "Life" :
+        "Category" :
         {
-            "levelOne" : "0",
-            "levelTwo" : "0",
-            "levelThree" : "0"
+            "resurection" :
+            [
+                "maxLife"
+            ],
+            "thorns" :
+            [
+                "damages"
+            ],
+            "deflect" :
+            [
+                "damages"
+            ],
+            "debuff" :
+            [
+                "attackDmg"
+            ],
+            "sbires" :
+            [
+                "damages",
+                "life"
+            ],
+            "doubleShot" :
+            [
+                "damages"
+            ],
+            "combo" :
+            [
+                "damages",
+                "allyDamages"
+            ],
+            "castle" :
+            [
+                "life"
+            ]
+
         },
-        "Powers" :
+        "Capacities" :
+        [
+            "damages",
+            "overHeal",
+            "shield",
+            "heal",
+            "dmgBoost",
+            "dmgReduction",
+            "thorns",
+            "selfHeal",
+            "deflect",
+            "enemyBoost"
+        ]
+    },
+    "Characters" :
+    {
+        "Character" :
         {
-            "Power1" :
+            "Name" : "Character",
+            "Life" :
             {
                 "levelOne" : "0",
                 "levelTwo" : "0",
                 "levelThree" : "0"
             },
-            "Power2" :
+            "Powers" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
-            },
-            "Ultime" :
-            {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "Power1" :
+                {
+                    "levelOne" : "capacity=0",
+                    "levelTwo" : "capacity=0",
+                    "levelThree" : "capacity=0"
+                },
+                "Power2" :
+                {
+                    "levelOne" : "category:capacity=0",
+                    "levelTwo" : "category:capacity=0",
+                    "levelThree" : "category:capacity=0"
+                },
+                "Ultime" :
+                {
+                    "levelOne" : "capacity=0",
+                    "levelTwo" : "capacity=0",
+                    "levelThree" : "capacity=0"
+                }
             }
-        }
-    },
-    "Recruit" :
-    {
-        "Name" : "Recruit",
-        "Life" :
-        {
-            "levelOne" : "65",
-            "levelTwo" : "80",
-            "levelThree" : "110"
         },
-        "Powers" :
+        "Recruit" :
         {
-            "Punch" :
+            "Name" : "Recruit",
+            "Life" :
             {
-                "levelOne" : "12",
-                "levelTwo" : "15",
-                "levelThree" : "20"
+                "levelOne" : "65",
+                "levelTwo" : "80",
+                "levelThree" : "110"
             },
-            "Kick" :
+            "Powers" :
             {
-                "levelOne" : "14",
-                "levelTwo" : "16",
-                "levelThree" : "21"
+                "Punch" :
+                {
+                    "levelOne" : "damages=12",
+                    "levelTwo" : "damages=15",
+                    "levelThree" : "damages=20"
+                },
+                "Kick" :
+                {
+                    "levelOne" : "damages=14",
+                    "levelTwo" : "damages=16",
+                    "levelThree" : "damages=21"
+                }
             }
-        }
-    },
-    "Infantryman" :
-    {
-        "Name" : "Infantryman",
-        "Life" :
-        {
-            "levelOne" : "70",
-            "levelTwo" : "84",
-            "levelThree" : "112"
         },
-        "Powers" :
+        "Infantryman" :
         {
-            "Hit" :
+            "Name" : "Infantryman",
+            "Life" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "10",
-                "levelThree" : "16"
+                "levelOne" : "70",
+                "levelTwo" : "84",
+                "levelThree" : "112"
             },
-            "Shoot" :
+            "Powers" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "20",
-                "levelThree" : "23"
-            },
-            "USnipe" :
-            {
-                "levelOne" : "25",
-                "levelTwo" : "30",
-                "levelThree" : "35"
+                "Hit" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=10",
+                    "levelThree" : "damages=16"
+                },
+                "Shoot" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=20",
+                    "levelThree" : "damages=23"
+                },
+                "USnipe" :
+                {
+                    "levelOne" : "damages=25",
+                    "levelTwo" : "damages=30",
+                    "levelThree" : "damages=35"
+                }
             }
-        }
-    },
-    "TrapInstaller" :
-    {
-        "Name" : "Trap installer",
-        "Life" :
-        {
-            "levelOne" : "68",
-            "levelTwo" : "76",
-            "levelThree" : "91"
         },
-        "Powers" :
+        "TrapInstaller" :
         {
-            "Trap" :
+            "Name" : "Trap installer",
+            "Life" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "2",
-                "levelThree" : "5"
+                "levelOne" : "68",
+                "levelTwo" : "76",
+                "levelThree" : "91"
             },
-            "Slap" :
+            "Powers" :
             {
-                "levelOne" : "9",
-                "levelTwo" : "13",
-                "levelThree" : "17"
-            },
-            "UTrapped" :
-            {
-                "levelOne" : "10",
-                "levelTwo" : "13",
-                "levelThree" : "16"
+                "Trap" :
+                {
+                    "levelOne" : "damages=0",
+                    "levelTwo" : "damages=2",
+                    "levelThree" : "damages=5"
+                },
+                "Slap" :
+                {
+                    "levelOne" : "damages=9",
+                    "levelTwo" : "damages=13",
+                    "levelThree" : "damages=17"
+                },
+                "UTrapped" :
+                {
+                    "levelOne" : "damages=10",
+                    "levelTwo" : "damages=13",
+                    "levelThree" : "damages=16"
+                }
             }
-        }
-    },
-    "Archer" :
-    {
-        "Name" : "Archer",
-        "Life" :
-        {
-            "levelOne" : "50",
-            "levelTwo" : "60",
-            "levelThree" : "75"
         },
-        "Powers" :
+        "Archer" :
         {
-            "Arrow" :
+            "Name" : "Archer",
+            "Life" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "20",
-                "levelThree" : "30"
+                "levelOne" : "50",
+                "levelTwo" : "60",
+                "levelThree" : "75"
             },
-            "FireArrow" :
+            "Powers" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "9",
-                "levelThree" : "13"
-            },
-            "USleepyArrow" :
-            {
-                "levelOne" : "4",
-                "levelTwo" : "10",
-                "levelThree" : "15"
+                "Arrow" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=20",
+                    "levelThree" : "damages=30"
+                },
+                "FireArrow" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=9",
+                    "levelThree" : "damages=13"
+                },
+                "USleepyArrow" :
+                {
+                    "levelOne" : "damages=4",
+                    "levelTwo" : "damages=10",
+                    "levelThree" : "damages=15"
+                }
             }
-        }
-    },
-    "Knight" :
-    {
-        "Name" : "Knight",
-        "Life" :
-        {
-            "levelOne" : "90",
-            "levelTwo" : "112",
-            "levelThree" : "140"
         },
-        "Powers" :
+        "Knight" :
         {
-            "SwordHit" :
+            "Name" : "Knight",
+            "Life" :
             {
-                "levelOne" : "4",
-                "levelTwo" : "8",
-                "levelThree" : "12"
+                "levelOne" : "90",
+                "levelTwo" : "112",
+                "levelThree" : "140"
             },
-            "OverHealed" :
+            "Powers" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "15",
-                "levelThree" : "20"
-            },
-            "UShield" :
-            {
-                "levelOne" : "20",
-                "levelTwo" : "35",
-                "levelThree" : "50"
+                "SwordHit" :
+                {
+                    "levelOne" : "damages=3",
+                    "levelTwo" : "damages=6",
+                    "levelThree" : "damages=10"
+                },
+                "OverHealed" :
+                {
+                    "levelOne" : "overHeal=10",
+                    "levelTwo" : "overHeal=15",
+                    "levelThree" : "overHeal=20"
+                },
+                "UShield" :
+                {
+                    "levelOne" : "shield=20",
+                    "levelTwo" : "shield=35",
+                    "levelThree" : "shield=50"
+                }
             }
-        }
-    },
-    "Shaman" :
-    {
-        "Name" : "Shaman",
-        "Life" :
-        {
-            "levelOne" : "55",
-            "levelTwo" : "60",
-            "levelThree" : "75"
         },
-        "Powers" :
+        "Shaman" :
         {
-            "Laser" :
+            "Name" : "Shaman",
+            "Life" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "10",
-                "levelThree" : "13"
+                "levelOne" : "55",
+                "levelTwo" : "60",
+                "levelThree" : "75"
             },
-            "Heal" :
+            "Powers" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "20",
-                "levelThree" : "30"
-            },
-            "UResurection" :
-            {
-                "levelOne" : "3",
-                "levelTwo" : "2",
-                "levelThree" : "1"
+                "Laser" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=10",
+                    "levelThree" : "damages=13"
+                },
+                "Heal" :
+                {
+                    "levelOne" : "heal=15",
+                    "levelTwo" : "heal=20",
+                    "levelThree" : "heal=30"
+                },
+                "UResurection" :
+                {
+                    "levelOne" : "resurection:maxLife=/3",
+                    "levelTwo" : "resurection:maxLife=/2",
+                    "levelThree" : "resurection:maxLife=/1"
+                }
             }
-        }
-    },
-    "Horseman" :
-    {
-        "Name" : "Horseman",
-        "Life" :
-        {
-            "levelOne" : "60",
-            "levelTwo" : "70",
-            "levelThree" : "80"
         },
-        "Powers" :
+        "Horseman" :
         {
-            "Charge" :
+            "Name" : "Horseman",
+            "Life" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "18",
-                "levelThree" : "25"
+                "levelOne" : "60",
+                "levelTwo" : "70",
+                "levelThree" : "80"
             },
-            "Boost" :
+            "Powers" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "8",
-                "levelThree" : "15"
-            },
-            "UImpale" :
-            {
-                "levelOne" : "25",
-                "levelTwo" : "40",
-                "levelThree" : "60"
+                "Charge" :
+                {
+                    "levelOne" : "damages=10",
+                    "levelTwo" : "damages=18",
+                    "levelThree" : "damages=25"
+                },
+                "Boost" :
+                {
+                    "levelOne" : "dmgBoost=5",
+                    "levelTwo" : "dmgBoost=8",
+                    "levelThree" : "dmgBoost=15"
+                },
+                "UImpale" :
+                {
+                    "levelOne" : "damages=25",
+                    "levelTwo" : "damages=40",
+                    "levelThree" : "damages=60"
+                }
             }
-        }
-    },
-    "Ram" :
-    {
-        "Name" : "Ram",
-        "Life" :
-        {
-            "levelOne" : "95",
-            "levelTwo" : "120",
-            "levelThree" : "140"
         },
-        "Powers" :
+        "Ram" :
         {
-            "SpeedCharge" :
+            "Name" : "Ram",
+            "Life" :
             {
-                "levelOne" : "4",
-                "levelTwo" : "8",
-                "levelThree" : "12"
+                "levelOne" : "95",
+                "levelTwo" : "120",
+                "levelThree" : "140"
             },
-            "Tank" :
+            "Powers" :
             {
-                "levelOne" : "2",
-                "levelTwo" : "3",
-                "levelThree" : "4"
-            },
-            "UConcentration" :
-            {
-                "levelOne" : "5",
-                "levelTwo" : "10",
-                "levelThree" : "18"
+                "SpeedCharge" :
+                {
+                    "levelOne" : "damages=4",
+                    "levelTwo" : "damages=8",
+                    "levelThree" : "damages=12"
+                },
+                "Tank" :
+                {
+                    "levelOne" : "dmgReduction=/2",
+                    "levelTwo" : "dmgReduction=/3",
+                    "levelThree" : "dmgReduction=/4"
+                },
+                "UConcentration" :
+                {
+                    "levelOne" : "thorns=5",
+                    "levelTwo" : "thorns=10",
+                    "levelThree" : "thorns=18"
+                }
             }
-        }
-    },
-    "BearTrainer" :
-    {
-        "Name" : "Bear trainer",
-        "Life" :
-        {
-            "levelOne" : "75",
-            "levelTwo" : "85",
-            "levelThree" : "95"
         },
-        "Powers" :
+        "BearTrainer" :
         {
-            "BearSlap" :
+            "Name" : "Bear trainer",
+            "Life" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "14",
-                "levelThree" : "21"
+                "levelOne" : "75",
+                "levelTwo" : "85",
+                "levelThree" : "95"
             },
-            "Bleeding" :
+            "Powers" :
             {
-                "levelOne" : "4",
-                "levelTwo" : "7",
-                "levelThree" : "9"
-            },
-            "UBearRage" :
-            {
-                "levelOne" : "10",
-                "levelTwo" : "16",
-                "levelThree" : "23"
+                "BearSlap" :
+                {
+                    "levelOne" : "damages=10",
+                    "levelTwo" : "damages=14",
+                    "levelThree" : "damages=21"
+                },
+                "Bleeding" :
+                {
+                    "levelOne" : "damages=4",
+                    "levelTwo" : "damages=7",
+                    "levelThree" : "damages=9"
+                },
+                "UBearRage" :
+                {
+                    "levelOne" : "dmgBoost=10",
+                    "levelTwo" : "dmgBoost=16",
+                    "levelThree" : "dmgBoost=23"
+                }
             }
-        }
-    },
-    "Sorcerer" :
-    {
-        "Name" : "Sorcerer",
-        "Life" :
-        {
-            "levelOne" : "65",
-            "levelTwo" : "75",
-            "levelThree" : "85"
         },
-        "Powers" :
+        "Sorcerer" :
         {
-            "Fire" :
+            "Name" : "Sorcerer",
+            "Life" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "9",
-                "levelThree" : "12"
+                "levelOne" : "65",
+                "levelTwo" : "75",
+                "levelThree" : "85"
             },
-            "Purify" :
+            "Powers" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "25",
-                "levelThree" : "30"
-            },
-            "UFREEZE" :
-            {
-                "levelOne" : "3",
-                "levelTwo" : "5",
-                "levelThree" : "8"
+                "Fire" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=9",
+                    "levelThree" : "damages=12"
+                },
+                "Purify" :
+                {
+                    "levelOne" : "heal=15",
+                    "levelTwo" : "heal=25",
+                    "levelThree" : "heal=30"
+                },
+                "UFREEZE" :
+                {
+                    "levelOne" : "damages=3",
+                    "levelTwo" : "damages=5",
+                    "levelThree" : "damages=8"
+                }
             }
-        }
-    },
-    "Skeleton" :
-    {
-        "Name" : "Skeleton",
-        "Life" :
-        {
-            "levelOne" : "50",
-            "levelTwo" : "60",
-            "levelThree" : "75"
         },
-        "Powers" :
+        "Skeleton" :
         {
-            "HelpingHand" :
+            "Name" : "Skeleton",
+            "Life" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "25",
-                "levelThree" : "30"
+                "levelOne" : "50",
+                "levelTwo" : "60",
+                "levelThree" : "75"
             },
-            "Regeneration" :
+            "Powers" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "9",
-                "levelThree" : "14"
-            },
-            "UArmLaunch" :
-            {
-                "levelOne" : "15",
-                "levelTwo" : "20",
-                "levelThree" : "30"
+                "HelpingHand" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=25",
+                    "levelThree" : "damages=30"
+                },
+                "Regeneration" :
+                {
+                    "levelOne" : "selfHeal=5",
+                    "levelTwo" : "selfHeal=9",
+                    "levelThree" : "selfHeal=14"
+                },
+                "UArmLaunch" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=20",
+                    "levelThree" : "damages=30"
+                }
             }
-        }
-    },
-    "Guard" :
-    {
-        "Name" : "Guard",
-        "Life" :
-        {
-            "levelOne" : "100",
-            "levelTwo" : "125",
-            "levelThree" : "150"
         },
-        "Powers" :
+        "Guard" :
         {
-            "Target" :
+            "Name" : "Guard",
+            "Life" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "14",
-                "levelThree" : "20"
+                "levelOne" : "100",
+                "levelTwo" : "125",
+                "levelThree" : "150"
             },
-            "Interception" :
+            "Powers" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "10",
-                "levelThree" : "20"
-            },
-            "Upoison" :
-            {
-                "levelOne" : "7",
-                "levelTwo" : "12",
-                "levelThree" : "15"
+                "Target" :
+                {
+                    "levelOne" : "thorns:damages=5",
+                    "levelTwo" : "thorns:damages=14",
+                    "levelThree" : "thorns:damages=20"
+                },
+                "Interception" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=10",
+                    "levelThree" : "damages=20"
+                },
+                "Upoison" :
+                {
+                    "levelOne" : "damages=7",
+                    "levelTwo" : "damages=12",
+                    "levelThree" : "damages=15"
+                }
             }
-        }
-    },
-    "Arquebusier" :
-    {
-        "Name" : "Arquebusier",
-        "Life" :
-        {
-            "levelOne" : "55",
-            "levelTwo" : "65",
-            "levelThree" : "70"
         },
-        "Powers" :
+        "Arquebusier" :
         {
-            "PowerShoot" :
+            "Name" : "Arquebusier",
+            "Life" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "25",
-                "levelThree" : "35"
+                "levelOne" : "55",
+                "levelTwo" : "65",
+                "levelThree" : "70"
             },
-            "SpeedShoot" :
+            "Powers" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "15",
-                "levelThree" : "20"
-            },
-            "UPoisonBullet" :
-            {
-                "levelOne" : "12",
-                "levelTwo" : "16",
-                "levelThree" : "22"
+                "PowerShoot" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=25",
+                    "levelThree" : "damages=35"
+                },
+                "SpeedShoot" :
+                {
+                    "levelOne" : "damages=10",
+                    "levelTwo" : "damages=15",
+                    "levelThree" : "damages=20"
+                },
+                "UPoisonBullet" :
+                {
+                    "levelOne" : "damages=12",
+                    "levelTwo" : "damages=16",
+                    "levelThree" : "damages=22"
+                }
             }
-        }
-    },
-    "Lancer" :
-    {
-        "Name" : "Lancer",
-        "Life" :
-        {
-            "levelOne" : "60",
-            "levelTwo" : "77",
-            "levelThree" : "85"
         },
-        "Powers" :
+        "Lancer" :
         {
-            "JavelinThrow" :
+            "Name" : "Lancer",
+            "Life" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "15",
-                "levelThree" : "25"
+                "levelOne" : "60",
+                "levelTwo" : "77",
+                "levelThree" : "85"
             },
-            "JavelinHit" :
+            "Powers" :
             {
-                "levelOne" : "20",
-                "levelTwo" : "25",
-                "levelThree" : "35"
-            },
-            "UDeflect" :
-            {
-                "levelOne" : "8",
-                "levelTwo" : "12",
-                "levelThree" : "17"
+                "JavelinThrow" :
+                {
+                    "levelOne" : "damages=10",
+                    "levelTwo" : "damages=15",
+                    "levelThree" : "damages=25"
+                },
+                "JavelinHit" :
+                {
+                    "levelOne" : "damages=20",
+                    "levelTwo" : "damages=25",
+                    "levelThree" : "damages=35"
+                },
+                "UDeflect" :
+                {
+                    "levelOne" : "deflect:damages=8",
+                    "levelTwo" : "deflect:damages=12",
+                    "levelThree" : "deflect:damages=17"
+                }
             }
-        }
-    },
-    "Triggerfish" :
-    {
-        "Name" : "Triggerfish",
-        "Life" :
-        {
-            "levelOne" : "50",
-            "levelTwo" : "55",
-            "levelThree" : "65"
         },
-        "Powers" :
+        "Triggerfish" :
         {
-            "RockThrow" :
+            "Name" : "Triggerfish",
+            "Life" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "25",
-                "levelThree" : "30"
+                "levelOne" : "50",
+                "levelTwo" : "55",
+                "levelThree" : "65"
             },
-            "RocketLauncher" :
+            "Powers" :
             {
-                "levelOne" : "12",
-                "levelTwo" : "23",
-                "levelThree" : "35"
-            },
-            "UBleedingDizziness" :
-            {
-                "levelOne" : "9",
-                "levelTwo" : "17",
-                "levelThree" : "26"
+                "RockThrow" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=25",
+                    "levelThree" : "damages=30"
+                },
+                "RocketLauncher" :
+                {
+                    "levelOne" : "damages=12",
+                    "levelTwo" : "damages=23",
+                    "levelThree" : "damages=35"
+                },
+                "UBleedingDizziness" :
+                {
+                    "levelOne" : "damages=9",
+                    "levelTwo" : "damages=17",
+                    "levelThree" : "damages=26"
+                }
             }
-        }
-    },
-    "Halberdier" :
-    {
-        "Name" : "Halberdier",
-        "Life" :
-        {
-            "levelOne" : "85",
-            "levelTwo" : "95",
-            "levelThree" : "110"
         },
-        "Powers" :
+        "Halberdier" :
         {
-            "AxeBlow" :
+            "Name" : "Halberdier",
+            "Life" :
             {
-                "levelOne" : "8",
-                "levelTwo" : "17",
-                "levelThree" : "24"
+                "levelOne" : "85",
+                "levelTwo" : "95",
+                "levelThree" : "110"
             },
-            "PowerAxe" :
+            "Powers" :
             {
-                "levelOne" : "10-17",
-                "levelTwo" : "15-26",
-                "levelThree" : "23-34"
-            },
-            "UDebuff" :
-            {
-                "levelOne" : "5",
-                "levelTwo" : "9",
-                "levelThree" : "14"
+                "AxeBlow" :
+                {
+                    "levelOne" : "damages=38",
+                    "levelTwo" : "damages=317",
+                    "levelThree" : "damages=324"
+                },
+                "PowerAxe" :
+                {
+                    "levelOne" : "damages=310-17",
+                    "levelTwo" : "damages=315-26",
+                    "levelThree" : "damages=323-34"
+                },
+                "UDebuff" :
+                {
+                    "levelOne" : "debuff:attackDmg=-5",
+                    "levelTwo" : "debuff:attackDmg=-9",
+                    "levelThree" : "debuff:attackDmg=-14"
+                }
             }
-        }
-    },
-    "Witch" :
-    {
-        "Name" : "Witch",
-        "Life" :
-        {
-            "levelOne" : "52",
-            "levelTwo" : "73",
-            "levelThree" : "82"
         },
-        "Powers" :
+        "Witch" :
         {
-            "PoisonCloud" :
+            "Name" : "Witch",
+            "Life" :
             {
-                "levelOne" : "5",
-                "levelTwo" : "10",
-                "levelThree" : "18"
+                "levelOne" : "52",
+                "levelTwo" : "73",
+                "levelThree" : "82"
             },
-            "Infection" :
+            "Powers" :
             {
-                "levelOne" : "15",
-                "levelTwo" : "25",
-                "levelThree" : "30"
-            },
-            "USbireInvoke" :
-            {
-                "levelOne" : "3",
-                "levelTwo" : "6",
-                "levelThree" : "10"
+                "PoisonCloud" :
+                {
+                    "levelOne" : "damages=5",
+                    "levelTwo" : "damages=10",
+                    "levelThree" : "damages=18"
+                },
+                "Infection" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=25",
+                    "levelThree" : "damages=30"
+                },
+                "USbireInvoke" :
+                {
+                    "levelOne" : "sbires:damages=3,life=5",
+                    "levelTwo" : "sbires:damages=6,life=8",
+                    "levelThree" : "sbires:damages=10,life=12"
+                }
             }
-        }
-    },
-    "Cannon" :
-    {
-        "Name" : "Cannon",
-        "Life" :
-        {
-            "levelOne" : "63",
-            "levelTwo" : "75",
-            "levelThree" : "86"
         },
-        "Powers" :
+        "Cannon" :
         {
-            "Cannonball" :
+            "Name" : "Cannon",
+            "Life" :
             {
-                "levelOne" : "8",
-                "levelTwo" : "16",
-                "levelThree" : "24"
+                "levelOne" : "63",
+                "levelTwo" : "75",
+                "levelThree" : "86"
             },
-            "ExplosiveCannonBall" :
+            "Powers" :
             {
-                "levelOne" : "4",
-                "levelTwo" : "8",
-                "levelThree" : "12"
-            },
-            "UDoubleShot" :
-            {
-                "levelOne" : "10-15",
-                "levelTwo" : "20-25",
-                "levelThree" : "30-35"
+                "Cannonball" :
+                {
+                    "levelOne" : "damages=8",
+                    "levelTwo" : "damages=16",
+                    "levelThree" : "damages=24"
+                },
+                "ExplosiveCannonBall" :
+                {
+                    "levelOne" : "damages=4",
+                    "levelTwo" : "damages=8",
+                    "levelThree" : "damages=12"
+                },
+                "UDoubleShot" :
+                {
+                    "levelOne" : "doubleShot:damages=10-15",
+                    "levelTwo" : "doubleShot:damages=20-25",
+                    "levelThree" : "doubleShot:damages=30-35"
+                }
             }
-        }
-    },
-    "Catapult" :
-    {
-        "Name" : "Catapult",
-        "Life" :
-        {
-            "levelOne" : "55",
-            "levelTwo" : "64",
-            "levelThree" : "73"
         },
-        "Powers" :
+        "Catapult" :
         {
-            "BombThrow" :
+            "Name" : "Catapult",
+            "Life" :
             {
-                "levelOne" : "12",
-                "levelTwo" : "15",
-                "levelThree" : "21"
+                "levelOne" : "55",
+                "levelTwo" : "64",
+                "levelThree" : "73"
             },
-            "Fortification" :
+            "Powers" :
             {
-                "levelOne" : "10",
-                "levelTwo" : "15",
-                "levelThree" : "25"
-            },
-            "UDamageBoost" :
-            {
-                "levelOne" : "6",
-                "levelTwo" : "9",
-                "levelThree" : "13"
+                "BombThrow" :
+                {
+                    "levelOne" : "damages=12",
+                    "levelTwo" : "damages=15",
+                    "levelThree" : "damages=21"
+                },
+                "Fortification" :
+                {
+                    "levelOne" : "shield=10",
+                    "levelTwo" : "shield=15",
+                    "levelThree" : "shield=25"
+                },
+                "UDamageBoost" :
+                {
+                    "levelOne" : "dmgBoost=6",
+                    "levelTwo" : "dmgBoost=9",
+                    "levelThree" : "dmgBoost=13"
+                }
             }
-        }
-    },
-    "Character" :
-    {
-        "Name" : "",
-        "Life" :
-        {
-            "levelOne" : "0",
-            "levelTwo" : "0",
-            "levelThree" : "0"
         },
-        "Powers" :
+        "Dragon" :
         {
-            "Power1" :
+            "Name" : "Dragon",
+            "Life" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "levelOne" : "70",
+                "levelTwo" : "85",
+                "levelThree" : "105"
             },
-            "Power2" :
+            "Powers" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
-            },
-            "Ultime" :
-            {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "FireSpit" :
+                {
+                    "levelOne" : "damages=15",
+                    "levelTwo" : "damages=23",
+                    "levelThree" : "damages=35"
+                },
+                "Grab" :
+                {
+                    "levelOne" : "damages=8",
+                    "levelTwo" : "damages=13",
+                    "levelThree" : "damages=22"
+                },
+                "UEat" :
+                {
+                    "levelOne" : "damages=5;enemyBoost=15%",
+                    "levelTwo" : "damages=10;enemyBoost=25%;",
+                    "levelThree" : "damages=16;enemyBoost=35%;"
+                }
             }
-        }
-    },
-    "Character" :
-    {
-        "Name" : "",
-        "Life" :
-        {
-            "levelOne" : "0",
-            "levelTwo" : "0",
-            "levelThree" : "0"
         },
-        "Powers" :
+        "UltimateKnight" :
         {
-            "Power1" :
+            "Name" : "Ultimate knight",
+            "Life" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "levelOne" : "94",
+                "levelTwo" : "132",
+                "levelThree" : "163"
             },
-            "Power2" :
+            "Powers" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
-            },
-            "Ultime" :
-            {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "UltimateSword" :
+                {
+                    "levelOne" : "damages=7",
+                    "levelTwo" : "damages=12",
+                    "levelThree" : "damages=15"
+                },
+                "LightningPower" :
+                {
+                    "levelOne" : "damages=14;selfHeal=7",
+                    "levelTwo" : "damages=24;selfHeal=12",
+                    "levelThree" : "damages=32;selfHeal=16"
+                },
+                "UCombo" :
+                {
+                    "levelOne" : "combo:damages=10,allyDamages=35%",
+                    "levelTwo" : "combo:damages=15,allyDamages=50%",
+                    "levelThree" : "combo:damages=22,allyDamages=65%"
+                }
             }
-        }
-    },
-    "Character" :
-    {
-        "Name" : "",
-        "Life" :
-        {
-            "levelOne" : "0",
-            "levelTwo" : "0",
-            "levelThree" : "0"
         },
-        "Powers" :
+        "Lord" :
         {
-            "Power1" :
+            "Name" : "Lord",
+            "Life" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "levelOne" : "75",
+                "levelTwo" : "95",
+                "levelThree" : "115"
             },
-            "Power2" :
+            "Powers" :
             {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
-            },
-            "Ultime" :
-            {
-                "levelOne" : "0",
-                "levelTwo" : "0",
-                "levelThree" : "0"
+                "SwordHit" :
+                {
+                    "levelOne" : "damages=6",
+                    "levelTwo" : "damages=13",
+                    "levelThree" : "damages=17"
+                },
+                "SuperStrike" :
+                {
+                    "levelOne" : "damages=8",
+                    "levelTwo" : "damages=16",
+                    "levelThree" : "damages=25"
+                },
+                "UCastle" :
+                {
+                    "levelOne" : "castle:life=25;sbires:damages=2",
+                    "levelTwo" : "castle:life=33;sbires:damages=3",
+                    "levelThree" : "castle:life=41;sbires:damages=4"
+                }
             }
         }
     }
-    
-    
 }

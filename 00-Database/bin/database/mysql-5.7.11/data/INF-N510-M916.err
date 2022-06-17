@@ -1081,3 +1081,746 @@ Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
 2022-06-15T11:35:34.186546Z 896 [Note] Aborted connection 896 to db: 'test2' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2022-06-15T11:37:09.746849Z 897 [Note] Aborted connection 897 to db: 'test2' user: 'root' host: 'localhost' (Got an error reading communication packets)
 2022-06-15T11:37:22.444244Z 898 [Note] Aborted connection 898 to db: 'test2' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-17T06:07:25.262466Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-17T06:07:25.262466Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-17T06:07:25.262466Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-17T06:07:25.262466Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-17T06:07:25.262466Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-17T06:07:25.262466Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 12552 ...
+2022-06-17T06:07:25.293709Z 0 [ERROR] Can't open shared library 'C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-17T06:07:25.293709Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-17T06:07:25.293709Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-17T06:07:25.340574Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-17T06:07:25.356196Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-17T06:07:25.387437Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-17T06:07:25.403059Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2719469
+2022-06-17T06:07:25.403059Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2719478
+2022-06-17T06:07:25.403059Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2719478
+2022-06-17T06:07:25.403059Z 0 [Note] InnoDB: Database was not shutdown normally!
+2022-06-17T06:07:25.403059Z 0 [Note] InnoDB: Starting crash recovery.
+2022-06-17T06:07:25.873246Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-06-17T06:07:25.873246Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-17T06:07:25.873246Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-17T06:07:25.951355Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-17T06:07:25.966975Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-17T06:07:25.966975Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-17T06:07:25.966975Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-17T06:07:26.029461Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 2719478
+2022-06-17T06:07:26.029461Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-17T06:07:26.029461Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-17T06:07:26.029461Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220617  8:07:26
+2022-06-17T06:07:26.029461Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-17T06:07:26.029461Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-17T06:07:26.045083Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-17T06:07:26.045083Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-17T06:07:26.045083Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-17T06:07:26.045083Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-17T06:07:26.045083Z 0 [Note] IPv6 is available.
+2022-06-17T06:07:26.045083Z 0 [Note]   - '::' resolves to '::';
+2022-06-17T06:07:26.045083Z 0 [Note] Server socket created on IP: '::'.
+2022-06-17T06:07:26.045083Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:07:26.060703Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-17T06:07:26.091949Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-17T06:07:26.091949Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:07:26.107568Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-17T06:07:26.123188Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:07:26.123188Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-17T06:07:26.753200Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-17T06:07:26.753200Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-17T06:07:32.365247Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Normal shutdown
+
+2022-06-17T06:07:32.365247Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down slave threads
+2022-06-17T06:07:32.365247Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2022-06-17T06:07:32.365247Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-06-17T06:07:32.365247Z 0 [Note] Binlog end
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'ngram'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'partition'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'MyISAM'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-06-17T06:07:32.365247Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2022-06-17T06:07:32.380869Z 0 [Note] Shutting down plugin 'InnoDB'
+2022-06-17T06:07:32.380869Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-17T06:07:32.380869Z 0 [Note] InnoDB: Starting shutdown...
+2022-06-17T06:07:32.505839Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-17T06:07:32.508176Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 220617  8:07:32
+2022-06-17T06:07:33.745390Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2719506
+2022-06-17T06:07:33.745390Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-06-17T06:07:33.745390Z 0 [Note] Shutting down plugin 'MEMORY'
+2022-06-17T06:07:33.745390Z 0 [Note] Shutting down plugin 'CSV'
+2022-06-17T06:07:33.745390Z 0 [Note] Shutting down plugin 'sha256_password'
+2022-06-17T06:07:33.745390Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2022-06-17T06:07:33.745390Z 0 [Note] Shutting down plugin 'binlog'
+2022-06-17T06:07:33.745390Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+
+2022-06-17T06:08:00.104827Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-17T06:08:00.104827Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-17T06:08:00.104827Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-17T06:08:00.104827Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-17T06:08:00.104827Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-17T06:08:00.104827Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 13104 ...
+2022-06-17T06:08:00.120448Z 0 [ERROR] Can't open shared library 'C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-17T06:08:00.120448Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-17T06:08:00.120448Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-17T06:08:00.182932Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-17T06:08:00.182932Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-17T06:08:00.229794Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-17T06:08:00.370386Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-17T06:08:00.370386Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-17T06:08:00.417250Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-17T06:08:00.432872Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-17T06:08:00.432872Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-17T06:08:00.432872Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-17T06:08:00.495357Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 2719506
+2022-06-17T06:08:00.495357Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-17T06:08:00.495357Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-17T06:08:00.495357Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:08:00.495357Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220617  8:08:00
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-17T06:08:00.495357Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-17T06:08:00.495357Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-17T06:08:00.495357Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-17T06:08:00.495357Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-17T06:08:00.495357Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-17T06:08:00.495357Z 0 [Note] IPv6 is available.
+2022-06-17T06:08:00.495357Z 0 [Note]   - '::' resolves to '::';
+2022-06-17T06:08:00.495357Z 0 [Note] Server socket created on IP: '::'.
+2022-06-17T06:08:00.510977Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:08:00.510977Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-17T06:08:00.510977Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-17T06:08:00.510977Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:08:00.510977Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-17T06:08:00.510977Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:08:00.510977Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-17T06:08:00.526600Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-17T06:08:00.526600Z 0 [Note] C:\Users\damloup\Desktop\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-17T06:15:57.616009Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__relation from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.620993Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.626977Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_coords from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.633966Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.639944Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__history from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.651911Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__recent from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.656843Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__favorite from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.661832Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_uiprefs from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.666856Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__tracking from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.673842Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__userconfig from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.678812Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__bookmark from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.683803Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__users from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.688789Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__navigationhiding from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.694771Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__savedsearches from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.699758Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__central_columns from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.705041Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__designer_settings from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:15:57.709032Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__export_templates from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T06:21:17.812407Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.812407Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.822354Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.822354Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.831513Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.831513Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.839098Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.839098Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.847610Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.847610Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.856080Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.856080Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.864059Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.865053Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.872107Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.873104Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.880014Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.881011Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.888237Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.889206Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:21:17.893232Z 28 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:21:17.893232Z 28 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T06:22:05.790685Z 90 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T06:22:05.790685Z 90 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:01.169840Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.177876Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.185851Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.194829Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.201812Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.207795Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.213777Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.219761Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.224748Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.231729Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.237715Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.244695Z 196 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T09:06:01.305534Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.318499Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.327473Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.337382Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.346926Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.356838Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.370799Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.382584Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.394703Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.407668Z 196 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:01.422144Z 196 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T09:06:07.907456Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:07.951807Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:07.989052Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.020970Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.055836Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.086828Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.115372Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.161210Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.198185Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.229615Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.254185Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.257178Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.298069Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.301060Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.303054Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.320010Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.321010Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.324996Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.324996Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.327987Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.341188Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.341188Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.371710Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.371710Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.372710Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.377695Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.377695Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.381687Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.381687Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.382682Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.391657Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.392656Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.422105Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.425094Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.427092Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.445042Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.445042Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.449031Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.449031Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.450028Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.460005Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.461996Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.502554Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.502554Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.503553Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.509537Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.509537Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.513528Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.514524Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.515521Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.524501Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.524501Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.554417Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.554417Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.555416Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.560410Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.561399Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.565388Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.565388Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.566386Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.576118Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.577116Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.606698Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.606698Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.607696Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.612684Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.613680Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.617669Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.617669Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.618667Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.627643Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.628640Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.658217Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.659216Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.659216Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.665202Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.665202Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.669190Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.669190Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.670187Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.679620Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.680617Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.709159Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.710159Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.711156Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.716142Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.716142Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.720130Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.720130Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.721129Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.733097Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.734093Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.771847Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.771847Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.772848Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.777831Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.777831Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.782817Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.783819Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.784813Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.793791Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.795783Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.831687Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.831687Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.832686Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_ca` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.837671Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.838671Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.841661Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.842657Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.844655Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.854626Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.857621Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.885545Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.886540Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `ID_t_belong_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:08.889534Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.891528Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.927432Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.927432Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.928428Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `FKt_b_t_u_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:08.930423Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.931421Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.942391Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.943389Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:08.963336Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.964332Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `ID_t_character_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:08.968322Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:08.970317Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.020185Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.020185Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.021182Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `FKt_own_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.023177Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.023177Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.054096Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.055091Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.056087Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `FKt_contain_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.059080Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.060077Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.071048Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.072048Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.094986Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.095981Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` index `ID_t_chest_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.098975Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.099975Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.133879Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.134877Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.135877Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` index `FKt_categorize_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.137870Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.138866Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.146848Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.147843Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.177764Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.177764Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_game` index `ID_t_game_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.180754Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.180754Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.189730Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.192724Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.243587Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.244585Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_play` index `ID_t_play_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.246579Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.246579Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.273506Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.274503Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.275501Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_play` index `FKt_p_t_u_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.277497Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.278494Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.285474Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.287471Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.304424Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.305424Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` index `ID_t_power_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.307418Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.308413Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.329360Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.330356Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.331357Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` index `FKt_use_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.334347Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.334347Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.353293Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.355288Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.375236Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.376234Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rank` index `ID_t_rank_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.378231Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.378231Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.385209Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.385209Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.401169Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.401169Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rarity` index `ID_t_rarity_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.403160Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.404157Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.411139Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.412138Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.429094Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.431086Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_session` index `ID_t_session_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.437069Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.439064Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.467987Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.467987Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_session` index `FKt_isPartOf_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.469982Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.470979Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.482947Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.482947Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.502894Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.502894Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` index `ID_t_user_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.504888Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.505888Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:09.537805Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.537805Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.538797Z 202 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` index `FKt_be_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:09.540794Z 202 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:09.541790Z 202 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T09:06:51.300308Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:51.300308Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rarity` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:06:56.378978Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:06:56.378978Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:07:11.452027Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:07:11.452027Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rank` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T09:07:21.457030Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T09:07:21.457030Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:54:10.480990Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.494110Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.501087Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.509091Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.515080Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.521034Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.526934Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.531922Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.536908Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.542892Z 296 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:54:10.550870Z 296 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-17T10:55:55.165458Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.197930Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.226534Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.269472Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.307124Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.352854Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.382776Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.418678Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.449595Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.486500Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.533375Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.542347Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.543344Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.589222Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.590219Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.590219Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.598198Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.598198Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.603187Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.604183Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.605179Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.622136Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.624130Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.670991Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.670991Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.671987Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.679966Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.679966Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.683956Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.684951Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.685949Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.703902Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.705898Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.757952Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.758947Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.758947Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.766925Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.766925Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.770916Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.771913Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.772909Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.796845Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.797845Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.828763Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.829758Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.829758Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.835393Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.836262Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.841240Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.843236Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.848223Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.861188Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.861188Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.902080Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.902080Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.903075Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.910056Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.911057Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.915046Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.915046Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.916042Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.926016Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.927011Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.969714Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.970708Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.970708Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:55.980682Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.980682Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.984671Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.985669Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:55.987663Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.000631Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.001625Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.050838Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.050838Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.051862Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.060811Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.061809Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.065798Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.065798Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.066795Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.077766Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.080759Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.137208Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.138208Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.138208Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.147152Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.148151Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.152169Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.152169Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.153136Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.165105Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.167099Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.214242Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.215239Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.215239Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.224217Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.225213Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.229202Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.229202Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.230199Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.241170Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.242170Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.282224Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.282224Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.283222Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.292200Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.292200Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.296188Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.297185Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.298183Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.313145Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.316137Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.357030Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.358023Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.358023Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_13c` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.365005Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.366002Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.370988Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.370988Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.372983Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.382957Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.383955Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.403900Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.403900Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `ID_t_belong_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.405895Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.406892Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.434818Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.435419Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.435419Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `FKt_b_t_u_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.437413Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.438410Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.445391Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.446393Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.472320Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.473316Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `ID_t_character_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.475310Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.475310Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.500244Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.501241Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.501241Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `FKt_own_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.503239Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.504236Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.526178Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.526178Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.527174Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `FKt_contain_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.529166Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.529166Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.561012Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.561012Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.562009Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` index `FKt_can_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.564004Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.565002Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.570986Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.572982Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.600661Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.601652Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` index `ID_t_chest_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.603653Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.603653Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.630574Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.630574Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.631570Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` index `FKt_categorize_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.634563Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.634563Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.644205Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.644205Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.664151Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.667147Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_game` index `ID_t_game_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.676120Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.679114Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.697066Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.697066Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.816254Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.817260Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_play` index `ID_t_play_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.819247Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.819247Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.844687Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.845684Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.845684Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_play` index `FKt_p_t_u_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.847681Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.848684Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.860450Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.860450Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.879398Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.879398Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` index `ID_t_power_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.881394Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.882391Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.910316Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.912310Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.915303Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` index `FKt_use_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:56.926274Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.928276Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.948724Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:56.950716Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:56.999586Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.000583Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rank` index `ID_t_rank_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.001584Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.002580Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.011553Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.013551Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.039984Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.039984Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rarity` index `ID_t_rarity_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.042009Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.042976Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.051951Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.053975Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.074890Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.077908Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_session` index `ID_t_session_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.086857Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.089851Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.119770Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.119770Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_session` index `FKt_isPartOf_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.122763Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.124757Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.136732Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.137721Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.154676Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.154676Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` index `ID_t_upgrade_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.156670Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.157669Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.175620Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.175620Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.194569Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.194569Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` index `ID_t_user_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.196565Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.197562Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:55:57.224517Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.224517Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.225487Z 316 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` index `FKt_be_IND` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:55:57.227482Z 316 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:55:57.227482Z 316 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T10:56:11.178523Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:56:11.179518Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rarity` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:56:15.358295Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:56:15.359292Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_rank` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T10:56:25.367932Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T10:56:25.367932Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_chest` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T11:27:21.561824Z 436 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:27:21.561824Z 436 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:00.930499Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.930499Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.931499Z 480 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_1e0` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:00.936485Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.937483Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.941476Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.942468Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.943469Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.953577Z 480 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:00.954575Z 480 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:13.166920Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.166920Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.167917Z 500 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_1f4` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:13.172902Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.172902Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.178889Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.178889Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.179885Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.190835Z 500 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:13.191834Z 500 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:37.061691Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.061691Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.062687Z 520 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_208` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:37.067674Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.068671Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.074655Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.075652Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.076651Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.086056Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.087055Z 520 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:37.120302Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.120302Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.121302Z 520 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-3330_208` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:28:37.126289Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.126289Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.130278Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.130278Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.131275Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.140252Z 520 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:28:37.140252Z 520 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-17T11:40:47.655919Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:40:47.655919Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T11:59:23.199634Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:59:23.199634Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T11:59:33.204244Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T11:59:33.204244Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T12:11:33.520215Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T12:11:33.520215Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-17T12:11:43.527656Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-17T12:11:43.527656Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.

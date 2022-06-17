@@ -1,2 +1,4 @@
 Select un élément dans un tableau JSON
 SELECT upgCharacterName, upgDamages->"$.Power1.levelOne" AS `Power` FROM t_upgrades WHERE upgCharacterName = "toto2"
+
+SELECT upgCapacity->"$.Punch" AS "capacity" FROM t_upgrade LIMIT 1
