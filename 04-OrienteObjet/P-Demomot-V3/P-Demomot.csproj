@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
@@ -89,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Action.cs" />
     <Compile Include="Controllers\UserProperties\ChestsController.cs" />
     <Compile Include="Controllers\FightTactics\FtCharactersChoiceController.cs" />
     <Compile Include="Controllers\FightTactics\FtGameController.cs" />
@@ -188,15 +192,40 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ChestsView.resx">
+      <DependentUpon>ChestsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FtCharactersChoice.resx">
+      <DependentUpon>FtCharactersChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FtGameView.resx">
+      <DependentUpon>FtGameView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GameTypeView.resx">
+      <DependentUpon>GameTypeView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\InventoryView.resx">
       <DependentUpon>InventoryView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginSignInView.resx">
       <DependentUpon>LoginSignInView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenuView.resx">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\OptionsView.resx">
       <DependentUpon>OptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PlayView.resx">
+      <DependentUpon>PlayView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TbCharactersChoice.resx">
+      <DependentUpon>TbCharactersChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TbGameView.resx">
+      <DependentUpon>TbGameView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -212,8 +241,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\ControllerFactory\" />
+    <None Include="Resources\Sans titre 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteFlag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

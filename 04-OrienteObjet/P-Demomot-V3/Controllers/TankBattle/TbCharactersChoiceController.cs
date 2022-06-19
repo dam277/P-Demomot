@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Controllers.TankBattle
 {
-    class TbCharactersChoiceController : MainController
+    public class TbCharactersChoiceController : MainController
     {
-        public TbCharactersChoiceController()
-        {
+        private MainController _mainController;         // Main controller
 
+        /// <summary>
+        /// Public main controller
+        /// </summary>
+        public MainController MainController
+        {
+            get { return _mainController; }
+            set { _mainController = value; }
         }
     }
 }

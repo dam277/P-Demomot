@@ -71,10 +71,13 @@ namespace P_Demomot
 
             ChestsController chestsController = new ChestsController();
             InventoryController inventoryController = new InventoryController();
-            LoginSignInController loginSignInController = new LoginSignInController();
+            LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user);
 
-            MainController mainController = new MainController();
+            // Set the main controller
+            MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, gameTypeView, inventoryView, mainMenuView, optionsView, playView, tbCharactersChoiceView, tbGameView,
+                ftCharactersChoice, ftGame, gameTypeController, playController, mainMenu, options, tbCharactersChoice, tbGame, chestsController, inventoryController, loginSignInController);
 
+            // Run the login view
             Application.Run(loginSignInView);
         }
     }

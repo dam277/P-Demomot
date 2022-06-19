@@ -2,6 +2,7 @@
 using P_Demomot.Controllers;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace P_Demomot.Models.Databases
         string _userID = "root";                            // Database login
         string _password = "root";                          // Database password
         private static Database _instance;                  // Instance of the database
+        List<string>[] _dataResult;                          //
 
         /// <summary>
         /// Public main controller
@@ -62,8 +64,56 @@ namespace P_Demomot.Models.Databases
         /// <param name="req">Database request</param>
         /// <param name="args">Arguments for the request</param>
         /// <returns>Return an object of datas</returns>
-        public object QueryPrepareExecutes(string req, List<string> args)
-        {
+        public List<string>[] QueryPrepareExecutes(string query, Dictionary<string, string> binds, List<string> columns)
+        {            
+            //Create a mysql command
+            MySqlCommand com = _connection.CreateCommand();
+            com.CommandType = System.Data.CommandType.Text;
+            com.CommandText = query;
+
+            var cmd = new MySqlCommand(com.CommandText, _connection);
+
+            // Put the binds value into the parameters
+            foreach (var element in binds)
+            {
+                cmd.Parameters.AddWithValue(element.Key, element.Value);
+            }
+
+            if(cmd.CommandText.Contains("SELECT"))
+            {
+                //Execute the query
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                int i = 0;
+                // Set the size of data result
+                _dataResult = new List<string>[columns.Count()];
+                // Set the lists into the table
+                for (int y = 0; y < _dataResult.Length; y++)
+                {
+                    _dataResult[y] = new List<string>();
+                }
+
+                //Read data and store in the list
+                while (dataReader.Read())
+                {
+                    // Write the datas into the list
+                    foreach (string column in columns)
+                    {
+                        _dataResult[i].Add(dataReader[column].ToString());
+                        i++;
+                    }
+                }
+
+                dataReader.Close();
+
+                // Return the datas
+                return _dataResult;
+            }
+            else if(cmd.CommandText.Contains("INSERT"))
+            {
+                return null;
+            }
+
             return null;
         }
 
