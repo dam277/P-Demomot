@@ -1,7 +1,9 @@
 ﻿using P_Demomot.Controllers;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Characters;
+using P_Demomot.Models.Databases;
 using P_Demomot.Models.Utils;
+using P_Demomot.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,18 +14,27 @@ namespace P_Demomot.Models.UserInfos
 {
     public class User
     {
+        private LoginSignInController _loginSignInController;
+        public LoginSignInController LoginSignInController
+        {
+            get { return _loginSignInController; }
+            set { _loginSignInController = value; }
+        }
+
         #region Variables 
         private MainController _mainController;                 // Main controller
         private InventoryController _inventoryController;       // Inventory controller
         private int _id;                                        // User ID
         private string _nickname;                               // User nickname
-        private string _profileImage;                           // User profile image
         private string _role;                                   // User role
         private DateTime _entryDate;                            // User entry date
         private Rank _rank;                                     // User rank
         private List<Fighter> _fighterList;                     // User fighter list
         private List<Tank> _tankList;                           // User tank list
         private Dictionary<Rarity, List<Chest>> _chests;        // User chest list
+
+        private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
+        private List<string> _columns;                          // Columns searched in the request
         #endregion
 
         #region Getter Setter
@@ -65,21 +76,6 @@ namespace P_Demomot.Models.UserInfos
             set
             {
                 _nickname = value;
-            }
-        }
-
-        /// <summary>
-        /// Public User profile image
-        /// </summary>
-        public string ProfileImage
-        {
-            get
-            {
-                return _profileImage;
-            }
-            set
-            {
-                _profileImage = value;
             }
         }
 
@@ -209,11 +205,44 @@ namespace P_Demomot.Models.UserInfos
         /// <summary>
         /// Connect to an account
         /// </summary>
-        /// <param name="nickname"></param>
-        /// <param name="password"></param>
-        public void Connect(string nickname, string password)
+        /// <param name="nickname">user nickname entered</param>
+        /// <param name="password">user password entered</param>
+        public bool Connect(string nickname, string password)
         {
+            // Request
+            string req = $"SELECT * FROM t_user WHERE useNickname = @nickname";
 
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@nickname", nickname);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idUser");
+            _columns.Add("useNickname");
+            _columns.Add("usePasswordHash");
+            _columns.Add("useEntryDate");
+            _columns.Add("usePermLevel");
+            _columns.Add("idRank");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Check the password
+            for(int i = 0; i < datas[2].Count; i++)
+            {
+                // Set the datas to the user if the password is good
+                if (BCrypt.Net.BCrypt.Verify(password, datas[2][i]))
+                {
+                    this._id = Convert.ToInt32(datas[0][i]);
+                    this._nickname = datas[1][i];
+                    this._entryDate = Convert.ToDateTime(datas[3][i]);
+                    this._role = (datas[4][i].ToString() == "1") ? "Membre" : "Administrateur";
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>

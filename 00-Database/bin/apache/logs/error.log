@@ -409,3 +409,79 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/User
 [Wed Jun 15 10:33:51.912296 2022] [ssl:warn] [pid 13172:tid 752] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
 PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
 [Wed Jun 15 10:33:51.935229 2022] [mpm_winnt:notice] [pid 13172:tid 752] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 17 08:07:26.045083 2022] [ssl:warn] [pid 14312:tid 764] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:07:26.045083 2022] [ssl:warn] [pid 14312:tid 764] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 08:07:26.091949 2022] [core:warn] [pid 14312:tid 764] AH00098: pid file C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 17 08:07:26.169072 2022] [ssl:warn] [pid 14312:tid 764] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 08:07:26.170072 2022] [ssl:warn] [pid 14312:tid 764] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:07:26.170072 2022] [ssl:warn] [pid 14312:tid 764] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 08:07:26.846928 2022] [mpm_winnt:notice] [pid 14312:tid 764] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/8.0.1 configured -- resuming normal operations
+[Fri Jun 17 08:07:26.846928 2022] [mpm_winnt:notice] [pid 14312:tid 764] AH00456: Server built: Jan 28 2016 09:58:25
+[Fri Jun 17 08:07:26.846928 2022] [core:notice] [pid 14312:tid 764] AH00094: Command line: 'C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\bin\\httpd.exe -d C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache -f C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\conf\\httpd.conf'
+[Fri Jun 17 08:07:26.846928 2022] [mpm_winnt:notice] [pid 14312:tid 764] AH00418: Parent: Created child process 9096
+[Fri Jun 17 08:07:27.581767 2022] [ssl:warn] [pid 9096:tid 664] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:07:27.581767 2022] [ssl:warn] [pid 9096:tid 664] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 08:07:27.691118 2022] [ssl:warn] [pid 9096:tid 664] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 08:07:27.691118 2022] [ssl:warn] [pid 9096:tid 664] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:07:27.691118 2022] [ssl:warn] [pid 9096:tid 664] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 08:07:27.706738 2022] [mpm_winnt:notice] [pid 9096:tid 664] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 17 08:07:32.130926 2022] [mpm_winnt:crit] [pid 9096:tid 664] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Fri Jun 17 08:07:32.130926 2022] [mpm_winnt:warn] [pid 9096:tid 836] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Fri Jun 17 08:07:32.130926 2022] [mpm_winnt:warn] [pid 9096:tid 1480] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Fri Jun 17 08:07:32.130926 2022] [mpm_winnt:warn] [pid 9096:tid 860] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Fri Jun 17 08:08:00.307900 2022] [ssl:warn] [pid 13072:tid 752] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:08:00.307900 2022] [ssl:warn] [pid 13072:tid 752] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 08:08:00.339145 2022] [core:warn] [pid 13072:tid 752] AH00098: pid file C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 17 08:08:00.417250 2022] [ssl:warn] [pid 13072:tid 752] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 08:08:00.417250 2022] [ssl:warn] [pid 13072:tid 752] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:08:00.417250 2022] [ssl:warn] [pid 13072:tid 752] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 08:08:00.448493 2022] [mpm_winnt:notice] [pid 13072:tid 752] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/8.0.1 configured -- resuming normal operations
+[Fri Jun 17 08:08:00.448493 2022] [mpm_winnt:notice] [pid 13072:tid 752] AH00456: Server built: Jan 28 2016 09:58:25
+[Fri Jun 17 08:08:00.448493 2022] [core:notice] [pid 13072:tid 752] AH00094: Command line: 'C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\bin\\httpd.exe -d C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/apache -f C:\\Users\\damloup\\Desktop\\P-Demomot\\00-Database\\bin\\apache\\conf\\httpd.conf'
+[Fri Jun 17 08:08:00.448493 2022] [mpm_winnt:notice] [pid 13072:tid 752] AH00418: Parent: Created child process 10652
+[Fri Jun 17 08:08:01.390058 2022] [ssl:warn] [pid 10652:tid 752] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:08:01.390058 2022] [ssl:warn] [pid 10652:tid 752] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 08:08:01.499408 2022] [ssl:warn] [pid 10652:tid 752] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 08:08:01.499408 2022] [ssl:warn] [pid 10652:tid 752] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 08:08:01.499408 2022] [ssl:warn] [pid 10652:tid 752] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damloup/Desktop/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 08:08:01.530652 2022] [mpm_winnt:notice] [pid 10652:tid 752] AH00354: Child: Starting 64 worker threads.
+[Fri Jun 17 18:48:15.905561 2022] [ssl:warn] [pid 18236:tid 572] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 18:48:15.906557 2022] [ssl:warn] [pid 18236:tid 572] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 18:48:15.970388 2022] [core:warn] [pid 18236:tid 572] AH00098: pid file C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Jun 17 18:48:16.103545 2022] [ssl:warn] [pid 18236:tid 572] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 18:48:16.104542 2022] [ssl:warn] [pid 18236:tid 572] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 18:48:16.104542 2022] [ssl:warn] [pid 18236:tid 572] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 18:48:16.758314 2022] [mpm_winnt:notice] [pid 18236:tid 572] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/8.0.1 configured -- resuming normal operations
+[Fri Jun 17 18:48:16.758314 2022] [mpm_winnt:notice] [pid 18236:tid 572] AH00456: Server built: Jan 28 2016 09:58:25
+[Fri Jun 17 18:48:16.758314 2022] [core:notice] [pid 18236:tid 572] AH00094: Command line: 'C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\bin\\apache\\bin\\httpd.exe -d C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/apache -f C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\bin\\apache\\conf\\httpd.conf'
+[Fri Jun 17 18:48:16.761305 2022] [mpm_winnt:notice] [pid 18236:tid 572] AH00418: Parent: Created child process 1976
+[Fri Jun 17 18:48:17.817335 2022] [ssl:warn] [pid 1976:tid 660] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 18:48:17.817335 2022] [ssl:warn] [pid 1976:tid 660] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 17 18:48:18.008630 2022] [ssl:warn] [pid 1976:tid 660] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Jun 17 18:48:18.008630 2022] [ssl:warn] [pid 1976:tid 660] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Jun 17 18:48:18.008630 2022] [ssl:warn] [pid 1976:tid 660] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Fri Jun 17 18:48:18.046529 2022] [mpm_winnt:notice] [pid 1976:tid 660] AH00354: Child: Starting 64 worker threads.
+[Sun Jun 19 15:57:34.870441 2022] [ssl:warn] [pid 29108:tid 688] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Jun 19 15:57:34.872436 2022] [ssl:warn] [pid 29108:tid 688] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Jun 19 15:57:34.926290 2022] [core:warn] [pid 29108:tid 688] AH00098: pid file C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Jun 19 15:57:35.055944 2022] [ssl:warn] [pid 29108:tid 688] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Sun Jun 19 15:57:35.055944 2022] [ssl:warn] [pid 29108:tid 688] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Jun 19 15:57:35.055944 2022] [ssl:warn] [pid 29108:tid 688] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Sun Jun 19 15:57:35.638390 2022] [mpm_winnt:notice] [pid 29108:tid 688] AH00455: Apache/2.4.18 (Win32) OpenSSL/1.0.2f PHP/8.0.1 configured -- resuming normal operations
+[Sun Jun 19 15:57:35.638390 2022] [mpm_winnt:notice] [pid 29108:tid 688] AH00456: Server built: Jan 28 2016 09:58:25
+[Sun Jun 19 15:57:35.638390 2022] [core:notice] [pid 29108:tid 688] AH00094: Command line: 'C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\bin\\apache\\bin\\httpd.exe -d C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/apache -f C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\bin\\apache\\conf\\httpd.conf'
+[Sun Jun 19 15:57:35.641379 2022] [mpm_winnt:notice] [pid 29108:tid 688] AH00418: Parent: Created child process 12016
+[Sun Jun 19 15:57:36.624748 2022] [ssl:warn] [pid 12016:tid 468] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Jun 19 15:57:36.624748 2022] [ssl:warn] [pid 12016:tid 468] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Jun 19 15:57:36.820226 2022] [ssl:warn] [pid 12016:tid 468] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Sun Jun 19 15:57:36.821223 2022] [ssl:warn] [pid 12016:tid 468] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Jun 19 15:57:36.821223 2022] [ssl:warn] [pid 12016:tid 468] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Sun Jun 19 15:57:36.855131 2022] [mpm_winnt:notice] [pid 12016:tid 468] AH00354: Child: Starting 64 worker threads.

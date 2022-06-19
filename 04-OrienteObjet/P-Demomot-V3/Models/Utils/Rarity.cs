@@ -45,8 +45,22 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Basic class constructor
+        /// </summary>
+        public Rarity()
+        {
 
+        }
 
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="lvl1UpCards"></param>
+        /// <param name="lvl1UpPrice"></param>
+        /// <param name="lvl2UpCards"></param>
+        /// <param name="lvl2UpPrice"></param>
         public Rarity(string name, int lvl1UpCards, int lvl1UpPrice, int lvl2UpCards, int lvl2UpPrice)
         {
             _name = name;

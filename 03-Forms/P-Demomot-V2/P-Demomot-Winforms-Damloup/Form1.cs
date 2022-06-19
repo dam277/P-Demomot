@@ -679,7 +679,7 @@ namespace P_Demomot_Winforms_Damloup
             Random randomChest = new Random();
             int coffre = randomChest.Next(1, 2001);
 
-            if (coffrecoffre < 750)
+            if (coffre < 750)
             {
                 ChestNumbers[1, 0]++;
             }
