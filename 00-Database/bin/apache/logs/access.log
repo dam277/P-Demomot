@@ -6570,3 +6570,12 @@
 ::1 - - [19/Jun/2022:17:18:35 +0200] "POST /mysql/index.php HTTP/1.1" 200 1557
 ::1 - - [19/Jun/2022:17:36:36 +0200] "POST /mysql/index.php HTTP/1.1" 200 1557
 ::1 - - [19/Jun/2022:17:53:57 +0200] "POST /mysql/index.php HTTP/1.1" 200 1557
+::1 - - [19/Jun/2022:18:13:36 +0200] "GET /mysql/ HTTP/1.1" 200 15024
+::1 - - [19/Jun/2022:18:13:36 +0200] "GET /mysql/themes/pmahomme/css/theme.css?v=5.0.4&nocache=-1967834797ltr&server=1 HTTP/1.1" 200 100468
+::1 - - [19/Jun/2022:18:13:37 +0200] "POST /mysql/ajax.php HTTP/1.1" 200 1475
+::1 - - [19/Jun/2022:18:13:37 +0200] "POST /mysql/navigation.php?ajax_request=1 HTTP/1.1" 200 2891
+::1 - - [19/Jun/2022:18:13:37 +0200] "POST /mysql/ajax.php HTTP/1.1" 200 1571
+::1 - - [19/Jun/2022:18:13:37 +0200] "POST /mysql/ajax.php HTTP/1.1" 200 1469
+::1 - - [19/Jun/2022:18:13:37 +0200] "POST /mysql/version_check.php HTTP/1.1" 200 64
+::1 - - [19/Jun/2022:18:13:45 +0200] "GET /mysql/db_structure.php?server=1&db=db_demomot&ajax_request=true&ajax_page_request=true&_nocache=165565522582027612&token=3531435e756e78335d7042667c315a56 HTTP/1.1" 200 7020
+::1 - - [19/Jun/2022:18:13:46 +0200] "GET /mysql/navigation.php?ajax_request=1&aPath=cm9vdA%3D%3D.ZGJfZGVtb21vdA%3D%3D&vPath=cm9vdA%3D%3D.ZGI%3D.ZGVtb21vdA%3D%3D&pos=0&pos2_name=&pos2_value=&searchClause=&searchClause2=&_nocache=1655655226279246612&token=3531435e756e78335d7042667c315a56 HTTP/1.1" 200 2177

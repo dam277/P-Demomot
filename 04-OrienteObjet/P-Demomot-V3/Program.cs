@@ -71,7 +71,7 @@ namespace P_Demomot
 
             ChestsController chestsController = new ChestsController();
             InventoryController inventoryController = new InventoryController();
-            LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user);
+            LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user, rank, fighter, rarity);
 
             // Set the main controller
             MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, gameTypeView, inventoryView, mainMenuView, optionsView, playView, tbCharactersChoiceView, tbGameView,

@@ -1,4 +1,5 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Utils;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,18 @@ namespace P_Demomot.Models.Characters
     public class Character
     {
         #region Variables   
-        protected MainController _mainController;       // Main controller
-        protected int _idCharacter;                     // Id of the character
-        protected string _name;                         // name of the character
-        protected string _model;                        // Model of the character
-        protected int _level;                           // level of the character
-        protected int _life;                            // life of the character
-        protected Rarity _rarity;                       // rarity of the character
-        protected List<Fighter> _fightersList;           // List of fighters
-        protected List<Tank> _tanksList;                 // List of tanks
+        protected MainController _mainController;                   // Main controller
+        protected LoginSignInController _loginSignInController;     // login signin controller
+        protected int _idCharacter;                                 // Id of the character
+        protected string _name;                                     // name of the character
+        protected string _model;                                    // Model of the character
+        protected int _level;                                       // level of the character
+        protected int _life;                                        // life of the character
+        protected Rarity _rarity;                                   // rarity of the character
+        protected List<Fighter> _fightersList;                      // List of fighters
+        protected List<Tank> _tanksList;                            // List of tanks
+        protected Dictionary<string, string> _binds;              // Dictionary of binds to the requests
+        protected List<string> _columns;                          // Columns searched in the request
         #endregion
 
         #region getter setter
@@ -35,6 +39,21 @@ namespace P_Demomot.Models.Characters
             set
             {
                 _mainController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public login signin controller
+        /// </summary>
+        public LoginSignInController LoginSignInController
+        {
+            get
+            {
+                return _loginSignInController;
+            }
+            set
+            {
+                _loginSignInController = value;
             }
         }
 
@@ -139,6 +158,17 @@ namespace P_Demomot.Models.Characters
             _level = level;
             _rarity = rarity;
             _life = life;
+        }
+
+        /// <summary>
+        /// Models of characters class constructor
+        /// </summary>
+        /// <param name="name">Name of the character</param>
+        /// <param name="rarity">Rarity of the character</param>
+        public Character(string name, Rarity rarity)
+        {
+            _name = name;
+            _rarity = rarity;
         }
         #endregion
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using P_Demomot.Controllers.UserProperties;
+using P_Demomot.Models.Databases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +10,12 @@ namespace P_Demomot.Models.UserInfos
 {
     public class Rank
     {
+        private LoginSignInController _loginSignInController;       // Login signin controller
+
         #region Variables
+        private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
+        private List<string> _columns;                          // Columns searched in the request
+        private int _id;            // Rank id
         private int _points;        // Rank points
         private string _name;       // Rank name
         #endregion
@@ -43,6 +50,24 @@ namespace P_Demomot.Models.UserInfos
                 _name = value; 
             }
         }
+
+        /// <summary>
+        /// Public rank id
+        /// </summary>
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        /// <summary>
+        /// Public login signin controller
+        /// </summary>
+        public LoginSignInController LoginSignInController
+        {
+            get { return _loginSignInController; }
+            set { _loginSignInController = value; }
+        }
         #endregion
 
         #region Constructors
@@ -59,10 +84,11 @@ namespace P_Demomot.Models.UserInfos
         /// </summary>
         /// <param name="points">rank points</param>
         /// <param name="name">rank name</param>
-        private Rank(int points, string name)
+        private Rank(int points, string name, int id)
         {
             _points = points;
             _name = name;
+            _id = id;
         }
         #endregion
 
@@ -74,7 +100,24 @@ namespace P_Demomot.Models.UserInfos
         /// <returns></returns>
         public Rank GetRankByPoints(int points)
         {
-            return null;
+            // Request
+            string req = $"SELECT * FROM t_rank WHERE ranPoints = @points";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@points", points.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idRank");
+            _columns.Add("ranName");
+            _columns.Add("ranPoints");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the rank
+            return new Rank(Convert.ToInt32(datas[2][0]), datas[1][0], Convert.ToInt32(datas[0][0]));
         }
         #endregion
     }

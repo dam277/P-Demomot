@@ -14,16 +14,11 @@ namespace P_Demomot.Models.UserInfos
 {
     public class User
     {
-        private LoginSignInController _loginSignInController;
-        public LoginSignInController LoginSignInController
-        {
-            get { return _loginSignInController; }
-            set { _loginSignInController = value; }
-        }
-
-        #region Variables 
+        private LoginSignInController _loginSignInController;   // Login signin controller
         private MainController _mainController;                 // Main controller
         private InventoryController _inventoryController;       // Inventory controller
+
+        #region Variables 
         private int _id;                                        // User ID
         private string _nickname;                               // User nickname
         private string _role;                                   // User role
@@ -51,6 +46,15 @@ namespace P_Demomot.Models.UserInfos
             {
                 _mainController = value;
             }
+        }
+
+        /// <summary>
+        /// Public login sigin controller
+        /// </summary>
+        public LoginSignInController LoginSignInController
+        {
+            get { return _loginSignInController; }
+            set { _loginSignInController = value; }
         }
 
         /// <summary>
@@ -103,6 +107,7 @@ namespace P_Demomot.Models.UserInfos
             {
                 return _entryDate;
             }
+            set { _entryDate = value; }
         }
 
         /// <summary>
@@ -164,7 +169,6 @@ namespace P_Demomot.Models.UserInfos
                 _chests = value;
             }
         }
-
         #endregion
 
         #region Constructors
@@ -192,21 +196,11 @@ namespace P_Demomot.Models.UserInfos
 
         #region Methods
         /// <summary>
-        /// Create account
-        /// </summary>
-        public static void CreateAccount(string nickname, string password, string confirmPassword, string role = "membre")
-        {
-            if (nickname != null && password == confirmPassword)
-            {
-                User user = new User(nickname, role);
-            }
-        }
-
-        /// <summary>
         /// Connect to an account
         /// </summary>
         /// <param name="nickname">user nickname entered</param>
         /// <param name="password">user password entered</param>
+        /// <returns>Returns true if the user is connected</returns>
         public bool Connect(string nickname, string password)
         {
             // Request
@@ -246,10 +240,123 @@ namespace P_Demomot.Models.UserInfos
         }
 
         /// <summary>
+        /// Create an account
+        /// </summary>
+        /// <param name="nickname">Nickname entered</param>
+        /// <param name="password">Password entered and verified</param>
+        /// <returns>Returns true if the user is created</returns>
+        public bool SignUp(string nickname, string password)
+        {
+            // Request to check if the nickname exists in database
+            if(CheckUserExistsByNickname(nickname) == true)
+            {
+                CreateAccount();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            // Create the account in database
+            void CreateAccount()
+            {
+                // Create a new user
+                User tempUser = new User(nickname, "membre");
+                tempUser._entryDate = DateTime.Now;
+                tempUser._rank = _loginSignInController.GetRank(0);
+
+                // Get the informations
+                string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
+                int role = (tempUser._role == "membre") ? 1 : 2;
+
+                // Request
+                string req = $"INSERT INTO t_user (`idUser`, `useNickname`, `usePasswordHash`, `useEntryDate`, `usePermLevel`, `idRank`) " +
+                    $"VALUES (NULL, @nickname, @passwordHash, @entryDate, @role, @rankId);";
+
+                //Binds
+                _binds = new Dictionary<string, string>();
+                _binds.Add("@nickname", tempUser._nickname);
+                _binds.Add("@passwordHash", passwordHash);
+                _binds.Add("@entryDate", tempUser._entryDate.ToString("yyyy-MM-dd"));
+                _binds.Add("@role", role.ToString());
+                _binds.Add("@rankId", tempUser._rank.Id.ToString());
+
+                //Columns name
+                _columns = new List<string>();
+                _columns.Add("idUser");
+                _columns.Add("useNickname");
+                _columns.Add("usePasswordHash");
+                _columns.Add("useEntryDate");
+                _columns.Add("usePermLevel");
+                _columns.Add("idRank");
+
+                // Get the datas by requesting the database
+                Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+                // Set the actual user
+                this._id = GetUserIdByName(tempUser.Nickname);
+                this._nickname = tempUser.Nickname;
+                this.EntryDate = tempUser.EntryDate;
+                this.Role = tempUser.Role;
+                this.Rank = tempUser.Rank;
+
+                // Create the first Fighter
+                _loginSignInController.CreateFirstCharacter();
+            }
+        }
+
+        /// <summary>
+        /// Check if a user exists with the nickname given
+        /// </summary>
+        /// <param name="nickname">Nickname given</param>
+        /// <returns>Return true if the user exists</returns>
+        private bool CheckUserExistsByNickname(string nickname)
+        {
+            // requestq
+            string req = $"SELECT idUser FROM t_user WHERE useNickname = @nickname";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@nickname", nickname);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idUser");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            return (datas[0].Count() == 0) ? true : false;
+        }
+
+        /// <summary>
+        /// Get the user id by name
+        /// </summary>
+        /// <param name="nickname"></param>
+        /// <returns></returns>
+        public int GetUserIdByName(string nickname)
+        {
+            // Request
+            string req = $"SELECT idUser FROM t_user WHERE useNickname = @nickname";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@nickname", nickname);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idUser");
+
+            // Get the datas by requesting the database
+            return Convert.ToInt32(Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns)[0][0]);
+        }
+
+        /// <summary>
         /// Get a user by an ID
         /// </summary>
         /// <param name="userId">User id</param>
-        /// <returns></returns>
+        /// <returns>Returns the user</returns>
         public User GetUserById(int userId)
         {
             return null;

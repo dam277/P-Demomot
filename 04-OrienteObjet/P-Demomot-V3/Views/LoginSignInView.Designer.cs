@@ -44,6 +44,7 @@
             this.btnConnectionValidate = new System.Windows.Forms.Button();
             this.lblInscription = new System.Windows.Forms.Label();
             this.lblConnectionErrors = new System.Windows.Forms.Label();
+            this.lblInscriptionErrors = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInscriptionNickname
@@ -205,12 +206,22 @@
             this.lblConnectionErrors.Size = new System.Drawing.Size(0, 13);
             this.lblConnectionErrors.TabIndex = 15;
             // 
+            // lblInscriptionErrors
+            // 
+            this.lblInscriptionErrors.AutoSize = true;
+            this.lblInscriptionErrors.ForeColor = System.Drawing.Color.Red;
+            this.lblInscriptionErrors.Location = new System.Drawing.Point(313, 168);
+            this.lblInscriptionErrors.Name = "lblInscriptionErrors";
+            this.lblInscriptionErrors.Size = new System.Drawing.Size(0, 13);
+            this.lblInscriptionErrors.TabIndex = 16;
+            // 
             // LoginSignInView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.lblInscriptionErrors);
             this.Controls.Add(this.lblConnectionErrors);
             this.Controls.Add(this.btnConnectionValidate);
             this.Controls.Add(this.lblConnectionPassword);
@@ -254,5 +265,6 @@
         private System.Windows.Forms.Button btnConnectionValidate;
         private System.Windows.Forms.Label lblInscription;
         private System.Windows.Forms.Label lblConnectionErrors;
+        private System.Windows.Forms.Label lblInscriptionErrors;
     }
 }

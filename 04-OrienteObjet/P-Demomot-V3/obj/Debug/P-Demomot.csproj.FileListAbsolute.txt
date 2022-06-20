@@ -79,3 +79,5 @@ C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteOb
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.TbGameView.resources
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\bin\Debug\BCrypt.Net-Next.dll
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\bin\Debug\Newtonsoft.Json.xml

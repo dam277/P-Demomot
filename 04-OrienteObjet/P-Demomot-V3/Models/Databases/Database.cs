@@ -12,6 +12,7 @@ namespace P_Demomot.Models.Databases
 {
     public class Database
     {
+        #region Variables
         private MainController _mainController;             // Main controller
 
         MySqlConnection _connection;                        // Database connection
@@ -20,7 +21,9 @@ namespace P_Demomot.Models.Databases
         string _password = "root";                          // Database password
         private static Database _instance;                  // Instance of the database
         List<string>[] _dataResult;                          //
+        #endregion
 
+        #region Getter Setter
         /// <summary>
         /// Public main controller
         /// </summary>
@@ -35,6 +38,7 @@ namespace P_Demomot.Models.Databases
                 _mainController = value;
             }
         }
+        #endregion
 
         /// <summary>
         /// Private class contructor
@@ -79,6 +83,8 @@ namespace P_Demomot.Models.Databases
                 cmd.Parameters.AddWithValue(element.Key, element.Value);
             }
 
+            cmd.Prepare();
+
             if(cmd.CommandText.Contains("SELECT"))
             {
                 //Execute the query
@@ -111,7 +117,7 @@ namespace P_Demomot.Models.Databases
             }
             else if(cmd.CommandText.Contains("INSERT"))
             {
-                return null;
+                cmd.ExecuteNonQuery();
             }
 
             return null;
@@ -122,9 +128,43 @@ namespace P_Demomot.Models.Databases
         /// </summary>
         /// <param name="req">Database request</param>
         /// <returns>Return an object of datas</returns>
-        public object QueryExecute(string req)
+        public List<string>[] QuerySimpleExecute(string query, List<string> columns)
         {
-            return null;
+            //Create a mysql command
+            MySqlCommand com = _connection.CreateCommand();
+            com.CommandType = System.Data.CommandType.Text;
+            com.CommandText = query;
+
+            var cmd = new MySqlCommand(com.CommandText, _connection);
+
+            //Execute the query
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            int i = 0;
+            // Set the size of data result
+            _dataResult = new List<string>[columns.Count()];
+            // Set the lists into the table
+            for (int y = 0; y < _dataResult.Length; y++)
+            {
+                _dataResult[y] = new List<string>();
+            }
+
+            //Read data and store in the list
+            while (dataReader.Read())
+            {
+                i = 0;
+                // Write the datas into the list
+                foreach (string column in columns)
+                {
+                    _dataResult[i].Add(dataReader[column].ToString());
+                    i++;
+                }
+            }
+
+            dataReader.Close();
+
+            // Return the datas
+            return _dataResult;
         }
 
         /// <summary>

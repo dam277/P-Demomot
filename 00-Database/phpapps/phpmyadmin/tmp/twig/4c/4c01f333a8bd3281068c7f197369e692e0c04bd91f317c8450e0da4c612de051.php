@@ -59,6 +59,6 @@ class __TwigTemplate_f362bec51640f673f189273ddd7d0ae655f0b688d764571e759d2840458
 
     public function getSourceContext()
     {
-        return new Source("", "display/results/empty_display.twig", "D:\\DATA\\UwAmp\\phpapps\\phpmyadmin\\templates\\display\\results\\empty_display.twig");
+        return new Source("", "display/results/empty_display.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\display\\results\\empty_display.twig");
     }
 }

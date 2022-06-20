@@ -13,7 +13,7 @@ namespace P_Demomot.Models.Characters
         private MainController _mainController;         // Main controller
         private string _name;                           // Power name
         private string _description;                    // Power description
-        private float _damages;                         // Power damages
+        private string _capacity;                         // Power damages
         private int _loadTurns;                         // Power turns to use it
         private int _nbTurns;                           // Power number of turns damages
         private int _percentage;                        // Ultime Power percentage
@@ -63,15 +63,15 @@ namespace P_Demomot.Models.Characters
         /// <summary>
         /// Public power damages
         /// </summary>
-        public float Damages
+        public string Damages
         {
             get
             {
-                return _damages;
+                return _capacity;
             }
             set
             {
-                _damages = value;
+                _capacity = value;
             }
         }
 
@@ -145,6 +145,14 @@ namespace P_Demomot.Models.Characters
         }
 
         /// <summary>
+        /// Model of power class constructor
+        /// </summary>
+        public Power(string name)
+        {
+            _name = name;
+        }
+
+        /// <summary>
         /// Normal power class constructor
         /// </summary>
         /// <param name="name">Power name</param>
@@ -152,11 +160,11 @@ namespace P_Demomot.Models.Characters
         /// <param name="damages">Power damages</param>
         /// <param name="loadTurns">Power turns to use it</param>
         /// <param name="nbTurns">Power number of turns damages</param>
-        public Power(string name, string description, int damages, int loadTurns, int nbTurns)
+        public Power(string name, string description, string damages, int loadTurns, int nbTurns)
         {
             _name = name;
             _description = description;
-            _damages = damages;
+            _capacity = damages;
             _loadTurns = loadTurns;
             _nbTurns = nbTurns;
             _isUltime = false;
@@ -171,11 +179,11 @@ namespace P_Demomot.Models.Characters
         /// <param name="percentageUpPerHit">Ultime Power percentage up per hit</param>
         /// <param name="percentageUpPerKill">Ultime Power percentage up per kill</param>
         /// <param name="nbTurns">Power number of turns damages</param>
-        public Power(string name, string description, int damages, int percentageUpPerHit, int percentageUpPerKill, int nbTurns)
+        public Power(string name, string description, string damages, int percentageUpPerHit, int percentageUpPerKill, int nbTurns)
         {
             _name = name;
             _description = description;
-            _damages = damages;
+            _capacity = damages;
             _percentage = 0;
             _percentageUpPerHit = percentageUpPerHit;
             _percentageUpPerKill = percentageUpPerKill;

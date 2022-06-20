@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Newtonsoft.Json.Linq;
+using P_Demomot.Models.Databases;
 using P_Demomot.Models.Utils;
 
 namespace P_Demomot.Models.Characters
@@ -45,9 +49,9 @@ namespace P_Demomot.Models.Characters
         /// <summary>
         /// Basic class constructor
         /// </summary>
-        public Fighter() : base()
+        public Fighter()
         {
-
+            _fightersList = new List<Fighter>();
         }
 
         /// <summary>
@@ -61,11 +65,168 @@ namespace P_Demomot.Models.Characters
         /// <param name="life">life of the character</param>
         public Fighter(int id, string model, string name, int level, Rarity rarity, int life) : base(id, model, name, level, rarity, life)
         {
-
+            _powers = new Dictionary<string, Power>();
         }
+
+        /// <summary>
+        /// Models of fighters class constructor
+        /// </summary>
+        /// <param name="name">Name of the figter</param>
+        /// <param name="rarity">Rarity of the fighter</param>
+        public Fighter(string name, Rarity rarity) : base(name, rarity)
+        {
+            _powers = new Dictionary<string, Power>();
+        }
+
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Create the first character when sign up
+        /// </summary>
+        /// <param name="character">Model (object) of the character</param>
+        /// <param name="chaModel">Graphic model of the character</param>
+        /// <param name="chaGame">Game who the character is</param>
+        /// <param name="idUser">User id</param>
+        /// <param name="rarity">Rarity</param>
+        /// <param name="chaLevel">Level of the character</param>
+        /// <returns></returns>
+        public void CreateFirstCharacter(Character character, string chaModel, int chaGame, int idUser, Rarity rarity , int chaLevel = 1)
+        {
+            // Get the life of the character
+            string life = JToken.Parse(GetLifeOfCharacter(character.Name, chaLevel)).ToString();
+
+            // Get the upgrade id of the character
+            string idUpgrade = GetUpgradeId(character.Name);
+
+            // Insert a new character
+            // Request
+            string req = $"INSERT INTO t_character (`idCharacter`, `chaName`, `chaModel`, `chaLevel`, `chaLife`, `chaGame`, `idUser`, `idRarity`, `idUpgrade`)" +
+                $" VALUES (NULL, @name, @model, @level, @life ,@game ,@idUser ,@idRarity ,@idUpgrade)";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@name", character.Name);
+            _binds.Add("@model", chaModel);
+            _binds.Add("@level", chaLevel.ToString());
+            _binds.Add("@life", life);
+            _binds.Add("@game", chaGame.ToString());
+            _binds.Add("@idUser", idUser.ToString());
+            _binds.Add("@idRarity", rarity.Id.ToString());
+            _binds.Add("@idUpgrade", idUpgrade);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idCharacter");
+            _columns.Add("chaName");
+            _columns.Add("chaModel");
+            _columns.Add("chaLevel");
+            _columns.Add("chaLife");
+            _columns.Add("chaGame");
+            _columns.Add("idUser");
+            _columns.Add("idRarity");
+            _columns.Add("idUpgrade");
+
+            // 
+            Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+        }
+
+        /// <summary>
+        /// Get the upgrade id of the character
+        /// </summary>
+        /// <param name="characterName">character name</param>
+        /// <returns>Return the id of the his upgrades</returns>
+        public string GetUpgradeId(string characterName)
+        {
+            //Request
+            string req = $"SELECT idUpgrade FROM `t_upgrade` WHERE upgCharacterName = @characterName";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@characterName", characterName);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idUpgrade");
+
+            // Get the datas by requesting the database
+
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // return the content
+            return datas[0][0];
+        }
+
+        /// <summary>
+        /// Get the life of a character
+        /// </summary>
+        /// <param name="characterName">character name</param>
+        /// <param name="level">character level</param>
+        /// <returns>Return the life of a character</returns>
+        public string GetLifeOfCharacter(string characterName, int level)
+        {
+            // Get the level name
+            string levelName = "";
+            switch(level)
+            {
+                case 1:
+                    levelName = "levelOne";
+                    break;
+                case 2:
+                    levelName = "levelTwo";
+                    break;
+                case 3:
+                    levelName = "levelThree";
+                    break;
+                default:
+                    levelName = "levelZero";
+                    break;
+            }
+
+            //Request
+            string req = $"SELECT upgLife->'$.{levelName}' AS 'upgLife' FROM `t_upgrade` WHERE upgCharacterName = @characterName";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@characterName", characterName);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("upgLife");
+
+            // Get the datas by requesting the database
+
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // return the content
+            return datas[0][0];
+        }
+
+        /// <summary>
+        /// Create a character intot the database
+        /// </summary>
+        public void CreateCharacter()
+        {
+            //Insert a new character
+            // Request
+            string req = $"INSERT INTO t_character (`idCharacter`, `chaName`, `chaModel`, `chaLevel`, `chaLife`, `chaGame`, `idUser`, `idRarity`, `idUpgrade`)" +
+                $" VALUES (NULL, '', '', , , , , , )";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@nickname", "");
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idUser");
+            _columns.Add("useNickname");
+            _columns.Add("usePasswordHash");
+            _columns.Add("useEntryDate");
+            _columns.Add("usePermLevel");
+            _columns.Add("idRank");
+        }
+
+
         /// <summary>
         /// Add a power to the list
         /// </summary>

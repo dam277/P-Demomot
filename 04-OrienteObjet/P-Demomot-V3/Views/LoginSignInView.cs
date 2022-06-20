@@ -51,7 +51,7 @@ namespace P_Demomot.Views
         /// <param name="e"></param>
         private void LoginSignInView_Load(object sender, EventArgs e)
         {
-
+            _loginSignInController.CreateAllCharacters();
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace P_Demomot.Views
         /// <param name="e"></param>
         private void btnInscriptionValidate_Click(object sender, EventArgs e)
         {
-            
+            _loginSignInController.CreateAccount(txtInscriptionNickname.Text, txtInscriptionPassword.Text, txtInscriptionConfirmPassword.Text);
         }
 
         /// <summary>
@@ -75,12 +75,21 @@ namespace P_Demomot.Views
         }
 
         /// <summary>
-        /// Show an error message
+        /// Show an error message for the connection
         /// </summary>
-        /// <param name="message"></param>
-        public void ShowConnectionErros(string message)
+        /// <param name="message">Message to display</param>
+        public void ShowConnectionErrors(string message)
         {
             lblConnectionErrors.Text = message;
+        }
+
+        /// <summary>
+        /// Show an error message for the inscription
+        /// </summary>
+        /// <param name="message">message to display</param>
+        public void ShowInscriptionErrors(string message)
+        {
+            lblInscriptionErrors.Text = message;
         }
 
         /// <summary>
