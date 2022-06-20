@@ -14,6 +14,7 @@ namespace P_Demomot.Models.Characters
         #region Variables   
         protected MainController _mainController;                   // Main controller
         protected LoginSignInController _loginSignInController;     // login signin controller
+
         protected int _idCharacter;                                 // Id of the character
         protected string _name;                                     // name of the character
         protected string _model;                                    // Model of the character
@@ -22,8 +23,9 @@ namespace P_Demomot.Models.Characters
         protected Rarity _rarity;                                   // rarity of the character
         protected List<Fighter> _fightersList;                      // List of fighters
         protected List<Tank> _tanksList;                            // List of tanks
-        protected Dictionary<string, string> _binds;              // Dictionary of binds to the requests
-        protected List<string> _columns;                          // Columns searched in the request
+
+        protected Dictionary<string, string> _binds;                // Dictionary of binds to the requests
+        protected List<string> _columns;                            // Columns searched in the request
         #endregion
 
         #region getter setter

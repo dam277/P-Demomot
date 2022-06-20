@@ -28,6 +28,7 @@ namespace P_Demomot.Controllers.UserProperties
         private Rank _rank;                                     // Rank model
         private Fighter _fighter;                               // Fighter model
         private Rarity _rarity;                                 // Rarity
+        private Power _power;                                   // Power model
         #endregion
 
         #region Getter Setter
@@ -71,6 +72,15 @@ namespace P_Demomot.Controllers.UserProperties
         }
 
         /// <summary>
+        /// Public rank model
+        /// </summary>
+        public Power Power
+        {
+            get { return _power; }
+            set { _power = value; }
+        }
+
+        /// <summary>
         /// Public fighter model
         /// </summary>
         public Fighter Fighter
@@ -94,18 +104,20 @@ namespace P_Demomot.Controllers.UserProperties
         /// </summary>
         /// <param name="signInView"></param>
         /// <param name="user"></param>
-        public LoginSignInController(LoginSignInView signInView, User user, Rank rank, Fighter fighter, Rarity rarity)
+        public LoginSignInController(LoginSignInView signInView, User user, Rank rank, Fighter fighter, Rarity rarity, Power power)
         {
             _signInView = signInView;
             _user = user;
             _rank = rank;
             _fighter = fighter;
             _rarity = rarity;
+            _power = power;
             _signInView.LoginSignInController = this;
             _user.LoginSignInController = this;
             _rank.LoginSignInController = this;
             _fighter.LoginSignInController = this;
             _rarity.LoginSignInController = this;
+            _power.loginSignInController = this;
         }
 
         /// <summary>
@@ -180,7 +192,30 @@ namespace P_Demomot.Controllers.UserProperties
         /// </summary>
         public void CreateFirstCharacter()
         {
-            _fighter.CreateFirstCharacter(_fighter.FightersList[0], "", 1, _user.Id, _fighter.FightersList[0].Rarity);
+            // Create the character
+            Fighter recruit = _fighter.CreateFirstCharacter(_fighter.FightersList[0], "", 1, _user.Id, _fighter.FightersList[0].Rarity) as Fighter;
+            
+            // Get powers name
+            Dictionary<string, string> powersName = _power.GetPowersNameByCharacterName(recruit.Name);
+
+            // Create his powers
+            Power kick = _power.CreatePower(recruit.Name, powersName["Power1"], recruit.Level);
+            Power punch = _power.CreatePower(recruit.Name, powersName["Power2"], recruit.Level);
+            recruit.AddPower(kick);
+            recruit.AddPower(punch);
+
+            // Add him into the list of character of the user
+            _user.AddCharacter(recruit);
+        }
+
+        /// <summary>
+        /// Get the character Id
+        /// </summary>
+        /// <param name="characterName">character name</param>
+        /// <returns>Return the id of the character</returns>
+        public int GetCharacterId(string characterName)
+        {
+            return _fighter.GetId(characterName, _user.Id);
         }
 
         /// <summary>

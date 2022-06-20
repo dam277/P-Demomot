@@ -12,17 +12,27 @@ namespace P_Demomot.Models.Utils
 {
     public class Rarity
     {
+        #region Variables
+        // CONTROLLERS
         private LoginSignInController _loginSignInController;   // Login signin controller
-        private MainController _mainController;
+        private MainController _mainController;                 // Main controller
 
-        private Dictionary<int, Tuple<int, int>> _upgrades;
-        private int _id;
-        private string _name;
-        private Color _color;
-        private int _dropChance;
+        // CLASS VARIABLES
+        private Dictionary<int, Tuple<int, int>> _upgrades;     // Dictionary of the _upgrade prices
+        private int _id;                                        // Rarity id
+        private string _name;                                   // Rarity name
+        private Color _color;                                   // Rarity color
+        private int _dropChance;                                // Rarity drop chance
+
+        // REQUEST VARIABLE
         private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
         private List<string> _columns;                          // Columns searched in the request
+        #endregion
 
+        #region Getter Setter
+        /// <summary>
+        /// Public main controller
+        /// </summary>
         public MainController MainController
         {
             get
@@ -35,6 +45,9 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public login signin controller
+        /// </summary>
         public LoginSignInController LoginSignInController
         {
             get
@@ -47,6 +60,9 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public dictionary of upgrade prices
+        /// </summary>
         public Dictionary<int, Tuple<int, int>> Upgrades
         {
             get
@@ -59,6 +75,9 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public rarity name
+        /// </summary>
         public string Name
         {
             get
@@ -67,6 +86,9 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public rarity color
+        /// </summary>
         public Color color
         {
             get
@@ -75,6 +97,9 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public rarity drop chance
+        /// </summary>
         public int DropChance
         {
             get
@@ -83,12 +108,17 @@ namespace P_Demomot.Models.Utils
             }
         }
 
+        /// <summary>
+        /// Public rarity Id
+        /// </summary>
         public int Id
         {
             get { return _id; }
             set { _id = value; }
         }
+        #endregion
 
+        #region Constructors
         /// <summary>
         /// Basic class constructor
         /// </summary>
@@ -115,7 +145,9 @@ namespace P_Demomot.Models.Utils
             _color = color;
             _dropChance = dropChance;
         }
+        #endregion
 
+        #region Methods
         /// <summary>
         /// Get all the rarity of the DB
         /// </summary>
@@ -186,5 +218,6 @@ namespace P_Demomot.Models.Utils
         {
             return null;
         }
+        #endregion
     }
 }

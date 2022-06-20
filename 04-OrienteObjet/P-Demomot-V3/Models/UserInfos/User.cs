@@ -14,11 +14,13 @@ namespace P_Demomot.Models.UserInfos
 {
     public class User
     {
+        #region Variables 
+        // CONTROLLERS
         private LoginSignInController _loginSignInController;   // Login signin controller
         private MainController _mainController;                 // Main controller
         private InventoryController _inventoryController;       // Inventory controller
 
-        #region Variables 
+        // CLASS VARIABLES
         private int _id;                                        // User ID
         private string _nickname;                               // User nickname
         private string _role;                                   // User role
@@ -28,6 +30,7 @@ namespace P_Demomot.Models.UserInfos
         private List<Tank> _tankList;                           // User tank list
         private Dictionary<Rarity, List<Chest>> _chests;        // User chest list
 
+        // REQUEST VARIABLES
         private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
         private List<string> _columns;                          // Columns searched in the request
         #endregion
@@ -177,7 +180,8 @@ namespace P_Demomot.Models.UserInfos
         /// </summary>
         public User()
         {
-
+            _chests = new Dictionary<Rarity, List<Chest>>();
+            _fighterList = new List<Fighter>();
         }
 
         /// <summary>

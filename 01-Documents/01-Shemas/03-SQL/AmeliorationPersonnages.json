@@ -36,6 +36,10 @@
             "castle" :
             [
                 "life"
+            ],
+            "blocked" :
+            [
+                "damages"
             ]
 
         },
@@ -66,20 +70,33 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Power1Name",
+                    "Power2" : "Power2Name"
+                },
                 "Power1" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "0",
+                    "nbLoadTurns" : "0",
                     "levelOne" : "capacity=0",
                     "levelTwo" : "capacity=0",
                     "levelThree" : "capacity=0"
                 },
                 "Power2" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "0",
+                    "nbLoadTurns" : "0",
                     "levelOne" : "category:capacity=0",
                     "levelTwo" : "category:capacity=0",
                     "levelThree" : "category:capacity=0"
                 },
                 "Ultime" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "0",
                     "levelOne" : "capacity=0",
                     "levelTwo" : "capacity=0",
                     "levelThree" : "capacity=0"
@@ -97,14 +114,25 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Punch",
+                    "Power2" : "Kick"
+                },
                 "Punch" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=12",
                     "levelTwo" : "damages=15",
                     "levelThree" : "damages=20"
                 },
                 "Kick" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "2",
                     "levelOne" : "damages=14",
                     "levelTwo" : "damages=16",
                     "levelThree" : "damages=21"
@@ -122,20 +150,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Hit",
+                    "Power2" : "Shoot",
+                    "Power3" : "USnipe"
+                },
                 "Hit" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=5",
                     "levelTwo" : "damages=10",
                     "levelThree" : "damages=16"
                 },
                 "Shoot" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "2",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=20",
                     "levelThree" : "damages=23"
                 },
                 "USnipe" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "damages=25",
                     "levelTwo" : "damages=30",
                     "levelThree" : "damages=35"
@@ -153,23 +197,39 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Trap",
+                    "Power2" : "Slap",
+                    "Power3" : "UTrapped"
+                },
                 "Trap" :
                 {
-                    "levelOne" : "damages=0",
-                    "levelTwo" : "damages=2",
-                    "levelThree" : "damages=5"
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "nbLoadTurns" : "3",
+                    "levelOne" : "blocked:damages=0",
+                    "levelTwo" : "blocked:damages=2",
+                    "levelThree" : "blocked:damages=5"
                 },
                 "Slap" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=9",
                     "levelTwo" : "damages=13",
                     "levelThree" : "damages=17"
                 },
                 "UTrapped" :
                 {
-                    "levelOne" : "damages=10",
-                    "levelTwo" : "damages=13",
-                    "levelThree" : "damages=16"
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "25",
+                    "levelOne" : "blocked:damages=10",
+                    "levelTwo" : "blocked:damages=13",
+                    "levelThree" : "blocked:damages=16"
                 }
             }
         },
@@ -184,20 +244,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Arrow",
+                    "Power2" : "FireArrow",
+                    "Power3" : "USleepyArrow"
+                },
                 "Arrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=20",
                     "levelThree" : "damages=30"
                 },
                 "FireArrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=5",
                     "levelTwo" : "damages=9",
                     "levelThree" : "damages=13"
                 },
                 "USleepyArrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "20",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "damages=4",
                     "levelTwo" : "damages=10",
                     "levelThree" : "damages=15"
@@ -215,20 +291,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "SwordHit",
+                    "Power2" : "OverHealed",
+                    "Power3" : "UShield"
+                },
                 "SwordHit" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=3",
                     "levelTwo" : "damages=6",
                     "levelThree" : "damages=10"
                 },
                 "OverHealed" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "4",
                     "levelOne" : "overHeal=10",
                     "levelTwo" : "overHeal=15",
                     "levelThree" : "overHeal=20"
                 },
                 "UShield" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "shield=20",
                     "levelTwo" : "shield=35",
                     "levelThree" : "shield=50"
@@ -246,20 +338,37 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    
+                    "Power1" : "Laser",
+                    "Power2" : "Heal",
+                    "Power3" : "UResurection"
+                },
                 "Laser" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=5",
                     "levelTwo" : "damages=10",
                     "levelThree" : "damages=13"
                 },
                 "Heal" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "heal=15",
                     "levelTwo" : "heal=20",
                     "levelThree" : "heal=30"
                 },
                 "UResurection" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "15",
                     "levelOne" : "resurection:maxLife=/3",
                     "levelTwo" : "resurection:maxLife=/2",
                     "levelThree" : "resurection:maxLife=/1"
@@ -277,23 +386,39 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "SpeedCharge",
+                    "Power2" : "Tank",
+                    "Power3" : "Punch"
+                },
                 "Charge" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=10",
                     "levelTwo" : "damages=18",
                     "levelThree" : "damages=25"
                 },
                 "Boost" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "3",
+                    "nbLoadTurns" : "5",
                     "levelOne" : "dmgBoost=5",
                     "levelTwo" : "dmgBoost=8",
                     "levelThree" : "dmgBoost=15"
                 },
                 "UImpale" :
                 {
-                    "levelOne" : "damages=25",
-                    "levelTwo" : "damages=40",
-                    "levelThree" : "damages=60"
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "5",
+                    "percentageUpPerKill" : "15",
+                    "levelOne" : "blocked:damages=25",
+                    "levelTwo" : "blocked:damages=40",
+                    "levelThree" : "blocked:damages=60"
                 }
             }
         },
@@ -308,20 +433,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "SpeedCharge",
+                    "Power2" : "Tank",
+                    "Power3" : "UConcentration"
+                },
                 "SpeedCharge" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=4",
                     "levelTwo" : "damages=8",
                     "levelThree" : "damages=12"
                 },
                 "Tank" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "nbLoadTurns" : "7",
                     "levelOne" : "dmgReduction=/2",
                     "levelTwo" : "dmgReduction=/3",
                     "levelThree" : "dmgReduction=/4"
                 },
                 "UConcentration" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "thorns=5",
                     "levelTwo" : "thorns=10",
                     "levelThree" : "thorns=18"
@@ -339,20 +480,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "BearSlap",
+                    "Power2" : "Bleeding",
+                    "Power3" : "UBearRage"
+                },
                 "BearSlap" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=10",
                     "levelTwo" : "damages=14",
                     "levelThree" : "damages=21"
                 },
                 "Bleeding" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "nbLoadTurns" : "5",
                     "levelOne" : "damages=4",
                     "levelTwo" : "damages=7",
                     "levelThree" : "damages=9"
                 },
                 "UBearRage" :
-                {
+                { 
+                    "nbTargets" : "0",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "dmgBoost=10",
                     "levelTwo" : "dmgBoost=16",
                     "levelThree" : "dmgBoost=23"
@@ -370,23 +527,39 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Fire",
+                    "Power2" : "Purify",
+                    "Power3" : "UFREEZE"
+                },
                 "Fire" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=5",
                     "levelTwo" : "damages=9",
                     "levelThree" : "damages=12"
                 },
                 "Purify" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "5",
                     "levelOne" : "heal=15",
                     "levelTwo" : "heal=25",
                     "levelThree" : "heal=30"
                 },
                 "UFREEZE" :
                 {
-                    "levelOne" : "damages=3",
-                    "levelTwo" : "damages=5",
-                    "levelThree" : "damages=8"
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "30",
+                    "levelOne" : "blocked:damages=3",
+                    "levelTwo" : "blocked:damages=5",
+                    "levelThree" : "blocked:damages=8"
                 }
             }
         },
@@ -401,23 +574,39 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "HelpingHand",
+                    "Power2" : "Regeneration",
+                    "Power3" : "UArmLaunch"
+                },
                 "HelpingHand" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=25",
                     "levelThree" : "damages=30"
                 },
                 "Regeneration" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "4",
                     "levelOne" : "selfHeal=5",
                     "levelTwo" : "selfHeal=9",
                     "levelThree" : "selfHeal=14"
                 },
                 "UArmLaunch" :
                 {
-                    "levelOne" : "damages=15",
-                    "levelTwo" : "damages=20",
-                    "levelThree" : "damages=30"
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "20",
+                    "percentageUpPerKill" : "35",
+                    "levelOne" : "damages=20",
+                    "levelTwo" : "damages=30",
+                    "levelThree" : "damages=35"
                 }
             }
         },
@@ -432,20 +621,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Target",
+                    "Power2" : "Interception",
+                    "Power3" : "UPoison"
+                },
                 "Target" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "2",
+                    "nbLoadTurns" : "4",
                     "levelOne" : "thorns:damages=5",
                     "levelTwo" : "thorns:damages=14",
                     "levelThree" : "thorns:damages=20"
                 },
                 "Interception" :
                 {
-                    "levelOne" : "damages=5",
-                    "levelTwo" : "damages=10",
-                    "levelThree" : "damages=20"
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "nbLoadTurns" : "2",
+                    "levelOne" : "blocked:damages=5",
+                    "levelTwo" : "blocked:damages=10",
+                    "levelThree" : "blocked:damages=20"
                 },
                 "Upoison" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "damages=7",
                     "levelTwo" : "damages=12",
                     "levelThree" : "damages=15"
@@ -463,20 +668,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "PowerShoot",
+                    "Power2" : "SpeedShoot",
+                    "Power3" : "UPoisonBullet"
+                },
                 "PowerShoot" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=25",
                     "levelThree" : "damages=35"
                 },
                 "SpeedShoot" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=10",
                     "levelTwo" : "damages=15",
                     "levelThree" : "damages=20"
                 },
                 "UPoisonBullet" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "damages=12",
                     "levelTwo" : "damages=16",
                     "levelThree" : "damages=22"
@@ -494,20 +715,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "JavelinThrow",
+                    "Power2" : "JavelinHit",
+                    "Power3" : "UDeflect"
+                },
                 "JavelinThrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=10",
                     "levelTwo" : "damages=15",
                     "levelThree" : "damages=25"
                 },
                 "JavelinHit" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=20",
                     "levelTwo" : "damages=25",
                     "levelThree" : "damages=35"
                 },
                 "UDeflect" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "25",
                     "levelOne" : "deflect:damages=8",
                     "levelTwo" : "deflect:damages=12",
                     "levelThree" : "deflect:damages=17"
@@ -525,20 +762,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "RockThrow",
+                    "Power2" : "RocketLauncher",
+                    "Power3" : "UBleedingDizziness"
+                },
                 "RockThrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=25",
                     "levelThree" : "damages=30"
                 },
                 "RocketLauncher" :
                 {
+                    "nbTargets" : "2",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=12",
                     "levelTwo" : "damages=23",
                     "levelThree" : "damages=35"
                 },
                 "UBleedingDizziness" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "damages=9",
                     "levelTwo" : "damages=17",
                     "levelThree" : "damages=26"
@@ -556,20 +809,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "AxeBlow",
+                    "Power2" : "powerAxe",
+                    "Power3" : "UDebuff"
+                },
                 "AxeBlow" :
                 {
-                    "levelOne" : "damages=38",
-                    "levelTwo" : "damages=317",
-                    "levelThree" : "damages=324"
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
+                    "levelOne" : "damages=8",
+                    "levelTwo" : "damages=17",
+                    "levelThree" : "damages=24"
                 },
                 "PowerAxe" :
                 {
-                    "levelOne" : "damages=310-17",
-                    "levelTwo" : "damages=315-26",
-                    "levelThree" : "damages=323-34"
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
+                    "levelOne" : "damages=10-17",
+                    "levelTwo" : "damages=15-26",
+                    "levelThree" : "damages=23-34"
                 },
                 "UDebuff" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "debuff:attackDmg=-5",
                     "levelTwo" : "debuff:attackDmg=-9",
                     "levelThree" : "debuff:attackDmg=-14"
@@ -587,20 +856,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "PoisonCloud",
+                    "Power2" : "Infection",
+                    "Power3" : "USbireInvoke"
+                },
                 "PoisonCloud" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=5",
                     "levelTwo" : "damages=10",
                     "levelThree" : "damages=18"
                 },
                 "Infection" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "2",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=25",
                     "levelThree" : "damages=30"
                 },
                 "USbireInvoke" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "5",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "15",
                     "levelOne" : "sbires:damages=3,life=5",
                     "levelTwo" : "sbires:damages=6,life=8",
                     "levelThree" : "sbires:damages=10,life=12"
@@ -618,20 +903,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "Cannonball",
+                    "Power2" : "ExplosiveCannonBall",
+                    "Power3" : "UDoubleShot"
+                },
                 "Cannonball" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=8",
                     "levelTwo" : "damages=16",
                     "levelThree" : "damages=24"
                 },
                 "ExplosiveCannonBall" :
                 {
+                    "nbTargets" : "2",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "3",
                     "levelOne" : "damages=4",
                     "levelTwo" : "damages=8",
                     "levelThree" : "damages=12"
                 },
                 "UDoubleShot" :
                 {
+                    "nbTargets" : "2",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "15",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "doubleShot:damages=10-15",
                     "levelTwo" : "doubleShot:damages=20-25",
                     "levelThree" : "doubleShot:damages=30-35"
@@ -649,20 +950,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "BombThrow",
+                    "Power2" : "Fortification",
+                    "Power3" : "UDamagesBoost"
+                },
                 "BombThrow" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=12",
                     "levelTwo" : "damages=15",
                     "levelThree" : "damages=21"
                 },
                 "Fortification" :
                 {
+                    "nbTargets" : "0",
+                    "nbTurns" : "0",
+                    "nbLoadTurns" : "4",
                     "levelOne" : "shield=10",
                     "levelTwo" : "shield=15",
                     "levelThree" : "shield=25"
                 },
                 "UDamageBoost" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "percentageUpPerHit" : "20",
+                    "percentageUpPerKill" : "30",
                     "levelOne" : "dmgBoost=6",
                     "levelTwo" : "dmgBoost=9",
                     "levelThree" : "dmgBoost=13"
@@ -680,20 +997,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "FireSpit",
+                    "Power2" : "Grab",
+                    "Power3" : "UEat"
+                },
                 "FireSpit" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=15",
                     "levelTwo" : "damages=23",
                     "levelThree" : "damages=35"
                 },
                 "Grab" :
                 {
-                    "levelOne" : "damages=8",
-                    "levelTwo" : "damages=13",
-                    "levelThree" : "damages=22"
+                    "nbTargets" : "1",
+                    "nbTurns" : "3",
+                    "nbLoadTurns" : "6",
+                    "levelOne" : "blocked:damages=8",
+                    "levelTwo" : "blocked:damages=13",
+                    "levelThree" : "blocked:damages=22"
                 },
                 "UEat" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "20",
                     "levelOne" : "damages=5;enemyBoost=15%",
                     "levelTwo" : "damages=10;enemyBoost=25%;",
                     "levelThree" : "damages=16;enemyBoost=35%;"
@@ -711,20 +1044,36 @@
             },
             "Powers" :
             {
+                "names" :
+                {
+                    "Power1" : "UltimateSword",
+                    "Power2" : "LightningPower",
+                    "Power3" : "UCombo"
+                },
                 "UltimateSword" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=7",
                     "levelTwo" : "damages=12",
                     "levelThree" : "damages=15"
                 },
                 "LightningPower" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "5",
                     "levelOne" : "damages=14;selfHeal=7",
                     "levelTwo" : "damages=24;selfHeal=12",
                     "levelThree" : "damages=32;selfHeal=16"
                 },
                 "UCombo" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "10",
+                    "percentageUpPerKill" : "15",
                     "levelOne" : "combo:damages=10,allyDamages=35%",
                     "levelTwo" : "combo:damages=15,allyDamages=50%",
                     "levelThree" : "combo:damages=22,allyDamages=65%"
@@ -742,20 +1091,36 @@
             },
             "Powers" :
             {
-                "SwordHit" :
+                "names" :
                 {
+                    "Power1" : "SuperSwordHit",
+                    "Power2" : "SuperStrike",
+                    "Power3" : "UCastle"
+                },
+                "SuperSwordHit" :
+                {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=6",
                     "levelTwo" : "damages=13",
                     "levelThree" : "damages=17"
                 },
                 "SuperStrike" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "nbLoadTurns" : "1",
                     "levelOne" : "damages=8",
                     "levelTwo" : "damages=16",
                     "levelThree" : "damages=25"
                 },
                 "UCastle" :
                 {
+                    "nbTargets" : "1",
+                    "nbTurns" : "1",
+                    "percentageUpPerHit" : "5",
+                    "percentageUpPerKill" : "15",
                     "levelOne" : "castle:life=25;sbires:damages=2",
                     "levelTwo" : "castle:life=33;sbires:damages=3",
                     "levelThree" : "castle:life=41;sbires:damages=4"

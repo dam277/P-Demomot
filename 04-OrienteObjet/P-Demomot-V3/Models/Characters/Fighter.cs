@@ -77,7 +77,6 @@ namespace P_Demomot.Models.Characters
         {
             _powers = new Dictionary<string, Power>();
         }
-
         #endregion
 
         #region Methods
@@ -90,8 +89,8 @@ namespace P_Demomot.Models.Characters
         /// <param name="idUser">User id</param>
         /// <param name="rarity">Rarity</param>
         /// <param name="chaLevel">Level of the character</param>
-        /// <returns></returns>
-        public void CreateFirstCharacter(Character character, string chaModel, int chaGame, int idUser, Rarity rarity , int chaLevel = 1)
+        /// <returns>Return the first character</returns>
+        public Character CreateFirstCharacter(Character character, string chaModel, int chaGame, int idUser, Rarity rarity , int chaLevel = 1)
         {
             // Get the life of the character
             string life = JToken.Parse(GetLifeOfCharacter(character.Name, chaLevel)).ToString();
@@ -127,8 +126,34 @@ namespace P_Demomot.Models.Characters
             _columns.Add("idRarity");
             _columns.Add("idUpgrade");
 
-            // 
+            // Execute query
             Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the fighter
+            return new Fighter(GetId(character.Name, idUser), chaModel, character.Name, chaLevel, rarity, Convert.ToInt32(life));
+        }
+
+        /// <summary>
+        /// Get the id of the character
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public int GetId(string name, int idUser)
+        {
+            // Request
+            string req = $"SELECT idCharacter FROM t_character WHERE chaName = @name AND idUser = @idUser";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@name", name);
+            _binds.Add("@idUser", idUser.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idCharacter");
+
+            // Get the datas by requesting the database
+            return Convert.ToInt32(Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns)[0][0]);
         }
 
         /// <summary>
@@ -195,7 +220,6 @@ namespace P_Demomot.Models.Characters
             _columns.Add("upgLife");
 
             // Get the datas by requesting the database
-
             List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
 
             // return the content
@@ -225,7 +249,6 @@ namespace P_Demomot.Models.Characters
             _columns.Add("usePermLevel");
             _columns.Add("idRank");
         }
-
 
         /// <summary>
         /// Add a power to the list
