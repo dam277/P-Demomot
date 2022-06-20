@@ -498,3 +498,8 @@ PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/User
 [Sun Jun 19 18:13:35.243289 2022] [mpm_winnt:notice] [pid 22876:tid 624] AH00418: Parent: Created child process 26036
 [Sun Jun 19 18:13:36.218233 2022] [ssl:warn] [pid 26036:tid 532] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Sun Jun 19 18:13:36.219230 2022] [ssl:warn] [pid 26036:tid 532] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Jun 19 18:13:36.401289 2022] [ssl:warn] [pid 26036:tid 532] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Sun Jun 19 18:13:36.401289 2022] [ssl:warn] [pid 26036:tid 532] AH01906: main-serveur:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Jun 19 18:13:36.401289 2022] [ssl:warn] [pid 26036:tid 532] AH01909: main-serveur:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\curl (Le module sp\xc3\xa9cifi\xc3\xa9 est introuvable), C:/Users/damis/Desktop/developpement/01-Github/01-Projets/P-Demomot/00-Database/bin/php/php-8.0.1/ext\\php_curl.dll (La proc\xc3\xa9dure sp\xc3\xa9cifi\xc3\xa9e est introuvable)) in Unknown on line 0
+[Sun Jun 19 18:13:36.441180 2022] [mpm_winnt:notice] [pid 26036:tid 532] AH00354: Child: Starting 64 worker threads.
