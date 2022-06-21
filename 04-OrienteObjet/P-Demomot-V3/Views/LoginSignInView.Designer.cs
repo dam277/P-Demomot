@@ -242,6 +242,7 @@
             this.Name = "LoginSignInView";
             this.Text = "Inscription - Connexion";
             this.Load += new System.EventHandler(this.LoginSignInView_Load);
+            this.VisibleChanged += new System.EventHandler(this.LoginSignInView_VisibleChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

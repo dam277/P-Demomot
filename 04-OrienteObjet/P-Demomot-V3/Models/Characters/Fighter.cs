@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json.Linq;
+using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Databases;
 using P_Demomot.Models.Utils;
 
@@ -14,6 +15,7 @@ namespace P_Demomot.Models.Characters
     public class Fighter : Character
     {
         #region Variables
+        private InventoryController _inventoryController;   // Inventory controller
         private Dictionary<string, Power> _powers;          // Powers of a fighter
         #endregion
 
@@ -41,6 +43,25 @@ namespace P_Demomot.Models.Characters
             get
             {
                 return _fightersList;
+            }
+            set
+            {
+                _fightersList = value;
+            }
+        }
+
+        /// <summary>
+        /// Public list of fighters
+        /// </summary>
+        public InventoryController InventoryController
+        {
+            get
+            {
+                return _inventoryController;
+            }
+            set
+            {
+                _inventoryController = value;
             }
         }
         #endregion
@@ -248,6 +269,52 @@ namespace P_Demomot.Models.Characters
             _columns.Add("useEntryDate");
             _columns.Add("usePermLevel");
             _columns.Add("idRank");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<Fighter> GetUserFighters(int idUser)
+        {
+            // Request
+            string req = $"SELECT * FROM t_character WHERE idUser = @idUser";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idUser", idUser.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idCharacter");
+            _columns.Add("chaName");
+            _columns.Add("chaModel");
+            _columns.Add("chaLevel");
+            _columns.Add("chaLife");
+            _columns.Add("chaGame");
+            _columns.Add("idUser");
+            _columns.Add("idRarity");
+            _columns.Add("idUpgrade");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            //Create the characters
+            List<Fighter> fighters = new List<Fighter>();
+            for (int i = 0; i < datas[0].Count(); i++)
+            {
+                Fighter character = new Fighter(Convert.ToInt32(datas[0][i]), datas[2][i], datas[1][i], Convert.ToInt32(datas[3][i]), new Rarity(), Convert.ToInt32(datas[4][i]));
+                //Get his powers
+                List<Power> powers = _loginSignInController.GetPowers(character.IdCharacter);
+                foreach(Power power in powers)
+                {
+                    character.AddPower(power);
+                }
+
+                fighters.Add(character);
+            }
+
+            return fighters;
         }
 
         /// <summary>

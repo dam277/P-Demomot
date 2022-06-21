@@ -140,8 +140,10 @@ namespace P_Demomot.Controllers
         /// <param name="action">Action of the operation (view to open)</param>
         public void ShowView(Action action, IView view)
         {
+            // Close the actual view
             view.CloseView();
 
+            // Show the new view
             switch(action)
             {
                 case Action.CHESTS:

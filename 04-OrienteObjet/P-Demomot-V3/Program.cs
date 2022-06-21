@@ -66,11 +66,11 @@ namespace P_Demomot
             GameTypeController gameTypeController = new GameTypeController();
             PlayController playController = new PlayController();
 
-            MainMenuController mainMenu = new MainMenuController();
+            MainMenuController mainMenu = new MainMenuController(mainMenuView, user);
             OptionsController options = new OptionsController();
 
-            ChestsController chestsController = new ChestsController();
-            InventoryController inventoryController = new InventoryController();
+            ChestsController chestsController = new ChestsController(chestsView, chest);
+            InventoryController inventoryController = new InventoryController(inventoryView, user, fighter);
             LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user, rank, fighter, rarity, power);
 
             // Set the main controller

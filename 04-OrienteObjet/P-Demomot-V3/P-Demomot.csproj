@@ -244,12 +244,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\magicChest.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sans titre 1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\whiteFlag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oldChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reinforcedChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\royalChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamondChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextChest.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

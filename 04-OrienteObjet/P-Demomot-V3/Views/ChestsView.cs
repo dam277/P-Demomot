@@ -1,4 +1,7 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.UserProperties;
+using P_Demomot.Models.UserInfos;
+using P_Demomot.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +17,9 @@ namespace P_Demomot.Views
     public partial class ChestsView : Form, IView
     {
         private MainController _mainController;         // Main controller
+        private ChestsController _chestController;         //chest controller
+        private List<Chest> _chests;
+        private List<Resources> _resources;
 
         /// <summary>
         /// Public main controller
@@ -22,6 +28,15 @@ namespace P_Demomot.Views
         {
             get { return _mainController; }
             set { _mainController = value; }
+        }
+
+        /// <summary>
+        /// Public main controller
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get { return _chestController; }
+            set { _chestController = value; }
         }
 
         /// <summary>
@@ -39,7 +54,9 @@ namespace P_Demomot.Views
         /// <param name="e"></param>
         private void ChestsView_Load(object sender, EventArgs e)
         {
-
+            _resources = new List<Resources>();
+            //_resources.Add()
+            //_chests = _chestController.GetAllChests();
         }
 
         /// <summary>
@@ -48,6 +65,44 @@ namespace P_Demomot.Views
         public void CloseView()
         {
             this.Hide();
+        }
+
+        private void pnlChest2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pctNext_Click(object sender, EventArgs e)
+        {
+            
+            Chest lastChest = _chests[_chests.Count() - 1];
+
+            for(int i = _chests.Count() - 1; i >= 0; i--)
+            {
+                if(i > 0)
+                {
+                    _chests[i] = _chests[i - 1];
+                }
+                else
+                {
+                    _chests[i] = lastChest;
+                }
+            }
+        }
+
+        private void pctBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Show main menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

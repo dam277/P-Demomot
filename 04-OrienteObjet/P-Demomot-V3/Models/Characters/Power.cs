@@ -430,6 +430,56 @@ namespace P_Demomot.Models.Characters
 
             return powersName;
         }
+
+        /// <summary>
+        /// Get the powers of a character
+        /// </summary>
+        /// <returns></returns>
+        public List<Power> GetPowers(int idCharacter)
+        {
+            // Request
+            string req = $"SELECT * FROM t_power WHERE idCharacter = @idCharacter";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idCharacter", idCharacter.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idPower");
+            _columns.Add("powName");
+            _columns.Add("powDescription");
+            _columns.Add("powCapacity");
+            _columns.Add("powLoadTurns");
+            _columns.Add("powNbTurns");
+            _columns.Add("powPercentageUpPerHit");
+            _columns.Add("powPercentageUpPerKill");
+            _columns.Add("powIsUltime");
+            _columns.Add("powNbTargets");
+            _columns.Add("idCharacter");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Get the datas
+            List<Power> powers = new List<Power>();
+            for (int i = 0; i < datas[0].Count(); i++)
+            {
+                // Set ultime or power
+                if (datas[8][i] == "0")
+                {
+                    Power power = new Power(datas[1][i], datas[2][i], datas[3][i], Convert.ToInt32(datas[4][i]), Convert.ToInt32(datas[5][i]), Convert.ToInt32(datas[9][i]));
+                    powers.Add(power);
+                }
+                else
+                {
+                    Power ultime = new Power(datas[1][i], datas[2][i], datas[3][i], Convert.ToInt32(datas[6][i]), Convert.ToInt32(datas[7][i]), Convert.ToInt32(datas[5][i]), Convert.ToInt32(datas[9][i]));
+                    powers.Add(ultime);
+                }
+            }
+
+            return powers;
+        }
         #endregion
     }
 }

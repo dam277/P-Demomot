@@ -37,6 +37,7 @@
             this.btnFt = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.pnlInventory = new System.Windows.Forms.Panel();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.pnlGameChoice.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,15 +135,31 @@
             this.pnlInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.pnlInventory.Location = new System.Drawing.Point(21, 116);
             this.pnlInventory.Name = "pnlInventory";
-            this.pnlInventory.Size = new System.Drawing.Size(943, 548);
+            this.pnlInventory.Size = new System.Drawing.Size(943, 738);
             this.pnlInventory.TabIndex = 19;
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(46)))), ((int)(((byte)(165)))));
+            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.Color.White;
+            this.btnReturn.Location = new System.Drawing.Point(843, 12);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(115, 36);
+            this.btnReturn.TabIndex = 20;
+            this.btnReturn.Text = "Retour";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // InventoryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ClientSize = new System.Drawing.Size(984, 866);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.pnlInventory);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.pnlGameChoice);
@@ -152,6 +169,7 @@
             this.Controls.Add(this.lblGold);
             this.Name = "InventoryView";
             this.Text = "Inventaire";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InventoryView_FormClosed);
             this.Load += new System.EventHandler(this.InventoryView_Load);
             this.pnlGameChoice.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -170,5 +188,6 @@
         private System.Windows.Forms.Button btnFt;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel pnlInventory;
+        private System.Windows.Forms.Button btnReturn;
     }
 }
