@@ -94,6 +94,6 @@ class __TwigTemplate_a9fdeaed836b949dde6dbe53270d4db50e87852622ee07e6449b132ae94
 
     public function getSourceContext()
     {
-        return new Source("", "display/results/table_navigation_button.twig", "C:\\Users\\damis\\Desktop\\UwAmp\\phpapps\\phpmyadmin\\templates\\display\\results\\table_navigation_button.twig");
+        return new Source("", "display/results/table_navigation_button.twig", "C:\\Users\\damis\\Desktop\\developpement\\01-Github\\01-Projets\\P-Demomot\\00-Database\\phpapps\\phpmyadmin\\templates\\display\\results\\table_navigation_button.twig");
     }
 }

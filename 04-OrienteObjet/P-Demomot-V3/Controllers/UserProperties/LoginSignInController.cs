@@ -99,11 +99,16 @@ namespace P_Demomot.Controllers.UserProperties
         }
         #endregion
 
+
         /// <summary>
         /// Class constructor
         /// </summary>
-        /// <param name="signInView"></param>
-        /// <param name="user"></param>
+        /// <param name="signInView">Signin view</param>
+        /// <param name="user">User model</param>
+        /// <param name="rank">Rank model</param>
+        /// <param name="fighter">fighter model</param>
+        /// <param name="rarity">Rarity model</param>
+        /// <param name="power">Power model</param>
         public LoginSignInController(LoginSignInView signInView, User user, Rank rank, Fighter fighter, Rarity rarity, Power power)
         {
             _signInView = signInView;
@@ -118,6 +123,24 @@ namespace P_Demomot.Controllers.UserProperties
             _fighter.LoginSignInController = this;
             _rarity.LoginSignInController = this;
             _power.loginSignInController = this;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<Fighter> GetCharactersOfUser()
+        {
+            return _fighter.GetUserFighters(_user.Id);
+        }
+
+        /// <summary>
+        /// Get the powers
+        /// </summary>
+        /// <returns>Return the powers</returns>
+        public List<Power> GetPowers(int idCharacter)
+        {
+            return _power.GetPowers(idCharacter);
         }
 
         /// <summary>
@@ -180,11 +203,21 @@ namespace P_Demomot.Controllers.UserProperties
         /// <summary>
         /// Get the rank by points for the start
         /// </summary>
-        /// <param name="points"></param>
-        /// <returns></returns>
+        /// <param name="points">Rank points</param>
+        /// <returns>Return a rank</returns>
         public Rank GetRank(int points)
         {
             return _rank.GetRankByPoints(points);
+        }
+
+        /// <summary>
+        /// Get the rank by his Id
+        /// </summary>
+        /// <param name="rankId">Rank id</param>
+        /// <returns>Return a rank</returns>
+        public Rank GetRankById(int rankId)
+        {
+            return _rank.GetRankByID(rankId);
         }
 
         /// <summary>
@@ -223,6 +256,9 @@ namespace P_Demomot.Controllers.UserProperties
         /// </summary>
         public void CreateAllCharacters()
         {
+            //reset the list
+            _fighter.FightersList = new List<Fighter>();
+
             #region Creation of rarities
             // Create the rarities
             List<Rarity> rarities = _rarity.GetAllRarity();

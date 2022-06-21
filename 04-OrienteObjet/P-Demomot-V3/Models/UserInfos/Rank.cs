@@ -97,7 +97,7 @@ namespace P_Demomot.Models.UserInfos
         /// Get a rank with his points
         /// </summary>
         /// <param name="points">rank points</param>
-        /// <returns></returns>
+        /// <returns>Return a rank</returns>
         public Rank GetRankByPoints(int points)
         {
             // Request
@@ -106,6 +106,33 @@ namespace P_Demomot.Models.UserInfos
             //Binds
             _binds = new Dictionary<string, string>();
             _binds.Add("@points", points.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idRank");
+            _columns.Add("ranName");
+            _columns.Add("ranPoints");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the rank
+            return new Rank(Convert.ToInt32(datas[2][0]), datas[1][0], Convert.ToInt32(datas[0][0]));
+        }
+
+        /// <summary>
+        /// Get the rank by the rankId
+        /// </summary>
+        /// <param name="idRank">RankId</param>
+        /// <returns>Return a rank</returns>
+        public Rank GetRankByID(int idRank)
+        {
+            // Request
+            string req = $"SELECT * FROM t_rank WHERE idRank = @idRank";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idRank", idRank.ToString());
 
             //Columns name
             _columns = new List<string>();

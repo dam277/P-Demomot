@@ -31,12 +31,12 @@
             this.pnlInformations = new System.Windows.Forms.Panel();
             this.pnlGrade = new System.Windows.Forms.Panel();
             this.lblGradePoints = new System.Windows.Forms.Label();
+            this.lblGradeName = new System.Windows.Forms.Label();
             this.pnlGradeInformations = new System.Windows.Forms.Panel();
             this.btnGradeTb = new System.Windows.Forms.Button();
             this.btnGradeFt = new System.Windows.Forms.Button();
             this.lblGrade = new System.Windows.Forms.Label();
             this.btnDeconnection = new System.Windows.Forms.Button();
-            this.btnModifyAccount = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblNickname = new System.Windows.Forms.Label();
@@ -44,8 +44,8 @@
             this.lblInformations = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnChests = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
-            this.btnOptions = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -62,7 +62,6 @@
             this.pnlInformations.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlInformations.Controls.Add(this.pnlGrade);
             this.pnlInformations.Controls.Add(this.btnDeconnection);
-            this.pnlInformations.Controls.Add(this.btnModifyAccount);
             this.pnlInformations.Controls.Add(this.btnInventory);
             this.pnlInformations.Controls.Add(this.lblLevel);
             this.pnlInformations.Controls.Add(this.lblNickname);
@@ -78,11 +77,12 @@
             // 
             this.pnlGrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(46)))), ((int)(((byte)(165)))));
             this.pnlGrade.Controls.Add(this.lblGradePoints);
+            this.pnlGrade.Controls.Add(this.lblGradeName);
             this.pnlGrade.Controls.Add(this.pnlGradeInformations);
             this.pnlGrade.Controls.Add(this.btnGradeTb);
             this.pnlGrade.Controls.Add(this.btnGradeFt);
             this.pnlGrade.Controls.Add(this.lblGrade);
-            this.pnlGrade.Location = new System.Drawing.Point(43, 262);
+            this.pnlGrade.Location = new System.Drawing.Point(43, 299);
             this.pnlGrade.Name = "pnlGrade";
             this.pnlGrade.Size = new System.Drawing.Size(235, 205);
             this.pnlGrade.TabIndex = 16;
@@ -92,18 +92,29 @@
             this.lblGradePoints.AutoSize = true;
             this.lblGradePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGradePoints.ForeColor = System.Drawing.Color.White;
-            this.lblGradePoints.Location = new System.Drawing.Point(5, 64);
+            this.lblGradePoints.Location = new System.Drawing.Point(4, 91);
             this.lblGradePoints.Name = "lblGradePoints";
             this.lblGradePoints.Size = new System.Drawing.Size(69, 20);
-            this.lblGradePoints.TabIndex = 17;
+            this.lblGradePoints.TabIndex = 20;
             this.lblGradePoints.Text = "Points :";
+            // 
+            // lblGradeName
+            // 
+            this.lblGradeName.AutoSize = true;
+            this.lblGradeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGradeName.ForeColor = System.Drawing.Color.White;
+            this.lblGradeName.Location = new System.Drawing.Point(5, 64);
+            this.lblGradeName.Name = "lblGradeName";
+            this.lblGradeName.Size = new System.Drawing.Size(69, 20);
+            this.lblGradeName.TabIndex = 17;
+            this.lblGradeName.Text = "Grade :";
             // 
             // pnlGradeInformations
             // 
             this.pnlGradeInformations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
-            this.pnlGradeInformations.Location = new System.Drawing.Point(8, 93);
+            this.pnlGradeInformations.Location = new System.Drawing.Point(8, 119);
             this.pnlGradeInformations.Name = "pnlGradeInformations";
-            this.pnlGradeInformations.Size = new System.Drawing.Size(218, 103);
+            this.pnlGradeInformations.Size = new System.Drawing.Size(218, 77);
             this.pnlGradeInformations.TabIndex = 19;
             // 
             // btnGradeTb
@@ -132,7 +143,7 @@
             this.btnGradeFt.Name = "btnGradeFt";
             this.btnGradeFt.Size = new System.Drawing.Size(51, 44);
             this.btnGradeFt.TabIndex = 17;
-            this.btnGradeFt.Text = "TB";
+            this.btnGradeFt.Text = "FT";
             this.btnGradeFt.UseVisualStyleBackColor = false;
             this.btnGradeFt.Click += new System.EventHandler(this.btnGradeFt_Click);
             // 
@@ -161,21 +172,6 @@
             this.btnDeconnection.Text = "Se déconnecter";
             this.btnDeconnection.UseVisualStyleBackColor = false;
             this.btnDeconnection.Click += new System.EventHandler(this.btnDeconnection_Click);
-            // 
-            // btnModifyAccount
-            // 
-            this.btnModifyAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(46)))), ((int)(((byte)(165)))));
-            this.btnModifyAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModifyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifyAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifyAccount.ForeColor = System.Drawing.Color.White;
-            this.btnModifyAccount.Location = new System.Drawing.Point(43, 486);
-            this.btnModifyAccount.Name = "btnModifyAccount";
-            this.btnModifyAccount.Size = new System.Drawing.Size(235, 56);
-            this.btnModifyAccount.TabIndex = 14;
-            this.btnModifyAccount.Text = "Modifier le compte";
-            this.btnModifyAccount.UseVisualStyleBackColor = false;
-            this.btnModifyAccount.Click += new System.EventHandler(this.btnModifyAccount_Click);
             // 
             // btnInventory
             // 
@@ -246,8 +242,8 @@
             // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.btnChests);
             this.pnlMenu.Controls.Add(this.btnQuit);
-            this.pnlMenu.Controls.Add(this.btnOptions);
             this.pnlMenu.Controls.Add(this.btnPlay);
             this.pnlMenu.Controls.Add(this.lblMenu);
             this.pnlMenu.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -255,6 +251,21 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(391, 669);
             this.pnlMenu.TabIndex = 2;
+            // 
+            // btnChests
+            // 
+            this.btnChests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(46)))), ((int)(((byte)(165)))));
+            this.btnChests.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChests.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChests.ForeColor = System.Drawing.Color.White;
+            this.btnChests.Location = new System.Drawing.Point(76, 225);
+            this.btnChests.Name = "btnChests";
+            this.btnChests.Size = new System.Drawing.Size(235, 56);
+            this.btnChests.TabIndex = 11;
+            this.btnChests.Text = "Coffres";
+            this.btnChests.UseVisualStyleBackColor = false;
+            this.btnChests.Click += new System.EventHandler(this.btnChests_Click);
             // 
             // btnQuit
             // 
@@ -270,21 +281,6 @@
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = false;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
-            // 
-            // btnOptions
-            // 
-            this.btnOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(46)))), ((int)(((byte)(165)))));
-            this.btnOptions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOptions.ForeColor = System.Drawing.Color.White;
-            this.btnOptions.Location = new System.Drawing.Point(76, 310);
-            this.btnOptions.Name = "btnOptions";
-            this.btnOptions.Size = new System.Drawing.Size(235, 56);
-            this.btnOptions.TabIndex = 9;
-            this.btnOptions.Text = "Options";
-            this.btnOptions.UseVisualStyleBackColor = false;
-            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // btnPlay
             // 
@@ -352,7 +348,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenuView";
             this.Text = "Menu Principal";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenuView_FormClosed);
             this.Load += new System.EventHandler(this.MainMenuView_Load);
             this.pnlInformations.ResumeLayout(false);
             this.pnlInformations.PerformLayout();
@@ -379,17 +374,17 @@
         private System.Windows.Forms.Label lblGold;
         private System.Windows.Forms.Label lblInformations;
         private System.Windows.Forms.Button btnQuit;
-        private System.Windows.Forms.Button btnOptions;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Panel pnlGrade;
-        private System.Windows.Forms.Label lblGradePoints;
+        private System.Windows.Forms.Label lblGradeName;
         private System.Windows.Forms.Panel pnlGradeInformations;
         private System.Windows.Forms.Button btnGradeTb;
         private System.Windows.Forms.Button btnGradeFt;
         private System.Windows.Forms.Label lblGrade;
         private System.Windows.Forms.Button btnDeconnection;
-        private System.Windows.Forms.Button btnModifyAccount;
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Label lblOtherInformations;
+        private System.Windows.Forms.Label lblGradePoints;
+        private System.Windows.Forms.Button btnChests;
     }
 }

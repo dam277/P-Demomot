@@ -1,4 +1,5 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.Menus;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Characters;
 using P_Demomot.Models.Databases;
@@ -18,7 +19,9 @@ namespace P_Demomot.Models.UserInfos
         // CONTROLLERS
         private LoginSignInController _loginSignInController;   // Login signin controller
         private MainController _mainController;                 // Main controller
+        private MainMenuController _mainMenuController;         // Main menu controller
         private InventoryController _inventoryController;       // Inventory controller
+        private ChestsController _chestsController;             // Chests controller
 
         // CLASS VARIABLES
         private int _id;                                        // User ID
@@ -36,6 +39,7 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Getter Setter
+        // CONTROLLERS
         /// <summary>
         /// public Main controller
         /// </summary>
@@ -60,6 +64,34 @@ namespace P_Demomot.Models.UserInfos
             set { _loginSignInController = value; }
         }
 
+        /// <summary>
+        /// Public main menu controller
+        /// </summary>
+        public MainMenuController MainMenuController
+        {
+            get { return _mainMenuController; }
+            set { _mainMenuController = value; }
+        }
+
+        /// <summary>
+        /// Public main menu controller
+        /// </summary>
+        public InventoryController InventoryController
+        {
+            get { return _inventoryController; }
+            set { _inventoryController = value; }
+        }
+
+        /// <summary>
+        /// Public chests controller
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get { return _chestsController; }
+            set { _chestsController = value; }
+        }
+
+        // CLASS VARIABLES
         /// <summary>
         /// Public User ID
         /// </summary>
@@ -236,11 +268,47 @@ namespace P_Demomot.Models.UserInfos
                     this._nickname = datas[1][i];
                     this._entryDate = Convert.ToDateTime(datas[3][i]);
                     this._role = (datas[4][i].ToString() == "1") ? "Membre" : "Administrateur";
+                    this.Rank = _loginSignInController.GetRankById(GetRankIdByUserId(this.Id));
+
+                    //Get the characters of the user
+                    List<Fighter> characters = _loginSignInController.GetCharactersOfUser();
+
+                    // Put the characters
+                    foreach(Fighter fighter in characters)
+                    {
+                        this._fighterList.Add(fighter);
+                    }
+                    
                     return true;
                 }
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Get the id of the user rank
+        /// </summary>
+        /// <param name="idUser">User id</param>
+        /// <returns>Return the id of the rank</returns>
+        public int GetRankIdByUserId(int idUser)
+        {
+            // Request
+            string req = $"SELECT idRank FROM t_user WHERE idUser = @idUser";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idUser", idUser.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idRank");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the rank id
+            return Convert.ToInt32(datas[0][0]);
         }
 
         /// <summary>

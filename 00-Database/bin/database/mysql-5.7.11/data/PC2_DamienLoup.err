@@ -1355,3 +1355,864 @@ Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
 2022-06-20T01:31:46.246014Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
 2022-06-20T01:31:56.269677Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
 2022-06-20T01:31:56.270673Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-20T20:45:59.990634Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-20T20:45:59.990634Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-20T20:45:59.990634Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-20T20:45:59.990634Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-20T20:45:59.990634Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-20T20:45:59.990634Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 9468 ...
+2022-06-20T20:46:00.035514Z 0 [ERROR] Can't open shared library 'C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-20T20:46:00.038506Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-20T20:46:00.040501Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-20T20:46:00.041498Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-20T20:46:00.041498Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-20T20:46:00.042495Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-20T20:46:00.044490Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-20T20:46:00.044490Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-20T20:46:00.122283Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-20T20:46:00.132255Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-20T20:46:00.226513Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-20T20:46:00.482585Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-20T20:46:00.483583Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-20T20:46:00.496722Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-20T20:46:00.506717Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-20T20:46:00.507715Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-20T20:46:00.509710Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-20T20:46:00.569861Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 3383443
+2022-06-20T20:46:00.571854Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-20T20:46:00.572851Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-20T20:46:00.591800Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220620 22:46:00
+2022-06-20T20:46:00.597296Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-20T20:46:00.600288Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-20T20:46:00.621672Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-20T20:46:00.625662Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-20T20:46:00.628653Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-20T20:46:00.633640Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-20T20:46:00.635636Z 0 [Note] IPv6 is available.
+2022-06-20T20:46:00.635636Z 0 [Note]   - '::' resolves to '::';
+2022-06-20T20:46:00.636633Z 0 [Note] Server socket created on IP: '::'.
+2022-06-20T20:46:00.645120Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:00.648131Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-20T20:46:00.724029Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-20T20:46:00.733007Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:00.735002Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-20T20:46:00.787017Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:00.790009Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-20T20:46:01.755981Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-20T20:46:01.756978Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-20T20:46:17.522946Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__relation from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.528930Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.533917Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_coords from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.540407Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.545393Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__history from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.551887Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__recent from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.557871Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__favorite from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.563855Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_uiprefs from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.570765Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__tracking from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.576749Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__userconfig from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.583733Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__bookmark from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.590712Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__users from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.597230Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__navigationhiding from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.602216Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__savedsearches from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.609393Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__central_columns from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.615690Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__designer_settings from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:17.621206Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__export_templates from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:46:22.675610Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.676610Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.688578Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.688578Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.696557Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.697559Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.706149Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.706149Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.714643Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.715642Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.721627Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.722625Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.730522Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.731520Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.738501Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.738501Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.746479Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.746479Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.753460Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.754458Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:22.762437Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:46:22.762437Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:46:35.826255Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Normal shutdown
+
+2022-06-20T20:46:35.828251Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2022-06-20T20:46:35.828251Z 0 [Note] Shutting down slave threads
+2022-06-20T20:46:35.829250Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2022-06-20T20:46:35.829250Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-06-20T20:46:35.830247Z 0 [Note] Binlog end
+2022-06-20T20:46:35.831244Z 0 [Note] Shutting down plugin 'ngram'
+2022-06-20T20:46:35.832241Z 0 [Note] Shutting down plugin 'partition'
+2022-06-20T20:46:35.832241Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2022-06-20T20:46:35.832241Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2022-06-20T20:46:35.833237Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-06-20T20:46:35.833237Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-06-20T20:46:35.834234Z 0 [Note] Shutting down plugin 'MyISAM'
+2022-06-20T20:46:35.834234Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2022-06-20T20:46:35.835232Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-06-20T20:46:35.835232Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-06-20T20:46:35.836231Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-06-20T20:46:35.837227Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-06-20T20:46:35.837227Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-06-20T20:46:35.838225Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-06-20T20:46:35.838225Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-06-20T20:46:35.839221Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-06-20T20:46:35.840218Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-06-20T20:46:35.840218Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-06-20T20:46:35.840218Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-06-20T20:46:35.841216Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-06-20T20:46:35.841216Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-06-20T20:46:35.842214Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-06-20T20:46:35.842214Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-06-20T20:46:35.843211Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-06-20T20:46:35.843211Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2022-06-20T20:46:35.844208Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-06-20T20:46:35.844208Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-06-20T20:46:35.844718Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-06-20T20:46:35.844718Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-06-20T20:46:35.845718Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-06-20T20:46:35.845718Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-06-20T20:46:35.846715Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-06-20T20:46:35.846715Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-06-20T20:46:35.846715Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2022-06-20T20:46:35.847713Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-06-20T20:46:35.848710Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-06-20T20:46:35.849707Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2022-06-20T20:46:35.849707Z 0 [Note] Shutting down plugin 'InnoDB'
+2022-06-20T20:46:35.850706Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-20T20:46:35.850706Z 0 [Note] InnoDB: Starting shutdown...
+2022-06-20T20:46:35.956431Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-20T20:46:35.958433Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 220620 22:46:35
+2022-06-20T20:46:37.160453Z 0 [Note] InnoDB: Shutdown completed; log sequence number 3383471
+2022-06-20T20:46:37.161424Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-06-20T20:46:37.161424Z 0 [Note] Shutting down plugin 'MEMORY'
+2022-06-20T20:46:37.162421Z 0 [Note] Shutting down plugin 'CSV'
+2022-06-20T20:46:37.162421Z 0 [Note] Shutting down plugin 'sha256_password'
+2022-06-20T20:46:37.162421Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2022-06-20T20:46:37.163448Z 0 [Note] Shutting down plugin 'binlog'
+2022-06-20T20:46:37.165419Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+
+2022-06-20T20:47:18.128412Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-20T20:47:18.128412Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-20T20:47:18.128412Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-20T20:47:18.129408Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-20T20:47:18.129408Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-20T20:47:18.129408Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 12580 ...
+2022-06-20T20:47:18.140381Z 0 [ERROR] Can't open shared library 'C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-20T20:47:18.142376Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-20T20:47:18.144372Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-20T20:47:18.145368Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-20T20:47:18.145368Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-20T20:47:18.146366Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-20T20:47:18.147364Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-20T20:47:18.148361Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-20T20:47:18.199474Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-20T20:47:18.207457Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-20T20:47:18.243976Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-20T20:47:18.332437Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-20T20:47:18.332437Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-20T20:47:18.344398Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-20T20:47:18.350610Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-20T20:47:18.351380Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-20T20:47:18.352377Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-20T20:47:18.414422Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 3383471
+2022-06-20T20:47:18.415424Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-20T20:47:18.415424Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-20T20:47:18.417411Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-20T20:47:18.419406Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-20T20:47:18.421495Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-20T20:47:18.423395Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-20T20:47:18.423395Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-20T20:47:18.426387Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220620 22:47:18
+2022-06-20T20:47:18.427384Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-20T20:47:18.427384Z 0 [Note] IPv6 is available.
+2022-06-20T20:47:18.428382Z 0 [Note]   - '::' resolves to '::';
+2022-06-20T20:47:18.428382Z 0 [Note] Server socket created on IP: '::'.
+2022-06-20T20:47:18.429379Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:47:18.431373Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-20T20:47:18.436363Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-20T20:47:18.438353Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:47:18.440348Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-20T20:47:18.443340Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-20T20:47:18.444337Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-20T20:47:18.461799Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-20T20:47:18.462796Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-20T20:47:28.488441Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.488441Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.494425Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.494425Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.497961Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.497961Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.501915Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.501915Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.505416Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.506426Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.509405Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.509405Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.513397Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.513397Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.517002Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.517986Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.520944Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.521946Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.525491Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.525491Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T20:47:28.528508Z 14 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T20:47:28.529510Z 14 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-20T21:13:29.586624Z 27 [Note] Aborted connection 27 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:24:07.763890Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T21:24:07.763890Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-20T21:31:39.895592Z 60 [Note] Aborted connection 60 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:50:34.067424Z 63 [Note] Aborted connection 63 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:50:38.215521Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-20T21:50:38.215983Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_user` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-20T21:50:52.413624Z 68 [Note] Aborted connection 68 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:51:06.353269Z 69 [Note] Aborted connection 69 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:58:17.183463Z 70 [Note] Aborted connection 70 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T21:59:11.408047Z 71 [Note] Aborted connection 71 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:06:31.739307Z 77 [Note] Aborted connection 77 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:12:40.910449Z 83 [Note] Aborted connection 83 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:13:21.437962Z 84 [Note] Aborted connection 84 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:13:40.546041Z 85 [Note] Aborted connection 85 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:54:00.770905Z 104 [Note] Aborted connection 104 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:56:15.468063Z 106 [Note] Aborted connection 106 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T22:57:53.827147Z 107 [Note] Aborted connection 107 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:16:31.319997Z 117 [Note] Aborted connection 117 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:26:51.752946Z 122 [Note] Aborted connection 122 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:27:52.973477Z 123 [Note] Aborted connection 123 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:33:03.710403Z 124 [Note] Aborted connection 124 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:43:34.680194Z 129 [Note] Aborted connection 129 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:45:53.235597Z 130 [Note] Aborted connection 130 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:46:21.864459Z 131 [Note] Aborted connection 131 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:57:50.622585Z 140 [Note] Aborted connection 140 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:58:16.383172Z 141 [Note] Aborted connection 141 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:58:35.513239Z 142 [Note] Aborted connection 142 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:59:18.009284Z 143 [Note] Aborted connection 143 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-20T23:59:38.218444Z 144 [Note] Aborted connection 144 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:01:31.719444Z 147 [Note] Aborted connection 147 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:26:54.407283Z 160 [Note] Aborted connection 160 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:27:36.265572Z 161 [Note] Aborted connection 161 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:28:11.873368Z 162 [Note] Aborted connection 162 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:28:43.571873Z 163 [Note] Aborted connection 163 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:30:46.825213Z 164 [Note] Aborted connection 164 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:33:47.905828Z 165 [Note] Aborted connection 165 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:35:20.584374Z 166 [Note] Aborted connection 166 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T00:41:28.987247Z 169 [Note] Aborted connection 169 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T01:08:18.342882Z 174 [Note] Aborted connection 174 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T01:08:29.938498Z 175 [Note] Aborted connection 175 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T01:09:49.186174Z 176 [Note] Aborted connection 176 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T01:13:24.715769Z 177 [Note] Aborted connection 177 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T01:46:07.966141Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Normal shutdown
+
+2022-06-21T01:46:07.968254Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2022-06-21T01:46:07.968254Z 0 [Note] Shutting down slave threads
+2022-06-21T01:46:07.969252Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2022-06-21T01:46:07.970249Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-06-21T01:46:07.971248Z 0 [Note] Binlog end
+2022-06-21T01:46:07.978233Z 0 [Note] Shutting down plugin 'ngram'
+2022-06-21T01:46:07.978233Z 0 [Note] Shutting down plugin 'partition'
+2022-06-21T01:46:07.979230Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2022-06-21T01:46:07.979230Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2022-06-21T01:46:07.979230Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-06-21T01:46:07.980228Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-06-21T01:46:07.980228Z 0 [Note] Shutting down plugin 'MyISAM'
+2022-06-21T01:46:07.981225Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2022-06-21T01:46:07.981225Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-06-21T01:46:07.982222Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-06-21T01:46:07.982222Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-06-21T01:46:07.983220Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-06-21T01:46:07.983220Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-06-21T01:46:07.984195Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-06-21T01:46:07.984195Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-06-21T01:46:07.985215Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-06-21T01:46:07.985215Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-06-21T01:46:07.986245Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-06-21T01:46:07.986245Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-06-21T01:46:07.987245Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-06-21T01:46:07.987245Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-06-21T01:46:07.988269Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-06-21T01:46:07.988269Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-06-21T01:46:07.988269Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-06-21T01:46:07.989581Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2022-06-21T01:46:07.989581Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-06-21T01:46:07.990607Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-06-21T01:46:07.990607Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-06-21T01:46:07.991578Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-06-21T01:46:07.991578Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-06-21T01:46:07.992576Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-06-21T01:46:07.992576Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-06-21T01:46:07.993572Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-06-21T01:46:07.993572Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2022-06-21T01:46:07.994569Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-06-21T01:46:07.994569Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-06-21T01:46:07.995592Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2022-06-21T01:46:07.995592Z 0 [Note] Shutting down plugin 'InnoDB'
+2022-06-21T01:46:07.996565Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-21T01:46:07.996565Z 0 [Note] InnoDB: Starting shutdown...
+2022-06-21T01:46:08.102675Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-21T01:46:08.105757Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 220621  3:46:08
+2022-06-21T01:46:09.434277Z 0 [Note] InnoDB: Shutdown completed; log sequence number 3385311
+2022-06-21T01:46:09.434522Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-06-21T01:46:09.435274Z 0 [Note] Shutting down plugin 'MEMORY'
+2022-06-21T01:46:09.435274Z 0 [Note] Shutting down plugin 'CSV'
+2022-06-21T01:46:09.436664Z 0 [Note] Shutting down plugin 'sha256_password'
+2022-06-21T01:46:09.437201Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2022-06-21T01:46:09.437201Z 0 [Note] Shutting down plugin 'binlog'
+2022-06-21T01:46:09.440197Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+
+2022-06-21T12:06:17.440964Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2022-06-21T12:06:17.440964Z 0 [Warning] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2022-06-21T12:06:17.440964Z 0 [Warning] 'NO_AUTO_CREATE_USER' sql mode was not set.
+2022-06-21T12:06:17.440964Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2022-06-21T12:06:17.440964Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2022-06-21T12:06:17.440964Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe (mysqld 5.7.11) starting as process 24632 ...
+2022-06-21T12:06:17.470883Z 0 [ERROR] Can't open shared library 'C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\lib\plugin\keyring_file.dll' (errno: 126 Le module spécifié est introuvable.)
+2022-06-21T12:06:17.472877Z 0 [ERROR] Couldn't load plugin named 'keyring_file' with soname 'keyring_file.dll'.
+2022-06-21T12:06:17.474871Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-06-21T12:06:17.475869Z 0 [Note] InnoDB: Uses event mutexes
+2022-06-21T12:06:17.475869Z 0 [Note] InnoDB: Memory barrier is not used
+2022-06-21T12:06:17.475869Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2022-06-21T12:06:17.476865Z 0 [Note] InnoDB: Number of pools: 1
+2022-06-21T12:06:17.477864Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2022-06-21T12:06:17.537706Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2022-06-21T12:06:17.548692Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-21T12:06:17.595549Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-21T12:06:17.736174Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-06-21T12:06:17.737170Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-06-21T12:06:17.747143Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-06-21T12:06:17.755122Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2022-06-21T12:06:17.756119Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2022-06-21T12:06:17.757116Z 0 [Note] InnoDB: Waiting for purge to start
+2022-06-21T12:06:17.812967Z 0 [Note] InnoDB: 5.7.11 started; log sequence number 3385311
+2022-06-21T12:06:17.813965Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-21T12:06:17.813965Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-21T12:06:17.824936Z 0 [Warning] InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.plugin' doesn't exist
+2022-06-21T12:06:17.826943Z 0 [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.
+2022-06-21T12:06:17.826943Z 0 [Note] InnoDB: Buffer pool(s) load completed at 220621 14:06:17
+2022-06-21T12:06:17.835906Z 0 [Warning] InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+mysqld: Table 'mysql.gtid_executed' doesn't exist
+2022-06-21T12:06:17.837901Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2022-06-21T12:06:17.838898Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2022-06-21T12:06:17.841890Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-21T12:06:17.842889Z 0 [Note] IPv6 is available.
+2022-06-21T12:06:17.842889Z 0 [Note]   - '::' resolves to '::';
+2022-06-21T12:06:17.843886Z 0 [Note] Server socket created on IP: '::'.
+2022-06-21T12:06:17.848871Z 0 [Warning] InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:17.850867Z 0 [Warning] Failed to open optimizer cost constant tables
+
+2022-06-21T12:06:17.892758Z 0 [Warning] Found invalid password for user: 'recettes_user@localhost'; Ignoring user
+2022-06-21T12:06:17.898753Z 0 [Warning] InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:17.900732Z 0 [Warning] Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them
+2022-06-21T12:06:17.938632Z 0 [Warning] InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:17.940627Z 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+2022-06-21T12:06:18.560967Z 0 [Note] Event Scheduler: Loaded 0 events
+2022-06-21T12:06:18.560967Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: ready for connections.
+Version: '5.7.11'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2022-06-21T12:06:38.071772Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__relation from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.081745Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.089722Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_coords from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.097702Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__column_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.105681Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__history from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.114656Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__recent from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.122634Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__favorite from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.132608Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__table_uiprefs from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.141584Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__tracking from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.149563Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__userconfig from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.160534Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__bookmark from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.169509Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__users from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.178485Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__navigationhiding from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.188458Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__savedsearches from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.198433Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__central_columns from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.208406Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__designer_settings from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:38.217381Z 5 [Warning] InnoDB: Cannot open table phpmyadmin/pma__export_templates from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.
+2022-06-21T12:06:47.976349Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:47.977347Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:47.995299Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:47.996296Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_character` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.012253Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.013251Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_chest` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.036189Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.038184Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_game` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.065113Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.066110Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_play` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.080072Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.081070Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_power` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.094036Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.095032Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rank` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.107998Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.108995Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_rarity` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.154872Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.155869Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_session` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.184792Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.185790Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_upgrade` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:06:48.233661Z 16 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:06:48.244632Z 16 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_user` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:18:31.080206Z 20 [Note] Aborted connection 20 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:23:56.962495Z 21 [Note] Aborted connection 21 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:29:56.122587Z 22 [Note] Aborted connection 22 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:31:23.531633Z 23 [Note] Aborted connection 23 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:32:39.518975Z 26 [Note] Aborted connection 26 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:33:04.508858Z 27 [Note] Aborted connection 27 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:34:06.192489Z 28 [Note] Aborted connection 28 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:35:30.278395Z 29 [Note] Aborted connection 29 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:45:57.388725Z 108 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:45:57.389722Z 108 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `idChest` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:45:57.399696Z 108 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:45:57.400693Z 108 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:46:01.513518Z 114 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:46:01.514516Z 114 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `idUser` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:46:01.518539Z 114 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:46:01.518539Z 114 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:46:17.395557Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:46:17.396530Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:48:54.448505Z 220 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:48:54.449502Z 220 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:48:54.450515Z 220 [Note] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` index `idChest` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:48:54.452499Z 220 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:48:54.453492Z 220 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:49:25.332437Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.333428Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.334427Z 230 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-6038_e6` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:49:25.342404Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.343401Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.348389Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.348389Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.350383Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.355370Z 230 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:25.355370Z 230 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:49:35.349016Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:35.349016Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:49:38.050811Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.050811Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.051809Z 240 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`#sql-6038_f0` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:49:38.059787Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.059787Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.063777Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.064775Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.065771Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.070757Z 240 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:38.070757Z 240 [ERROR] InnoDB: Fetch of persistent statistics requested for table `db_demomot`.`t_belong` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.
+2022-06-21T12:49:48.064429Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T12:49:48.064429Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T12:57:45.590209Z 320 [Note] Aborted connection 320 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T12:58:31.773868Z 321 [Note] Aborted connection 321 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:00:37.675841Z 322 [Note] Aborted connection 322 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:01:36.299954Z 323 [Note] Aborted connection 323 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:11:35.601677Z 414 [Note] Aborted connection 414 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:15:21.762664Z 419 [Note] Aborted connection 419 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:16:57.915421Z 420 [Note] Aborted connection 420 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:17:41.320869Z 421 [Note] Aborted connection 421 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:21:30.862476Z 422 [Note] Aborted connection 422 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:21:51.048761Z 423 [Note] Aborted connection 423 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:23:10.950683Z 428 [Note] Aborted connection 428 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:25:08.652412Z 429 [Note] Aborted connection 429 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:26:05.381834Z 430 [Note] Aborted connection 430 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:29:37.925262Z 432 [Note] Aborted connection 432 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:50:37.130087Z 451 [Note] Aborted connection 451 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:58:03.141927Z 464 [Note] Aborted connection 464 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T13:58:06.696589Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T13:58:06.697585Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:04:14.378656Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:04:14.379654Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:06:41.153734Z 499 [Note] Aborted connection 499 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T14:07:22.380438Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:07:22.381436Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:13:13.447227Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:13:13.447651Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:13:23.462548Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:13:23.462548Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:13:47.929433Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:13:47.930430Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:13:57.943563Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:13:57.943563Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:14:10.966668Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:14:10.967665Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:14:20.983489Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:14:20.984453Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:14:43.907984Z 552 [Note] Aborted connection 552 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T14:15:14.335438Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:15:14.336434Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:18:13.166850Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:18:13.166850Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:24:30.354166Z 613 [Note] Aborted connection 613 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T14:25:12.162200Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:25:12.162200Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:25:28.285378Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:25:28.286375Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:25:39.326373Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:25:39.326373Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:26:01.135879Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T14:26:01.136876Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T14:26:15.514372Z 752 [Note] Aborted connection 752 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T14:42:03.278843Z 1077 [Note] Aborted connection 1077 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:00:41.783090Z 1081 [Note] Aborted connection 1081 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:02:15.131362Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:02:15.132359Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:02:21.370793Z 1094 [Note] Aborted connection 1094 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:02:27.407645Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:02:27.408645Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:04:57.254531Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:04:57.255529Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:05:18.632427Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:05:18.632427Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:05:28.726472Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:05:28.727469Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:05:38.747731Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:05:38.747731Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:05:42.953843Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:05:42.954845Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:05:55.816016Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:05:55.816016Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:06:09.501924Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:06:09.502921Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:06:44.063289Z 1123 [Note] Aborted connection 1123 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:08:33.112189Z 1196 [Note] Aborted connection 1196 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:09:40.072302Z 1209 [Note] Aborted connection 1209 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:09:56.903627Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:09:56.904624Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:10:08.513606Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:10:08.514604Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:14:52.983244Z 1266 [Note] Aborted connection 1266 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:15:15.017984Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:15:15.018986Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:15:53.792936Z 1301 [Note] Aborted connection 1301 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:18:42.565514Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:18:42.566722Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:20:37.593110Z 1337 [Note] Aborted connection 1337 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:38:15.834266Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:38:15.835265Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:42:34.810309Z 1408 [Note] Aborted connection 1408 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:42:51.086406Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:42:51.087404Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:44:12.654504Z 1433 [Note] Aborted connection 1433 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:44:21.360807Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:44:21.361878Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:44:37.958979Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:44:37.958979Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:44:47.962114Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:44:47.963079Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:48:37.323527Z 1470 [Note] Aborted connection 1470 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:48:41.662877Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:48:41.663907Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:54:07.504449Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:54:07.505415Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:54:44.156621Z 1501 [Note] Aborted connection 1501 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:54:51.810880Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:54:51.811879Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:54:51.826069Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:54:51.826916Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:54:53.613289Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:54:53.614287Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:55:05.826168Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:55:05.827165Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:55:16.233135Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:55:16.234131Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:55:54.841754Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:55:54.842753Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:56:00.929994Z 1520 [Note] Aborted connection 1520 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T15:59:00.088627Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:59:00.088627Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:59:00.096250Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:59:00.097282Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:59:18.220099Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:59:18.220099Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:59:18.227084Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:59:18.228082Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T15:59:28.245057Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T15:59:28.245057Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:00:33.025556Z 1589 [Note] Aborted connection 1589 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:00:56.424756Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:00:56.424756Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:02:40.794604Z 1642 [Note] Aborted connection 1642 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:03:18.681595Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:03:18.681595Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:04:17.966195Z 1683 [Note] Aborted connection 1683 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:05:18.838903Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:05:18.839908Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:05:37.320152Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:05:37.321152Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:06:53.650921Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:06:53.651899Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:06:56.219371Z 1726 [Note] Aborted connection 1726 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:11:57.208817Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:11:57.208817Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:11:57.221788Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:11:57.221788Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:12:18.847449Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:12:18.848446Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:14:07.619186Z 1761 [Note] Aborted connection 1761 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:14:23.785396Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:14:23.786393Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:14:33.795727Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:14:33.795727Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:14:44.777310Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:14:44.778384Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:14:59.409644Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:14:59.409644Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:14:59.422161Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:14:59.422161Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:15:53.016735Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:15:53.017739Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:16:47.770239Z 1830 [Note] Aborted connection 1830 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:16:53.922401Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:16:53.923661Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:17:01.489506Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:17:01.490505Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:17:55.584405Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:17:55.585402Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:18:16.062845Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:18:16.063817Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:19:12.202666Z 1877 [Note] Aborted connection 1877 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:19:26.247135Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:19:26.248132Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:19:44.152786Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:19:44.153421Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:20:08.412502Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:20:08.412824Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:21:14.522923Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:21:14.523921Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:21:51.100332Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:21:51.100945Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:21:51.538552Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:21:51.538552Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:21:51.551520Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:21:51.552517Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:22:46.943800Z 1912 [Note] Aborted connection 1912 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:23:10.579741Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:23:10.580734Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:23:29.977491Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:23:29.977491Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:23:39.983117Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:23:39.983117Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:23:50.620794Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:23:50.621811Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:24:00.634832Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:24:00.634832Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:26:25.165663Z 1999 [Note] Aborted connection 1999 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:26:43.334396Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:26:43.334396Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:27:11.731094Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:27:11.732091Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:27:11.740988Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:27:11.741825Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:27:35.728790Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:27:35.728790Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:27:43.784371Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:27:43.785367Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:30:44.761443Z 2004 [Note] Aborted connection 2004 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:31:03.118877Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:31:03.119876Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:31:13.130377Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:31:13.130377Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:31:19.573343Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:31:19.573343Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:31:29.590123Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:31:29.590747Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:32:55.701437Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:32:55.702434Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:33:03.694303Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:33:03.695300Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:33:13.703864Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:33:13.703864Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:33:42.163919Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:33:42.164917Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:33:59.936100Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:33:59.936100Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:34:09.951588Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:34:09.951588Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:34:31.044815Z 2181 [Note] Aborted connection 2181 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:34:51.020450Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:34:51.021475Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:35:08.053998Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:35:08.054996Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:35:13.548718Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:35:13.549071Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:41:04.055117Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:41:04.055117Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:41:51.806961Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:41:51.806961Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:42:32.345809Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:42:32.345809Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:42:50.145509Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:42:50.145509Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:43:00.156915Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:43:00.156915Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:43:13.007323Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:43:13.008848Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:43:17.715707Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:43:17.716078Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:44:16.952114Z 2261 [Note] Aborted connection 2261 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:44:41.421783Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:44:41.422779Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:44:49.823211Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:44:49.824206Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:44:59.132773Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:44:59.133827Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:44:59.140751Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:44:59.141749Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:45:36.814169Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:45:36.815180Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:45:50.077714Z 2358 [Note] Aborted connection 2358 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:45:55.846082Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:45:55.846082Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:46:05.859854Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:46:05.859854Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:48:24.528851Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:48:24.529850Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:48:28.652919Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:48:28.652919Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:48:34.587368Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:48:34.588365Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:48:34.592352Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:48:34.592352Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:48:54.095971Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:48:54.097321Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:49:12.508227Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:49:12.508227Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:49:22.522614Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:49:22.523256Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:49:44.607726Z 2447 [Note] Aborted connection 2447 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:49:52.076795Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:49:52.076795Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:50:39.818899Z 2484 [Note] Aborted connection 2484 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T16:50:52.261149Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:50:52.262297Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:09.065675Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:09.065675Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:19.081503Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:19.081503Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:26.186854Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:26.187829Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:36.196256Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:36.196256Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:46.207211Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:46.207211Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:51:47.423529Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:51:47.423529Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:52:03.896634Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:52:03.896634Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T16:52:13.911207Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T16:52:13.912204Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:02:48.871524Z 2527 [Note] Aborted connection 2527 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T17:17:17.000753Z 2576 [Note] Aborted connection 2576 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T17:18:59.143161Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:18:59.144158Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:20:51.968093Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:20:51.968093Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:20:51.974061Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:20:51.975072Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:21:16.018089Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:21:16.019086Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:21:35.929452Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:21:35.929452Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:21:45.943012Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T17:21:45.944010Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T17:22:17.518640Z 2595 [Note] Aborted connection 2595 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:23:57.796142Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:23:57.797139Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:23:58.757456Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:23:58.758454Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:24:12.011463Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:24:12.011463Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:24:12.016959Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:24:12.017957Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:25:02.234216Z 2776 [Note] Aborted connection 2776 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:25:25.888476Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:25:25.889485Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:25:41.170194Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:25:41.170194Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_character` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:25:51.183859Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:25:51.183859Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_power` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:26:47.237766Z 2829 [Note] Aborted connection 2829 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:27:08.586766Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:27:08.587765Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:27:23.716913Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:27:23.716913Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:28:10.611957Z 2854 [Note] Aborted connection 2854 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:30:30.289226Z 2879 [Note] Aborted connection 2879 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:31:17.817192Z 2892 [Note] Aborted connection 2892 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:31:52.240056Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:31:52.241039Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:32:04.076085Z 2893 [Note] Aborted connection 2893 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:46:33.397714Z 2942 [Note] Aborted connection 2942 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:47:48.577696Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:47:48.578693Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:48:34.964562Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:48:34.964562Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T18:48:40.267274Z 2970 [Note] Aborted connection 2970 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T18:48:44.991504Z 0 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+2022-06-21T18:48:44.991504Z 0 [Warning] InnoDB: Recalculation of persistent statistics requested for table `db_demomot`.`t_belong` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+2022-06-21T19:17:49.179925Z 3029 [Note] Aborted connection 3029 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T19:18:43.019086Z 3027 [Note] Aborted connection 3027 to db: 'db_demomot' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2022-06-21T19:24:16.970286Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Normal shutdown
+
+2022-06-21T19:24:16.972281Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2022-06-21T19:24:16.973291Z 0 [Note] Shutting down slave threads
+2022-06-21T19:24:16.973291Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2022-06-21T19:24:16.974275Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2022-06-21T19:24:16.975821Z 0 [Note] Binlog end
+2022-06-21T19:24:16.984430Z 0 [Note] Shutting down plugin 'ngram'
+2022-06-21T19:24:16.985428Z 0 [Note] Shutting down plugin 'partition'
+2022-06-21T19:24:16.985428Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2022-06-21T19:24:16.985428Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2022-06-21T19:24:16.986426Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-06-21T19:24:16.986426Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-06-21T19:24:16.987423Z 0 [Note] Shutting down plugin 'MyISAM'
+2022-06-21T19:24:16.987423Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2022-06-21T19:24:16.988421Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-06-21T19:24:16.988421Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-06-21T19:24:16.989418Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-06-21T19:24:16.989418Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-06-21T19:24:16.990425Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-06-21T19:24:16.990425Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-06-21T19:24:16.991412Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-06-21T19:24:16.991853Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-06-21T19:24:16.992410Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-06-21T19:24:16.992410Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-06-21T19:24:16.993407Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-06-21T19:24:16.993407Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-06-21T19:24:16.994403Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-06-21T19:24:16.994926Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-06-21T19:24:16.995596Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-06-21T19:24:16.995928Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-06-21T19:24:16.995928Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2022-06-21T19:24:16.996925Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-06-21T19:24:16.997921Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-06-21T19:24:16.997921Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-06-21T19:24:16.997921Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-06-21T19:24:16.998920Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-06-21T19:24:16.999918Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-06-21T19:24:16.999918Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-06-21T19:24:17.000914Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-06-21T19:24:17.000914Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2022-06-21T19:24:17.000914Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-06-21T19:24:17.001911Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-06-21T19:24:17.001911Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2022-06-21T19:24:17.002909Z 0 [Note] Shutting down plugin 'InnoDB'
+2022-06-21T19:24:17.003907Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-21T19:24:17.004906Z 0 [Note] InnoDB: Starting shutdown...
+2022-06-21T19:24:17.109797Z 0 [Note] InnoDB: Dumping buffer pool(s) to C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\data\ib_buffer_pool
+2022-06-21T19:24:17.112791Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 220621 21:24:17
+2022-06-21T19:24:18.446314Z 0 [Note] InnoDB: Shutdown completed; log sequence number 3659914
+2022-06-21T19:24:18.447755Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-06-21T19:24:18.448136Z 0 [Note] Shutting down plugin 'MEMORY'
+2022-06-21T19:24:18.448136Z 0 [Note] Shutting down plugin 'CSV'
+2022-06-21T19:24:18.448136Z 0 [Note] Shutting down plugin 'sha256_password'
+2022-06-21T19:24:18.449133Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2022-06-21T19:24:18.449133Z 0 [Note] Shutting down plugin 'binlog'
+2022-06-21T19:24:18.454118Z 0 [Note] C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\00-Database\bin\database\mysql-5.7.11\bin\mysqld.exe: Shutdown complete
+

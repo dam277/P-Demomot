@@ -38,7 +38,6 @@ C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteOb
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Properties.Resources.resources
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.InventoryView.resources
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.LoginSignInView.resources
-C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P_Demomot.Views.OptionsView.resources
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P-Demomot.csproj.GenerateResource.cache
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P-Demomot.csproj.CoreCompileInputs.cache
 C:\Users\damis\Desktop\developpement\01-Github\01-Projets\P-Demomot\04-OrienteObjet\P-Demomot-V3\obj\Debug\P-Demomot.exe

@@ -102,6 +102,7 @@ namespace P_Demomot.Models.Databases
                 //Read data and store in the list
                 while (dataReader.Read())
                 {
+                    i = 0;
                     // Write the datas into the list
                     foreach (string column in columns)
                     {
@@ -115,7 +116,7 @@ namespace P_Demomot.Models.Databases
                 // Return the datas
                 return _dataResult;
             }
-            else if(cmd.CommandText.Contains("INSERT"))
+            else
             {
                 cmd.ExecuteNonQuery();
             }
@@ -184,7 +185,7 @@ namespace P_Demomot.Models.Databases
             }
             else
             {
-                MessageBox.Show("Connexion open");
+                //MessageBox.Show("Connexion open");
             }
 
             bool OpenConnection()

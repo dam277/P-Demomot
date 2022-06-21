@@ -99,5 +99,19 @@ namespace P_Demomot.Views
         {
             this.Hide();
         }
+
+        /// <summary>
+        /// Unset the datas
+        /// </summary>
+        /// <param name="sender">Sender object</param>
+        /// <param name="e">Event</param>
+        private void LoginSignInView_VisibleChanged(object sender, EventArgs e)
+        {
+            txtConnectionNickname.Text = "";
+            txtConnectionPassword.Text = "";
+            txtInscriptionConfirmPassword.Text = "";
+            txtInscriptionNickname.Text = "";
+            txtInscriptionPassword.Text = "";
+        }
     }
 }
