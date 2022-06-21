@@ -116,7 +116,7 @@ namespace P_Demomot.Models.Databases
                 // Return the datas
                 return _dataResult;
             }
-            else if(cmd.CommandText.Contains("INSERT"))
+            else
             {
                 cmd.ExecuteNonQuery();
             }

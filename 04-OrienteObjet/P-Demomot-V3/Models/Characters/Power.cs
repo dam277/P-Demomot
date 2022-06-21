@@ -16,6 +16,8 @@ namespace P_Demomot.Models.Characters
         // CONTROLLERS
         private MainController _mainController;         // Main controller
         private LoginSignInController _loginController; // Login controller
+        private ChestsController _chestsController;     // chest controller
+        private InventoryController _inventoryController;// imventory controller
 
         // CLASS VARIABLES
         private string _name;                           // Power name
@@ -63,6 +65,36 @@ namespace P_Demomot.Models.Characters
             set
             {
                 _loginController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public chest controller
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get
+            {
+                return _chestsController;
+            }
+            set
+            {
+                _chestsController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public inventory controller
+        /// </summary>
+        public InventoryController InventoryController
+        {
+            get
+            {
+                return _inventoryController;
+            }
+            set
+            {
+                _inventoryController = value;
             }
         }
 
@@ -183,6 +215,10 @@ namespace P_Demomot.Models.Characters
             {
                 return _isUltime;
             }
+            set
+            {
+                _isUltime = value;
+            }
         }
         #endregion
 
@@ -254,19 +290,8 @@ namespace P_Demomot.Models.Characters
         /// <returns>Return a new power</returns>
         public Power CreatePower(string characterName, string powerName, int characterLevel)
         {
-            string levelName = "";
-            switch(characterLevel)
-            {
-                case 1:
-                    levelName = "levelOne";
-                    break;
-                case 2:
-                    levelName = "levelTwo";
-                    break;
-                case 3:
-                    levelName = "levelThree";
-                    break;
-            }
+            // Get the name of the level
+            string levelName = GetLevelName(characterLevel);
 
             // Get the capacity of a power
             string capacity = JToken.Parse(GetPowerCapacity(powerName, levelName)).ToString();
@@ -294,29 +319,154 @@ namespace P_Demomot.Models.Characters
         }
 
         /// <summary>
+        /// Upgrade a power
+        /// </summary>
+        /// <param name="characterLevel">character level</param>
+        /// <param name="idCharacter">Character id</param>
+        public void Upgrade(int characterLevel, int idCharacter, string characterName)
+        {
+            // Update a power
+            // Request
+            string req = $"UPDATE t_power SET powCapacity = @powCapacity WHERE idPower = @idPower";
+
+            // Get the life of the character
+            string capacity = JToken.Parse(GetCapacity(characterLevel, characterName, this.Name)).ToString();
+
+            // Get power Id
+            int id = GetPowerId(this.Name, idCharacter);
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@powCapacity", capacity);
+            _binds.Add("@idPower", id.ToString());
+
+            // Execute query
+            Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+        }
+
+        /// <summary>
+        /// Get a cpacity
+        /// </summary>
+        /// <returns>Return a capacity</returns>
+        private string GetCapacity(int level, string characterName, string powerName)
+        {
+            // Get the level name
+            string levelname = GetLevelName(level);
+
+            // Request
+            string req = $"SELECT upgCapacity->'$.{powerName}.{levelname}' AS 'Capacity' FROM t_upgrade WHERE upgCharacterName = @characterName";
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("Capacity");
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@characterName", characterName);
+
+            return Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns)[0][0];
+        }
+
+        /// <summary>
+        /// Get the power Id
+        /// </summary>
+        /// <param name="powerName">Power name</param>
+        /// <returns>Return the power id</returns>
+        public int GetPowerId(string powerName, int idCharacter)
+        {
+            // Request
+            string req = $"SELECT idPower FROM t_power WHERE powName = @powName AND idCharacter = @idCharacter";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@powName", powerName);
+            _binds.Add("@idCharacter", idCharacter.ToString());
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idPower");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the id
+            return Convert.ToInt32(datas[0][0]);
+        }
+
+        /// <summary>
+        /// Get the name of the level
+        /// </summary>
+        /// <param name="level">level</param>
+        /// <returns>Return the name of the level</returns>
+        private string GetLevelName(int level)
+        {
+            string levelName = "";
+
+            // Get the level name
+            switch (level)
+            {
+                case 1:
+                    levelName = "levelOne";
+                    break;
+                case 2:
+                    levelName = "levelTwo";
+                    break;
+                case 3:
+                    levelName = "levelThree";
+                    break;
+            }
+
+            return levelName;
+        }
+
+        /// <summary>
         /// Insert the power into the database
         /// </summary>
         /// <param name="power">power object</param>
         private void InsertPower(Power power, int idCharacter)
         {
-            // Request
-            string req = $"INSERT INTO t_power (`idPower`, `powName`, `powDescription`, `powCapacity`, `powLoadTurns`, `powNbTurns`, `powIsUltime`, `powNbTargets`, `idCharacter`) " +
-                $"VALUES (NULL, @powName, @powDescription, @powCapacity, @powLoadTurns, @powNbTurns, @powIsUltime, @powNbTargets, @idCharacter);";
+            string req = "";
 
-            //Binds
-            _binds = new Dictionary<string, string>();
-            _binds.Add("@powName", power.Name);
-            _binds.Add("@powDescription", power.Description);
-            _binds.Add("@powCapacity", power.Capacity);
-            _binds.Add("@powLoadTurns", power.LoadTurns.ToString());
-            _binds.Add("@powNbTurns", power.NbTurns.ToString());
-            _binds.Add("@powIsUltime", power.IsUltime == true ? "1" : "0");
-            _binds.Add("@powNbTargets", power.NbTargets.ToString());
-            _binds.Add("@idCharacter", idCharacter.ToString());
+            if (power.IsUltime)
+            {
+                // Request
+                req = $"INSERT INTO t_power (`idPower`, `powName`, `powDescription`, `powCapacity`, `powNbTurns`, `powPercentageUpPerHit`, `powPercentageUpPerKill`, `powIsUltime`, `powNbTargets`, `idCharacter`) " +
+                    $"VALUES (NULL, @powName, @powDescription, @powCapacity, @powNbTurns, @powPercentageUpPerHit, @powPercentageUpPerKill, @powIsUltime, @powNbTargets, @idCharacter);";
+
+                //Binds
+                _binds = new Dictionary<string, string>();
+                _binds.Add("@powName", power.Name);
+                _binds.Add("@powDescription", power.Description);
+                _binds.Add("@powCapacity", power.Capacity);
+                _binds.Add("@powNbTurns", power.NbTurns.ToString());
+                _binds.Add("@powPercentageUpPerHit", power.PercentageUpPerHit.ToString());
+                _binds.Add("@powPercentageUpPerKill", power.PercentageUpPerKill.ToString());
+                _binds.Add("@powIsUltime", power.IsUltime == true ? "1" : "0");
+                _binds.Add("@powNbTargets", power.NbTargets.ToString());
+                _binds.Add("@idCharacter", idCharacter.ToString());
+            }
+            else
+            {
+                // Request
+                req = $"INSERT INTO t_power (`idPower`, `powName`, `powDescription`, `powCapacity`, `powLoadTurns`, `powNbTurns`, `powIsUltime`, `powNbTargets`, `idCharacter`) " +
+                    $"VALUES (NULL, @powName, @powDescription, @powCapacity, @powLoadTurns, @powNbTurns, @powIsUltime, @powNbTargets, @idCharacter);";
+
+                //Binds
+                _binds = new Dictionary<string, string>();
+                _binds.Add("@powName", power.Name);
+                _binds.Add("@powDescription", power.Description);
+                _binds.Add("@powCapacity", power.Capacity);
+                _binds.Add("@powLoadTurns", power.LoadTurns.ToString());
+                _binds.Add("@powNbTurns", power.NbTurns.ToString());
+                _binds.Add("@powIsUltime", power.IsUltime == true ? "1" : "0");
+                _binds.Add("@powNbTargets", power.NbTargets.ToString());
+                _binds.Add("@idCharacter", idCharacter.ToString());
+            }
 
             // Get the datas by requesting the database
             Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
         }
+
 
         /// <summary>
         /// Create a ultime for a character
@@ -324,9 +474,38 @@ namespace P_Demomot.Models.Characters
         /// <param name="characterName">Name of the character</param>
         /// <param name="powerName">Power name</param>
         /// <returns>Return an ultime</returns>
-        public Power CreateUltime(string characterName, string powerName)
+        public Power CreateUltime(string characterName, string powerName, int characterLevel)
         {
-            return null;
+            // Get the name of the level
+            string levelName = GetLevelName(characterLevel);
+
+            // Get the capacity of a power
+            string capacity = JToken.Parse(GetPowerCapacity(powerName, levelName)).ToString();
+
+            // Get the number of turns the power affects his target
+            int nbTurns = GetPowerNbTurns(powerName);
+
+            // Get the numbet of targets of the power
+            int nbTargets = GetPowerTargets(powerName);
+
+            // Get the number of percentage up per hit
+            int percentageUpPerHit = GetPercentageUpPerHit(powerName);
+
+            // Get the number of percentage up per kill
+            int percentageUpPerKill = GetPercentageUpPerKill(powerName);
+
+            // Create the ultime
+            Power power = new Power(JToken.Parse(powerName).ToString(), "", capacity, percentageUpPerHit, percentageUpPerKill, nbTurns, nbTargets);
+            power.IsUltime = true;
+
+            // Get the id of the character
+            int idCharacter = _chestsController.GetCharacterId(characterName);
+
+            // Insert the power into the database
+            InsertPower(power, idCharacter);
+
+            // Return the power
+            return power;
         }
 
         /// <summary>
@@ -356,6 +535,42 @@ namespace P_Demomot.Models.Characters
         {
             // Request
             string req = $"SELECT upgCapacity->'$.{powerName}.nbTurns' AS 'nbTurns' FROM t_upgrade WHERE upgCapacity->'$.{powerName}.nbTurns' IS NOT NULL";
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("nbTurns");
+
+            // Get the datas by requesting the database
+            return Convert.ToInt32(JToken.Parse(Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns)[0][0]));
+        }
+
+        /// <summary>
+        /// Get the percentage up per hit for the ultime
+        /// </summary>
+        /// <param name="powerName">Power name</param>
+        /// <returns>Return the percentage up per hit</returns>
+        public int GetPercentageUpPerHit(string powerName)
+        {
+            // Request
+            string req = $"SELECT upgCapacity->'$.{powerName}.percentageUpPerHit' AS 'nbTurns' FROM t_upgrade WHERE upgCapacity->'$.{powerName}.percentageUpPerHit' IS NOT NULL";
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("nbTurns");
+
+            // Get the datas by requesting the database
+            return Convert.ToInt32(JToken.Parse(Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns)[0][0]));
+        }
+
+        /// <summary>
+        /// Get the percentage up per kill for the ultime
+        /// </summary>
+        /// <param name="powerName">Power name</param>
+        /// <returns>Return the percentage up per kill</returns>
+        public int GetPercentageUpPerKill(string powerName)
+        {
+            // Request
+            string req = $"SELECT upgCapacity->'$.{powerName}.percentageUpPerKill' AS 'nbTurns' FROM t_upgrade WHERE upgCapacity->'$.{powerName}.percentageUpPerKill' IS NOT NULL";
 
             //Columns name
             _columns = new List<string>();

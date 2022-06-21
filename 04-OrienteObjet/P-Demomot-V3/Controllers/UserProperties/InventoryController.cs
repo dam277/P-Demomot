@@ -19,6 +19,7 @@ namespace P_Demomot.Controllers.UserProperties
         // MODELS
         private User _user;                             // User model
         private Fighter _fighter;                       // Fighter model
+        private Power _power;                       // Fighter model
 
         // VIEWS
         private InventoryView _inventoryView;           // Inventory view
@@ -53,6 +54,15 @@ namespace P_Demomot.Controllers.UserProperties
         }
 
         /// <summary>
+        /// Public user Model
+        /// </summary>
+        public Power Power
+        {
+            get { return _power; }
+            set { _power = value; }
+        }
+
+        /// <summary>
         /// Public fighter Model
         /// </summary>
         public Fighter Fighter
@@ -69,14 +79,16 @@ namespace P_Demomot.Controllers.UserProperties
         /// <param name="inventoryView">Inventory view</param>
         /// <param name="user">User model</param>
         /// <param name="fighter">fighter model</param>
-        public InventoryController(InventoryView inventoryView, User user, Fighter fighter)
+        public InventoryController(InventoryView inventoryView, User user, Fighter fighter, Power power)
         {
             _inventoryView = inventoryView;
             _user = user;
             _fighter = fighter;
+            _power = power;
             _inventoryView.InventoryController = this;
             _user.InventoryController = this;
             _fighter.InventoryController = this;
+            _power.InventoryController = this;
         }
         #endregion
 
@@ -87,6 +99,15 @@ namespace P_Demomot.Controllers.UserProperties
         public void DisplayFighters()
         {
             _inventoryView.DisplayFighters(_fighter.FightersList, _user.FighterList);
+        }
+
+        /// <summary>
+        /// Get the powers
+        /// </summary>
+        /// <returns>Return the powers</returns>
+        public List<Power> GetPowers(int idCharacter)
+        {
+            return _power.GetPowers(idCharacter);
         }
 
         /// <summary>

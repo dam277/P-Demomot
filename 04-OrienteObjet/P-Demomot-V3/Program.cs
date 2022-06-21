@@ -51,7 +51,6 @@ namespace P_Demomot
             InventoryView inventoryView = new InventoryView();
             LoginSignInView loginSignInView = new LoginSignInView();
             MainMenuView mainMenuView = new MainMenuView();
-            OptionsView optionsView = new OptionsView();
             PlayView playView = new PlayView();
             TbCharactersChoice tbCharactersChoiceView = new TbCharactersChoice();
             TbGameView tbGameView = new TbGameView();
@@ -67,15 +66,14 @@ namespace P_Demomot
             PlayController playController = new PlayController();
 
             MainMenuController mainMenu = new MainMenuController(mainMenuView, user);
-            OptionsController options = new OptionsController();
 
-            ChestsController chestsController = new ChestsController(chestsView, chest);
-            InventoryController inventoryController = new InventoryController(inventoryView, user, fighter);
+            ChestsController chestsController = new ChestsController(chestsView, chest, user, rarity, fighter, power);
+            InventoryController inventoryController = new InventoryController(inventoryView, user, fighter, power);
             LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user, rank, fighter, rarity, power);
 
             // Set the main controller
-            MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, gameTypeView, inventoryView, mainMenuView, optionsView, playView, tbCharactersChoiceView, tbGameView,
-                ftCharactersChoice, ftGame, gameTypeController, playController, mainMenu, options, tbCharactersChoice, tbGame, chestsController, inventoryController, loginSignInController);
+            MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, gameTypeView, inventoryView, mainMenuView, playView, tbCharactersChoiceView, tbGameView,
+                ftCharactersChoice, ftGame, gameTypeController, playController, mainMenu, tbCharactersChoice, tbGame, chestsController, inventoryController, loginSignInController);
 
             // Run the login view
             Application.Run(loginSignInView);

@@ -16,6 +16,7 @@ namespace P_Demomot.Models.Characters
     {
         #region Variables
         private InventoryController _inventoryController;   // Inventory controller
+        private ChestsController _chestsController;         // Inventory controller
         private Dictionary<string, Power> _powers;          // Powers of a fighter
         #endregion
 
@@ -62,6 +63,21 @@ namespace P_Demomot.Models.Characters
             set
             {
                 _inventoryController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public list of fighters
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get
+            {
+                return _chestsController;
+            }
+            set
+            {
+                _chestsController = value;
             }
         }
         #endregion
@@ -250,25 +266,85 @@ namespace P_Demomot.Models.Characters
         /// <summary>
         /// Create a character intot the database
         /// </summary>
-        public void CreateCharacter()
+        public Fighter CreateCharacter(Character character, string chaModel, int chaGame, int idUser, Rarity rarity, int chaLevel = 1)
         {
-            //Insert a new character
+            // Get the life of the character
+            string life = JToken.Parse(GetLifeOfCharacter(character.Name, chaLevel)).ToString();
+
+            // Get the upgrade id of the character
+            string idUpgrade = GetUpgradeId(character.Name);
+
+            // Insert a new character
             // Request
             string req = $"INSERT INTO t_character (`idCharacter`, `chaName`, `chaModel`, `chaLevel`, `chaLife`, `chaGame`, `idUser`, `idRarity`, `idUpgrade`)" +
-                $" VALUES (NULL, '', '', , , , , , )";
+                $" VALUES (NULL, @name, @model, @level, @life ,@game ,@idUser ,@idRarity ,@idUpgrade)";
 
             //Binds
             _binds = new Dictionary<string, string>();
-            _binds.Add("@nickname", "");
+            _binds.Add("@name", character.Name);
+            _binds.Add("@model", chaModel);
+            _binds.Add("@level", chaLevel.ToString());
+            _binds.Add("@life", life);
+            _binds.Add("@game", chaGame.ToString());
+            _binds.Add("@idUser", idUser.ToString());
+            _binds.Add("@idRarity", rarity.Id.ToString());
+            _binds.Add("@idUpgrade", idUpgrade);
 
             //Columns name
             _columns = new List<string>();
+            _columns.Add("idCharacter");
+            _columns.Add("chaName");
+            _columns.Add("chaModel");
+            _columns.Add("chaLevel");
+            _columns.Add("chaLife");
+            _columns.Add("chaGame");
             _columns.Add("idUser");
-            _columns.Add("useNickname");
-            _columns.Add("usePasswordHash");
-            _columns.Add("useEntryDate");
-            _columns.Add("usePermLevel");
-            _columns.Add("idRank");
+            _columns.Add("idRarity");
+            _columns.Add("idUpgrade");
+
+            // Execute query
+            Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return the fighter
+            return new Fighter(GetId(character.Name, idUser), chaModel, character.Name, chaLevel, rarity, Convert.ToInt32(life));
+        }
+
+        /// <summary>
+        /// Upgrade a character
+        /// </summary>
+        /// <param name="character"></param>
+        /// <returns>Return the fighter upgraded</returns>
+        public Fighter UpgradeFighter(Character character, int idUser, Rarity rarity)
+        {
+            // Get the life of the character
+            string life = JToken.Parse(GetLifeOfCharacter(character.Name, character.Level + 1)).ToString();
+
+            // Update a character
+            // Request
+            string req = $"UPDATE t_character SET chaLevel = chaLevel+1, chaLife = @life WHERE chaName = @chaName AND idUser = @idUser";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@life", life);
+            _binds.Add("@chaName", character.Name);
+            _binds.Add("@idUser", idUser.ToString());
+
+            // Execute query
+            Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Powers name 
+            Dictionary<string, string> powersName = _chestsController.GetPowersName(character.Name);
+            for(int i = 0; i < (character as Fighter).Power.Count(); i++)
+            {
+                (character as Fighter).Power[JToken.Parse(powersName["Power" + (i + 1)]).ToString()].Upgrade(character.Level + 1, character.IdCharacter, character.Name);
+            }
+            
+            // Create the fighter template
+            Fighter fighter = new Fighter(GetId(character.Name, idUser), character.Model, character.Name, character.Level + 1, rarity, Convert.ToInt32(life));
+            fighter.Power = (character as Fighter).Power;
+
+            // Return the fighter
+            return fighter;
         }
 
         /// <summary>

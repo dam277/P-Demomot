@@ -135,9 +135,9 @@ namespace P_Demomot.Controllers.UserProperties
         }
 
         /// <summary>
-        /// 
+        /// Get the powers
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Return the powers</returns>
         public List<Power> GetPowers(int idCharacter)
         {
             return _power.GetPowers(idCharacter);

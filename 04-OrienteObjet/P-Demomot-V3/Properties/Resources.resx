@@ -130,9 +130,6 @@
   <data name="magicChest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magicChest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="magnifyingGlass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sans titre 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="nextChest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nextChest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +141,9 @@
   </data>
   <data name="royalChest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\royalChest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sans_titre_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sans titre 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="whiteFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\whiteFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -99,7 +99,6 @@
             // 
             // btnForfait
             // 
-            this.btnForfait.Image = global::P_Demomot.Properties.Resources.whiteFlag;
             this.btnForfait.Location = new System.Drawing.Point(30, 993);
             this.btnForfait.Name = "btnForfait";
             this.btnForfait.Size = new System.Drawing.Size(64, 63);

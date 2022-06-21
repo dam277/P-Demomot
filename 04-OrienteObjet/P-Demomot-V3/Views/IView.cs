@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Views
 {
+    /// <summary>
+    /// Inteface of the views
+    /// </summary>
     public interface IView
     {
         void CloseView();

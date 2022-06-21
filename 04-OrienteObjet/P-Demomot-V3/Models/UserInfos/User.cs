@@ -21,6 +21,7 @@ namespace P_Demomot.Models.UserInfos
         private MainController _mainController;                 // Main controller
         private MainMenuController _mainMenuController;         // Main menu controller
         private InventoryController _inventoryController;       // Inventory controller
+        private ChestsController _chestsController;             // Chests controller
 
         // CLASS VARIABLES
         private int _id;                                        // User ID
@@ -79,6 +80,15 @@ namespace P_Demomot.Models.UserInfos
         {
             get { return _inventoryController; }
             set { _inventoryController = value; }
+        }
+
+        /// <summary>
+        /// Public chests controller
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get { return _chestsController; }
+            set { _chestsController = value; }
         }
 
         // CLASS VARIABLES

@@ -16,6 +16,7 @@ namespace P_Demomot.Models.Utils
         // CONTROLLERS
         private LoginSignInController _loginSignInController;   // Login signin controller
         private MainController _mainController;                 // Main controller
+        private ChestsController _chestsController;             // Chest controller
 
         // CLASS VARIABLES
         private Dictionary<int, Tuple<int, int>> _upgrades;     // Dictionary of the _upgrade prices
@@ -57,6 +58,21 @@ namespace P_Demomot.Models.Utils
             set
             {
                 _loginSignInController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public login chest controller
+        /// </summary>
+        public ChestsController ChestsController
+        {
+            get
+            {
+                return _chestsController;
+            }
+            set
+            {
+                _chestsController = value;
             }
         }
 

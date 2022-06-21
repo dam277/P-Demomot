@@ -125,11 +125,6 @@ namespace P_Demomot.Views
 
         }
 
-        private void MainMenuView_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
         /// <summary>
         /// Show the chest page
         /// </summary>

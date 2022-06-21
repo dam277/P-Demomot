@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace P_Demomot.Controllers
 {
+    /// <summary>
+    /// Action enum
+    /// </summary>
     public enum Action
     {
         CHESTS,
@@ -15,7 +18,6 @@ namespace P_Demomot.Controllers
         INVENTORY,
         LOGINSIGNIN,
         MAINMENU,
-        OPTIONS,
         PLAY,
         TBCHARACHOICE,
         TBGAME

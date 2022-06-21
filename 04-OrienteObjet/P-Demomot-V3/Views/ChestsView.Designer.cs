@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChestsView));
             this.btnReturn = new System.Windows.Forms.Button();
             this.lblChests = new System.Windows.Forms.Label();
             this.lblGold = new System.Windows.Forms.Label();
             this.pnlBorder = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlChest3 = new System.Windows.Forms.Panel();
+            this.pnlChest1 = new System.Windows.Forms.Panel();
             this.pctNext = new System.Windows.Forms.PictureBox();
             this.pctBack = new System.Windows.Forms.PictureBox();
             this.pnlChest2 = new System.Windows.Forms.Panel();
@@ -84,8 +85,8 @@
             // 
             // pnlBorder
             // 
-            this.pnlBorder.Controls.Add(this.panel2);
-            this.pnlBorder.Controls.Add(this.panel1);
+            this.pnlBorder.Controls.Add(this.pnlChest3);
+            this.pnlBorder.Controls.Add(this.pnlChest1);
             this.pnlBorder.Controls.Add(this.pctNext);
             this.pnlBorder.Controls.Add(this.pctBack);
             this.pnlBorder.Controls.Add(this.pnlChest2);
@@ -94,27 +95,28 @@
             this.pnlBorder.Size = new System.Drawing.Size(993, 451);
             this.pnlBorder.TabIndex = 17;
             // 
-            // panel2
+            // pnlChest3
             // 
-            this.panel2.BackgroundImage = global::P_Demomot.Properties.Resources.reinforcedChest;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(864, 98);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(255, 255);
-            this.panel2.TabIndex = 1;
+            this.pnlChest3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlChest3.BackgroundImage")));
+            this.pnlChest3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlChest3.Location = new System.Drawing.Point(864, 98);
+            this.pnlChest3.Name = "pnlChest3";
+            this.pnlChest3.Size = new System.Drawing.Size(255, 255);
+            this.pnlChest3.TabIndex = 1;
             // 
-            // panel1
+            // pnlChest1
             // 
-            this.panel1.BackgroundImage = global::P_Demomot.Properties.Resources.magicChest;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(-127, 98);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 255);
-            this.panel1.TabIndex = 1;
+            this.pnlChest1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlChest1.BackgroundImage")));
+            this.pnlChest1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlChest1.Location = new System.Drawing.Point(-127, 98);
+            this.pnlChest1.Name = "pnlChest1";
+            this.pnlChest1.Size = new System.Drawing.Size(255, 255);
+            this.pnlChest1.TabIndex = 1;
             // 
             // pctNext
             // 
-            this.pctNext.Image = global::P_Demomot.Properties.Resources.nextChest;
+            this.pctNext.ErrorImage = null;
+            this.pctNext.Image = ((System.Drawing.Image)(resources.GetObject("pctNext.Image")));
             this.pctNext.Location = new System.Drawing.Point(722, 183);
             this.pctNext.Name = "pctNext";
             this.pctNext.Size = new System.Drawing.Size(73, 70);
@@ -124,7 +126,8 @@
             // 
             // pctBack
             // 
-            this.pctBack.Image = global::P_Demomot.Properties.Resources.backChest;
+            this.pctBack.ErrorImage = null;
+            this.pctBack.Image = ((System.Drawing.Image)(resources.GetObject("pctBack.Image")));
             this.pctBack.Location = new System.Drawing.Point(213, 183);
             this.pctBack.Name = "pctBack";
             this.pctBack.Size = new System.Drawing.Size(73, 70);
@@ -134,22 +137,25 @@
             // 
             // pnlChest2
             // 
-            this.pnlChest2.BackgroundImage = global::P_Demomot.Properties.Resources.oldChest;
+            this.pnlChest2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlChest2.BackgroundImage")));
             this.pnlChest2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlChest2.Controls.Add(this.lblNbrChests);
             this.pnlChest2.Location = new System.Drawing.Point(391, 98);
             this.pnlChest2.Name = "pnlChest2";
             this.pnlChest2.Size = new System.Drawing.Size(255, 255);
             this.pnlChest2.TabIndex = 0;
-            this.pnlChest2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChest2_Paint);
+            this.pnlChest2.Click += new System.EventHandler(this.pnlChest2_Click);
             // 
             // lblNbrChests
             // 
             this.lblNbrChests.AutoSize = true;
+            this.lblNbrChests.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lblNbrChests.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNbrChests.Location = new System.Drawing.Point(219, 0);
+            this.lblNbrChests.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNbrChests.ForeColor = System.Drawing.Color.White;
+            this.lblNbrChests.Location = new System.Drawing.Point(214, 0);
             this.lblNbrChests.Name = "lblNbrChests";
-            this.lblNbrChests.Size = new System.Drawing.Size(2, 15);
+            this.lblNbrChests.Size = new System.Drawing.Size(2, 22);
             this.lblNbrChests.TabIndex = 0;
             // 
             // ChestsView
@@ -184,8 +190,8 @@
         private System.Windows.Forms.PictureBox pctNext;
         private System.Windows.Forms.PictureBox pctBack;
         private System.Windows.Forms.Panel pnlChest2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlChest3;
+        private System.Windows.Forms.Panel pnlChest1;
         private System.Windows.Forms.Label lblNbrChests;
     }
 }

@@ -98,11 +98,42 @@ namespace P_Demomot.Views
             // Get rarity
             Rarity rarity = _inventoryController.GetFighterRarity(fighter.Name);
 
-            MessageBox.Show($"Name : {fighter.Name} \n" +
-                            $"Level : {fighter.Level} \n" +
-                            $"Life : {fighter.Life} \n" +
-                            $"Rarity : {rarity.Name} \n" +
-                            $"Drop Chance : {rarity.DropChance} \n");
+            // Get the powers
+            List<Power> powers = _inventoryController.GetPowers(fighter.IdCharacter);
+            Power power1 = powers[0];
+            Power power2 = powers[1];
+            Power ultime;
+
+            string message = $"Name : {fighter.Name} \n" +
+                             $"Level : {fighter.Level} \n" +
+                             $"Life : {fighter.Life} \n" +
+                             $"Rarity : {rarity.Name} \n" +
+                             $"Drop Chance : {rarity.DropChance} \n\n" +
+                             $"Capacities : \n" +
+                             $"Power 1 : {power1.Name} : \n" +
+                             $"Capacity : {power1.Capacity} \n" +
+                             $"Number of targets : {power1.NbTargets} \n" +
+                             $"Number of turns affects : {power1.NbTurns} \n\n" +
+                             $"Power 2 : {power2.Name} : \n" +
+                             $"Capacity : { power2.Capacity} \n" +
+                             $"Number of targets : {power2.NbTargets} \n" +
+                             $"Number of turns affects : {power2.NbTurns} \n\n";
+
+            if (fighter.Name != "Recruit")
+            {
+                ultime = powers[2];
+                message += $"Ultime : {ultime.Name} : \n" +
+                             $"Capacity : {ultime.Capacity} \n" +
+                             $"Number of targets : {ultime.NbTargets} \n" +
+                             $"Number of turns affects : {ultime.NbTurns} \n\n";
+            }
+
+
+            // Display the card
+            MessageBox.Show(message);
+
+
+
         }
         #endregion
 
@@ -219,5 +250,16 @@ namespace P_Demomot.Views
             this.Hide();
         }
         #endregion
+
+        /// <summary>
+        /// Display characters on visible
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void InventoryView_VisibleChanged(object sender, EventArgs e)
+        {
+            pnlInventory.Controls.Clear();
+            _inventoryController.DisplayFighters();
+        }
     }
 }
