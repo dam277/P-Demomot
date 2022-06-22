@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using P_Demomot.Controllers;
+using P_Demomot.Controllers.FightTactics;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Databases;
 using System;
@@ -17,7 +18,9 @@ namespace P_Demomot.Models.Characters
         private MainController _mainController;         // Main controller
         private LoginSignInController _loginController; // Login controller
         private ChestsController _chestsController;     // chest controller
-        private InventoryController _inventoryController;// imventory controller
+        private InventoryController _inventoryController;// inventory controller
+        private FtCharactersChoiceController _ftCharactersChoiceController;// character choice controller
+        private FtGameController _ftGameController;// game controller
 
         // CLASS VARIABLES
         private string _name;                           // Power name
@@ -95,6 +98,36 @@ namespace P_Demomot.Models.Characters
             set
             {
                 _inventoryController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public character choice controller
+        /// </summary>
+        public FtCharactersChoiceController FtCharactersChoiceController
+        {
+            get
+            {
+                return _ftCharactersChoiceController;
+            }
+            set
+            {
+                _ftCharactersChoiceController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public character choice controller
+        /// </summary>
+        public FtGameController FtGameController
+        {
+            get
+            {
+                return _ftGameController;
+            }
+            set
+            {
+                _ftGameController = value;
             }
         }
 

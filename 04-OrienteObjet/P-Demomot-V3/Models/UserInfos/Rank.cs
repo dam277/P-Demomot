@@ -1,4 +1,5 @@
-﻿using P_Demomot.Controllers.UserProperties;
+﻿using P_Demomot.Controllers.FightTactics;
+using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Databases;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace P_Demomot.Models.UserInfos
     public class Rank
     {
         private LoginSignInController _loginSignInController;       // Login signin controller
+        private FtGameController _ftGameController;                 // Game controller
 
         #region Variables
         private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
@@ -21,6 +23,15 @@ namespace P_Demomot.Models.UserInfos
         #endregion
 
         #region Getter Setter
+        /// <summary>
+        /// Public ft game controller
+        /// </summary>
+        public FtGameController FtGameController
+        {
+            get { return _ftGameController; }
+            set { _ftGameController = value; }
+        }
+
         /// <summary>
         /// Public rank points
         /// </summary>

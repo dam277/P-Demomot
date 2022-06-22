@@ -21,16 +21,15 @@ namespace P_Demomot.Controllers
         protected ChestsView _chestsView;                                       // Chest view
         protected FtCharactersChoice _ftCharactersChoice;                       // Ft character choice view
         protected FtGameView _ftGameView;                                       // Ft game view
-        protected GameTypeView _gameTypeView;                                   // Game type view
         protected InventoryView _inventoryView;                                 // Inventory view
         protected MainMenuView _mainMenuView;                                   // Main menu view
         protected PlayView _playView;                                           // Play view
         protected TbCharactersChoice _tbCharactersChoice;                       // Tb character choice view
         protected TbGameView _tbGameView;                                       // Tb game view
+        protected FtCharactersChoiceInventory _ftCharactersChoiceInventory;     // Ft character inventory view
 
         private FtCharactersChoiceController _ftCharactersChoiceController;     // Ft character choice controller
         private FtGameController _ftGameController;                             // Ft game controller
-        private GameTypeController _gameTypeController;                         // Game type controller
         private PlayController _playController;                                 // Play controller
         private MainMenuController _mainMenuController;                         // Main menu controller
         private TbCharactersChoiceController _tbCharactersChoiceController;     // Tb Character choice controller
@@ -54,7 +53,6 @@ namespace P_Demomot.Controllers
         /// <param name="chestsView">Chest view</param>
         /// <param name="ftCharactersChoice">Ft character choice view</param>
         /// <param name="ftGameView">Ft game view</param>
-        /// <param name="gameTypeView">Game type view</param>
         /// <param name="inventoryView">Inventory view</param>
         /// <param name="mainMenuView">Main menu view</param>
         /// <param name="playView">Play view</param>
@@ -62,7 +60,6 @@ namespace P_Demomot.Controllers
         /// <param name="tbGameView">Tb game view</param>
         /// <param name="ftCharactersChoiceController">Ft character choice controller</param>
         /// <param name="ftGameController">Ft game controller</param>
-        /// <param name="gameTypeController">Game type controller</param>
         /// <param name="playController">Play controller</param>
         /// <param name="mainMenuController">Main menu controller</param>
         /// <param name="tbCharactersChoiceController">Tb Character choice controller</param>
@@ -70,40 +67,39 @@ namespace P_Demomot.Controllers
         /// <param name="chestsController">Inventory controller</param>
         /// <param name="inventoryController"></param>
         /// <param name="loginSignInController">Login sign in controller</param>
-        public MainController(LoginSignInView loginSignInView, ChestsView chestsView, FtCharactersChoice ftCharactersChoice, FtGameView ftGameView, GameTypeView gameTypeView,
+        public MainController(LoginSignInView loginSignInView, ChestsView chestsView, FtCharactersChoice ftCharactersChoice, FtGameView ftGameView,
             InventoryView inventoryView, MainMenuView mainMenuView, PlayView playView, TbCharactersChoice tbCharactersChoice, TbGameView tbGameView,
-            FtCharactersChoiceController ftCharactersChoiceController, FtGameController ftGameController, GameTypeController gameTypeController, PlayController playController,
+            FtCharactersChoiceController ftCharactersChoiceController, FtGameController ftGameController, PlayController playController,
             MainMenuController mainMenuController, TbCharactersChoiceController tbCharactersChoiceController, TbGameController tbGameController,
-            ChestsController chestsController, InventoryController inventoryController, LoginSignInController loginSignInController)
+            ChestsController chestsController, InventoryController inventoryController, LoginSignInController loginSignInController, FtCharactersChoiceInventory ftCharactersChoiceInventory)
         {
             // Set the views
             _loginSignInView = loginSignInView;
             _chestsView = chestsView;
             _ftCharactersChoice = ftCharactersChoice;
             _ftGameView = ftGameView;
-            _gameTypeView = gameTypeView;
             _inventoryView = inventoryView;
             _mainMenuView = mainMenuView;
             _playView = playView;
             _tbCharactersChoice = tbCharactersChoice;
             _tbGameView = tbGameView;
+            _ftCharactersChoiceInventory = ftCharactersChoiceInventory;
 
             // Set main controller into views
             _loginSignInView.MainController = this;
             _chestsView.MainController = this;
             _ftCharactersChoice.MainController = this;
             _ftGameView.MainController = this;
-            _gameTypeView.MainController = this;
             _inventoryView.MainController = this;
             _mainMenuView.MainController = this;
             _playView.MainController = this;
             _tbCharactersChoice.MainController = this;
             _tbGameView.MainController = this;
+            _ftCharactersChoiceInventory.MainController = this;
 
             // Set the controllers
             _ftCharactersChoiceController = ftCharactersChoiceController;
             _ftGameController = ftGameController;
-            _gameTypeController = gameTypeController;
             _playController = playController;
             _mainMenuController = mainMenuController;
             _tbCharactersChoiceController = tbCharactersChoiceController;
@@ -115,7 +111,6 @@ namespace P_Demomot.Controllers
             // Set main controller in other controllers
             _ftCharactersChoiceController.MainController = this;
             _ftGameController.MainController = this;
-            _gameTypeController.MainController = this;
             _playController.MainController = this;
             _mainMenuController.MainController = this;
             _tbCharactersChoiceController.MainController = this;
@@ -147,9 +142,6 @@ namespace P_Demomot.Controllers
                 case Action.FTGAME:
                     _ftGameView.Show();
                     break;
-                case Action.GAMETYPE:
-                    _gameTypeView.Show();
-                    break;
                 case Action.INVENTORY:
                     _inventoryView.Show();
                     break;
@@ -168,6 +160,10 @@ namespace P_Demomot.Controllers
                 case Action.TBGAME:
                     _tbGameView.Show();
                     break;
+                case Action.FtInventory:
+                    _ftCharactersChoiceInventory.Show();
+                    break;
+                    
             }
         }
     }

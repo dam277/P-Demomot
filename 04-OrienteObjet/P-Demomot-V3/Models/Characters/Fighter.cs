@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json.Linq;
+using P_Demomot.Controllers.FightTactics;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Databases;
 using P_Demomot.Models.Utils;
@@ -16,6 +17,7 @@ namespace P_Demomot.Models.Characters
     {
         #region Variables
         private InventoryController _inventoryController;   // Inventory controller
+        private FtCharactersChoiceController _ftCharactersChoiceController;   // character choice controller
         private ChestsController _chestsController;         // Inventory controller
         private Dictionary<string, Power> _powers;          // Powers of a fighter
         #endregion
@@ -52,7 +54,7 @@ namespace P_Demomot.Models.Characters
         }
 
         /// <summary>
-        /// Public list of fighters
+        /// Public inventory controller
         /// </summary>
         public InventoryController InventoryController
         {
@@ -67,7 +69,7 @@ namespace P_Demomot.Models.Characters
         }
 
         /// <summary>
-        /// Public list of fighters
+        /// Public Chest controller
         /// </summary>
         public ChestsController ChestsController
         {
@@ -78,6 +80,21 @@ namespace P_Demomot.Models.Characters
             set
             {
                 _chestsController = value;
+            }
+        }
+
+        /// <summary>
+        /// Public character choice controller
+        /// </summary>
+        public FtCharactersChoiceController FtCharactersChoiceController
+        {
+            get
+            {
+                return _ftCharactersChoiceController;
+            }
+            set
+            {
+                _ftCharactersChoiceController = value;
             }
         }
         #endregion
@@ -312,7 +329,9 @@ namespace P_Demomot.Models.Characters
         /// <summary>
         /// Upgrade a character
         /// </summary>
-        /// <param name="character"></param>
+        /// <param name="character">Character</param>
+        /// <param name="idUser">user id</param>
+        /// <param name="rarity">Rarity</param>
         /// <returns>Return the fighter upgraded</returns>
         public Fighter UpgradeFighter(Character character, int idUser, Rarity rarity)
         {
@@ -348,7 +367,7 @@ namespace P_Demomot.Models.Characters
         }
 
         /// <summary>
-        /// 
+        /// Get user fighters
         /// </summary>
         /// <returns></returns>
         public List<Fighter> GetUserFighters(int idUser)
@@ -391,6 +410,41 @@ namespace P_Demomot.Models.Characters
             }
 
             return fighters;
+        }
+
+        /// <summary>
+        /// Get the fighter by his name
+        /// </summary>
+        /// <param name="name">fighter name</param>
+        /// <param name="idUser">user id</param>
+        /// <returns>Return a fighter</returns>
+        public Fighter GetFighterByName(string name, int idUser)
+        {
+            // Request
+            string req = $"SELECT * FROM t_character WHERE idUser = @idUser AND chaName = @chaName";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idUser", idUser.ToString());
+            _binds.Add("@chaName", name);
+
+            //Columns name
+            _columns = new List<string>();
+            _columns.Add("idCharacter");
+            _columns.Add("chaName");
+            _columns.Add("chaModel");
+            _columns.Add("chaLevel");
+            _columns.Add("chaLife");
+            _columns.Add("chaGame");
+            _columns.Add("idUser");
+            _columns.Add("idRarity");
+            _columns.Add("idUpgrade");
+
+            // Get the datas by requesting the database
+            List<string>[] datas = Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
+
+            // Return a new fighter
+            return new Fighter(Convert.ToInt32(datas[0][0]), datas[2][0], datas[1][0], Convert.ToInt32(datas[3][0]), new Rarity(), Convert.ToInt32(datas[4][0]));
         }
 
         /// <summary>

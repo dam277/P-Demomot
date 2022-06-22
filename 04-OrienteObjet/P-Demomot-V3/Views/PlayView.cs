@@ -1,4 +1,5 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.Game;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace P_Demomot.Views
     public partial class PlayView : Form, IView
     {
         private MainController _mainController;         // Main controller
+        private PlayController _playController;         // Play controller
 
         /// <summary>
         /// Public main controller
@@ -25,6 +27,15 @@ namespace P_Demomot.Views
         }
 
         /// <summary>
+        /// Public play controller
+        /// </summary>
+        public PlayController PlayController
+        {
+            get { return _playController; }
+            set { _playController = value; }
+        }
+
+        /// <summary>
         /// Class constructor
         /// </summary>
         public PlayView()
@@ -33,39 +44,46 @@ namespace P_Demomot.Views
         }
 
         /// <summary>
-        /// 
+        /// Play view load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PlayView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Show the TankBattle page character choice
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnPlayTb_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         /// <summary>
-        /// 
+        /// Show fight tactics page character choice
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnPlayFt_Click(object sender, EventArgs e)
         {
-
+            _playController.ShowFtCharacterChoice();
         }
 
         /// <summary>
-        /// 
+        /// Return to the page Main menu
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnReturn_Click(object sender, EventArgs e)
         {
-
+            _playController.ShowMainMenu();
         }
 
-        private void PlayView_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         /// <summary>
         /// Hide the view
