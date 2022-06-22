@@ -1,4 +1,5 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.FightTactics;
 using P_Demomot.Controllers.Menus;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Characters;
@@ -22,6 +23,7 @@ namespace P_Demomot.Models.UserInfos
         private MainMenuController _mainMenuController;         // Main menu controller
         private InventoryController _inventoryController;       // Inventory controller
         private ChestsController _chestsController;             // Chests controller
+        private FtCharactersChoiceController _ftCharactersChoiceController;  // character choice controller
 
         // CLASS VARIABLES
         private int _id;                                        // User ID
@@ -89,6 +91,15 @@ namespace P_Demomot.Models.UserInfos
         {
             get { return _chestsController; }
             set { _chestsController = value; }
+        }
+
+        /// <summary>
+        /// Public chests controller
+        /// </summary>
+        public FtCharactersChoiceController FtCharactersChoiceController
+        {
+            get { return _ftCharactersChoiceController; }
+            set { _ftCharactersChoiceController = value; }
         }
 
         // CLASS VARIABLES
@@ -214,6 +225,15 @@ namespace P_Demomot.Models.UserInfos
         {
             _chests = new Dictionary<Rarity, List<Chest>>();
             _fighterList = new List<Fighter>();
+        }
+
+        /// <summary>
+        /// Create an invited user
+        /// </summary>
+        /// <param name="nickname">user name</param>
+        public User(string nickname = "invite")
+        {
+            _nickname = nickname;
         }
 
         /// <summary>

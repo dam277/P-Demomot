@@ -14,12 +14,12 @@ namespace P_Demomot.Controllers
         CHESTS,
         FTCHARACHOICE,
         FTGAME,
-        GAMETYPE,
         INVENTORY,
         LOGINSIGNIN,
         MAINMENU,
         PLAY,
         TBCHARACHOICE,
-        TBGAME
+        TBGAME,
+        FtInventory
     }
 }

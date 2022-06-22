@@ -46,8 +46,8 @@ namespace P_Demomot
             // Views creation
             ChestsView chestsView = new ChestsView();
             FtCharactersChoice ftCharactersChoiceView = new FtCharactersChoice();
+            FtCharactersChoiceInventory ftCharactersChoiceInventory = new FtCharactersChoiceInventory();
             FtGameView ftGameView = new FtGameView();
-            GameTypeView gameTypeView = new GameTypeView();
             InventoryView inventoryView = new InventoryView();
             LoginSignInView loginSignInView = new LoginSignInView();
             MainMenuView mainMenuView = new MainMenuView();
@@ -56,14 +56,13 @@ namespace P_Demomot
             TbGameView tbGameView = new TbGameView();
 
             // Controllers creation
-            FtCharactersChoiceController ftCharactersChoice = new FtCharactersChoiceController();
-            FtGameController ftGame = new FtGameController();
+            FtCharactersChoiceController ftCharactersChoice = new FtCharactersChoiceController(ftCharactersChoiceView, ftCharactersChoiceInventory, user, team, fighter, power);
+            FtGameController ftGame = new FtGameController(ftGameView, team, power, chest, rank);
 
             TbCharactersChoiceController tbCharactersChoice = new TbCharactersChoiceController();
             TbGameController tbGame = new TbGameController();
 
-            GameTypeController gameTypeController = new GameTypeController();
-            PlayController playController = new PlayController();
+            PlayController playController = new PlayController(playView);
 
             MainMenuController mainMenu = new MainMenuController(mainMenuView, user);
 
@@ -72,8 +71,8 @@ namespace P_Demomot
             LoginSignInController loginSignInController = new LoginSignInController(loginSignInView, user, rank, fighter, rarity, power);
 
             // Set the main controller
-            MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, gameTypeView, inventoryView, mainMenuView, playView, tbCharactersChoiceView, tbGameView,
-                ftCharactersChoice, ftGame, gameTypeController, playController, mainMenu, tbCharactersChoice, tbGame, chestsController, inventoryController, loginSignInController);
+            MainController mainController = new MainController(loginSignInView, chestsView, ftCharactersChoiceView, ftGameView, inventoryView, mainMenuView, playView, tbCharactersChoiceView, tbGameView,
+                    ftCharactersChoice, ftGame, playController, mainMenu, tbCharactersChoice, tbGame, chestsController, inventoryController, loginSignInController, ftCharactersChoiceInventory);
 
             // Run the login view
             Application.Run(loginSignInView);

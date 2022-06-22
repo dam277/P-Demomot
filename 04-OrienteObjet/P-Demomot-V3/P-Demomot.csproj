@@ -115,7 +115,6 @@
     <Compile Include="Controllers\UserProperties\ChestsController.cs" />
     <Compile Include="Controllers\FightTactics\FtCharactersChoiceController.cs" />
     <Compile Include="Controllers\FightTactics\FtGameController.cs" />
-    <Compile Include="Controllers\Game\GameTypeController.cs" />
     <Compile Include="Controllers\UserProperties\InventoryController.cs" />
     <Compile Include="Controllers\UserProperties\LoginSignInController.cs" />
     <Compile Include="Controllers\MainController.cs" />
@@ -147,17 +146,17 @@
     <Compile Include="Views\FtCharactersChoice.Designer.cs">
       <DependentUpon>FtCharactersChoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FtCharactersChoiceInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FtCharactersChoiceInventory.Designer.cs">
+      <DependentUpon>FtCharactersChoiceInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FtGameView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FtGameView.Designer.cs">
       <DependentUpon>FtGameView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\GameTypeView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\GameTypeView.Designer.cs">
-      <DependentUpon>GameTypeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\InventoryView.cs">
       <SubType>Form</SubType>
@@ -212,11 +211,11 @@
     <EmbeddedResource Include="Views\FtCharactersChoice.resx">
       <DependentUpon>FtCharactersChoice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FtCharactersChoiceInventory.resx">
+      <DependentUpon>FtCharactersChoiceInventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FtGameView.resx">
       <DependentUpon>FtGameView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\GameTypeView.resx">
-      <DependentUpon>GameTypeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\InventoryView.resx">
       <DependentUpon>InventoryView.cs</DependentUpon>

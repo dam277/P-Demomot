@@ -1,7 +1,9 @@
 ﻿using P_Demomot.Controllers;
+using P_Demomot.Controllers.FightTactics;
 using P_Demomot.Controllers.UserProperties;
 using P_Demomot.Models.Databases;
 using P_Demomot.Models.Utils;
+using P_Demomot.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +16,15 @@ namespace P_Demomot.Models.UserInfos
     {
         #region Variables
         private MainController _mainController;             // Main controller
-        private ChestsController _chestController;         //chest controller
+        private ChestsController _chestController;          // Chest controller
+        private FtGameController _ftGameController;         // Game controller
         private string _name;                               // Chest name
         private int _idChest;                               // Chest Id
         private Rarity _rarity;                             // Chest rarity
         private int _chanceNbr;                             // Chest chanceNbr
                                                             // REQUEST VARIABLES
-        private Dictionary<string, string> _binds;              // Dictionary of binds to the requests
-        private List<string> _columns;                          // Columns searched in the request
+        private Dictionary<string, string> _binds;          // Dictionary of binds to the requests
+        private List<string> _columns;                      // Columns searched in the request
         #endregion
 
         #region Getter Setter
@@ -41,12 +44,21 @@ namespace P_Demomot.Models.UserInfos
         }
 
         /// <summary>
-        /// Public main controller
+        /// Public chest controller
         /// </summary>
         public ChestsController ChestsController
         {
             get { return _chestController; }
             set { _chestController = value; }
+        }
+
+        /// <summary>
+        /// Public game controller
+        /// </summary>
+        public FtGameController FtGameController
+        {
+            get { return _ftGameController; }
+            set { _ftGameController = value; }
         }
 
         /// <summary>
@@ -156,6 +168,24 @@ namespace P_Demomot.Models.UserInfos
             }
 
             return chests;
+        }
+
+        /// <summary>
+        /// Insert a new chest in the database
+        /// </summary>
+        /// <param name="idChest">chest id</param>
+        /// <param name="idUser">user id</param>
+        public void AddChest(int idChest, int idUser)
+        {
+            // Request
+            string req = $"INSERT INTO `t_belong` (`idChest`, `idUser`) VALUES(@idChest, @idUser);";
+
+            //Binds
+            _binds = new Dictionary<string, string>();
+            _binds.Add("@idChest", idChest.ToString());
+            _binds.Add("@idUser", idUser.ToString());
+
+            Database.GetInstance().QueryPrepareExecutes(req, _binds, _columns);
         }
 
         /// <summary>
